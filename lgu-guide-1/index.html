@@ -1,0 +1,332 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>LGU生存指南（一） - - 如何快速高效地上手sis | 港中深资源站</title><noscript>开启JavaScript才能访问本站哦~</noscript><link rel="icon" href="/cuhksz/img/cuhksz.jpg"><!-- index.css--><link rel="stylesheet" href="/cuhksz/css/index.css?v=3.0.19"><!-- inject head--><meta name="msvalidate.01" content="394CFA1E21959CC3AF8C3B1E67448E75"><meta name="google-site-verification" content="P7QAlvkk47jv0OecO5UGRPx96l5A8dcZqvNaV-gdNJk"><link rel="canonical" href="https://dsanying.github.io/cuhksz/lgu-guide-1/"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"><!-- aplayer--><!-- swiper--><!-- fancybox ui--><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.min.css"><!-- katex--><!-- Open Graph--><meta name="description" content="文章来源于微信公众号 “抹茶 Mattya”,收录时有使用 AI 进行修改原文地址: LGU 生存指南（一） - - 如何快速高效地上手 sis 又是一年入学季，又有一批对大学生活满怀期待的 LGUer 即将进入到学校之中，然而还未等待到美好的大学生活，便被许多新人学不会，老生不用学的知识给"><!-- pwa--><meta name="apple-mobile-web-app-capable" content="港中深资源站"><meta name="theme-color" content="var(--efu-main)"><meta name="apple-mobile-web-app-status-bar-style" content="var(--efu-main)"><link rel="bookmark" href="/cuhksz/img/cuhksz.jpg"><link rel="apple-touch-icon" href="/cuhksz/img/cuhksz.jpg" sizes="180x180"><script>console.log(' %c Solitude %c ' + '3.0.19' + ' %c https://github.com/everfu/hexo-theme-solitude',
+    'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+    'background:#ff9a9a ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+    'background:unset ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff')
+</script><script>let mdate = "7-7,9-18,12-13";
+mdate = (mdate.split(","));
+let ndate = new Date();
+for (let i of mdate) {
+    if (i === (ndate.getMonth()+1) + "-" + (ndate.getDate())) {
+        document.documentElement.classList.add('memorial');
+    }
+}
+</script><script>(()=>{
+        const saveToLocal = {
+            set: function setWithExpiry(key, value, ttl) {
+                if (ttl === 0)
+                    return
+                const now = new Date()
+                const expiryDay = ttl * 86400000
+                const item = {
+                    value: value,
+                    expiry: now.getTime() + expiryDay
+                }
+                localStorage.setItem(key, JSON.stringify(item))
+            },
+            get: function getWithExpiry(key) {
+                const itemStr = localStorage.getItem(key)
+
+                if (!itemStr) {
+                    return undefined
+                }
+                const item = JSON.parse(itemStr)
+                const now = new Date()
+
+                if (now.getTime() > item.expiry) {
+                    localStorage.removeItem(key)
+                    return undefined
+                }
+                return item.value
+            }
+        };
+        window.utils = {
+            saveToLocal: saveToLocal,
+            getCSS: (url, id = false) => new Promise((resolve, reject) => {
+              const link = document.createElement('link')
+              link.rel = 'stylesheet'
+              link.href = url
+              if (id) link.id = id
+              link.onerror = reject
+              link.onload = link.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                link.onload = link.onreadystatechange = null
+                resolve()
+              }
+              document.head.appendChild(link)
+            }),
+            getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+              const script = document.createElement('script')
+              script.src = url
+              script.async = true
+              script.onerror = reject
+              script.onload = script.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                script.onload = script.onreadystatechange = null
+                resolve()
+              }
+
+              Object.keys(attr).forEach(key => {
+                script.setAttribute(key, attr[key])
+              })
+
+              document.head.appendChild(script)
+            }),
+            addGlobalFn: (key, fn, name = false, parent = window) => {
+                const globalFn = parent.globalFn || {}
+                const keyObj = globalFn[key] || {}
+
+                if (name && keyObj[name]) return
+
+                name = name || Object.keys(keyObj).length
+                keyObj[name] = fn
+                globalFn[key] = keyObj
+                parent.globalFn = globalFn
+            },
+            addEventListenerPjax: (ele, event, fn, option = false) => {
+              ele.addEventListener(event, fn, option)
+              utils.addGlobalFn('pjax', () => {
+                  ele.removeEventListener(event, fn, option)
+              })
+            },
+            diffDateFormat: (selector) => {
+                selector.forEach(item => {
+                    const date = new Date(item.getAttribute('datetime') || item.textContent);
+                    item.textContent = (date.getMonth() + 1).toString()+'/'+date.getDate().toString();
+                });
+            },
+        }
+    })()</script><!-- theme--><script>initTheme = () => {
+    let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const cachedMode = utils.saveToLocal.get('theme');
+    if (cachedMode === undefined) {
+        const nowMode =
+            isDarkMode ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', nowMode);
+    } else {
+        document.documentElement.setAttribute('data-theme', cachedMode);
+    }
+    typeof rm === 'object' && rm.mode(cachedMode === 'dark' && isDarkMode)
+}
+initTheme()</script><!-- global head--><script>const GLOBAL_CONFIG = {
+    root: '/cuhksz/',
+    algolia: undefined,
+    localsearch: {"preload":false,"path":"/search.xml"},
+    runtime: '2024-08-01 00:00:00',
+    lazyload: {
+        enable: false,
+        error: '/img/error_load.avif'
+    },
+    copyright: false,
+    highlight: {"limit":200,"expand":true,"copy":true,"syntax":"highlight.js"},
+    randomlink: false,
+    lang: {"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"day":"天前","hour":"小时前","just":"刚刚","min":"分钟前","month":"个月前"},"day":" 天","f12":"开发者模式已打开，请遵循GPL协议。","totalk":"无需删除空行，直接输入评论即可","search":{"empty":"找不到你查询的内容：${query}","hit":"找到 ${hits} 条结果，用时 ${time} 毫秒","placeholder":"输入关键词快速查找","count":"共 <b>${count}</b> 条结果。","loading":"搜索中..."}},
+    aside: {
+        state: {
+            morning: "早上好~",
+            noon: "中午好~",
+            afternoon: "下午好~",
+            night: "晚上好~",
+            goodnight: "😴晚安玛卡巴卡~",
+        },
+        witty_words: ["(＾• ω •＾)","(ฅ^•ﻌ•^ฅ)","(＾▽＾)","(≧∇≦)","(●ˊωˋ●)"],
+        witty_comment: {
+            prefix: '好久不见，',
+            back: '欢迎再次回来，',
+        },
+    },
+    covercolor: {
+        enable: false
+    },
+    comment: false,
+    lightbox: 'fancybox',
+    right_menu: false,
+    translate: {"translateDelay":0,"defaultEncoding":2},
+    lure: false,
+    expire: {"time":30,"position":"top","text_prev":"此文章最后更新于","text_next":"天前,请注意辨别数据的时效性。"},
+};</script><!-- page-config head--><script id="config-diff">var PAGE_CONFIG = {
+    is_post: true,
+    is_page: false,
+    is_home: false,
+    page: '',
+    toc: true,
+    comment: false,
+    ai_text: false,
+    color: false,
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body id="body"><!-- universe--><canvas id="universe"></canvas><!-- background img--><!-- loading--><!-- console--><div id="console"><div class="close-btn" onclick="sco.hideConsole()"><i class="solitude fas fa-xmark"></i></div><div class="console-card-group"><div class="console-card-group-right"><div class="console-card tags" onclick="sco.hideConsole()"><div class="card-content"><div class="author-content-item-tips">标签</div><div class="author-content-item-title">寻找感兴趣的领域</div></div><div class="card-tag-cloud"><a href="/cuhksz/tags/LGU%E6%8C%87%E5%8D%97/">LGU指南<sup>11</sup></a><a href="/cuhksz/tags/%E6%8A%B9%E8%8C%B6Mattya/">抹茶Mattya<sup>9</sup></a><a href="/cuhksz/tags/%E7%A5%9E%E4%BB%99%E6%B9%96%E7%95%94%E7%9A%84%E8%96%AF%E5%A1%94/">神仙湖畔的薯塔<sup>2</sup></a></div></div><div class="console-card history" onclick="sco.hideConsole()"><ul class="card-archive-list"><li class="item"><a href="/archives/2025/03/"><span class="date">2025/03</span><div class="count-group"><span class="count">1</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2024/11/"><span class="date">2024/11</span><div class="count-group"><span class="count">2</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2024/09/"><span class="date">2024/09</span><div class="count-group"><span class="count">7</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2024/08/"><span class="date">2024/08</span><div class="count-group"><span class="count">13</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/"><span class="date">全部文章</span><div class="count-group"><span class="count">23</span><span class="unit">篇</span></div></a></li></ul></div></div></div><div class="button-group"><div class="console-btn-item"><span class="darkmode_switchbutton" onclick="sco.switchDarkMode()" title="昼夜切换"><i class="solitude fas fa-circle-half-stroke"></i></span></div><div class="console-btn-item" id="consoleHideAside"><span class="asideSwitch" onclick="sco.switchHideAside()" title="边栏显示控制"><i class="solitude fas fa-arrows-left-right-to-line"></i></span></div></div><div class="console-mask" onclick="sco.hideConsole()"></div></div><!-- sidebar--><div id="sidebar" style="zoom: 1;"><div id="menu-mask" style="display: none;"></div><div id="sidebar-menus"><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/cuhksz/archives/"><div class="headline">文章</div><div class="length-num">23</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/cuhksz/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/cuhksz/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div></div></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><span class="darkmode_switchbutton menu-child" onclick="sco.switchDarkMode()"><i class="solitude fas fa-circle-half-stroke"></i><span>显示模式</span></span></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网站</div><div class="back-menu-list"><a class="back-menu-item" href="https://dsanying.github.io/" title="博客"><span class="back-menu-item-text">博客</span></a><a class="back-menu-item" href="https://dsanying.github.io/resource/" title="网站/软件资源站"><span class="back-menu-item-text">网站/软件资源站</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>新生必看</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/cuhksz/IT-guide/"><i class="solitude  fas fa-book-tanakh"></i><span>IT指南</span></a></li><li><a class="site-page child" href="/cuhksz/tags/LGU%E6%8C%87%E5%8D%97"><i class="solitude  fa-solid fa-book"></i><span>LGU指南</span></a></li><li><a class="site-page child" href="/cuhksz/material/"><i class="solitude  fa-solid fa-book-bookmark"></i><span>重要资料</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>课程</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/cuhksz/course/"><i class="solitude  fa-solid fa-book-open"></i><span>课程资料/电子课本</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://47.119.147.6/index"><i class="solitude  fa-solid fa-comments"></i><span>课程评价</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>校园</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/cuhksz/map/"><i class="solitude  fa-solid fa-map-location-dot"></i><span>校园地图</span></a></li><li><a class="site-page child" href="/cuhksz/contact-school/"><i class="solitude  fa-solid fa-address-book"></i><span>联系方式</span></a></li><li><a class="site-page child" href="/cuhksz/dorm/"><i class="solitude  fa-solid fa-bed"></i><span>宿舍信息</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/cuhksz/social/"><span>社交媒体&amp;宝藏资源</span></a></div><div class="menus_item"><a class="site-page" href="/cuhksz/about/"><span>关于本站</span></a></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="card-tag-cloud"><a href="/cuhksz/tags/LGU%E6%8C%87%E5%8D%97/">LGU指南<sup>11</sup></a><a href="/cuhksz/tags/%E6%8A%B9%E8%8C%B6Mattya/">抹茶Mattya<sup>9</sup></a><a href="/cuhksz/tags/%E7%A5%9E%E4%BB%99%E6%B9%96%E7%95%94%E7%9A%84%E8%96%AF%E5%A1%94/">神仙湖畔的薯塔<sup>2</sup></a></div></div></div></div><!-- keyboard--><!-- righhtside--><div class="needEndHide" id="rightside"><div class="rs_hide"><button class="translate" type="button" title="简繁转换">简</button><button class="mode" type="button" title="显示模式切换" onclick="sco.switchDarkMode()"><i class="fas fa-circle-half-stroke"></i></button><button class="aside pc" type="button" title="侧边栏" onclick="sco.switchHideAside()"><i class="fas fa-arrows-alt-h"></i></button></div><div class="rs_show"><button class="config" type="button" title="扩展" onclick="document.querySelector(&quot;.rs_hide&quot;).classList.toggle(&quot;show&quot;)"><i class="fas fa-gear fa-spin"></i></button><button class="mobile toc" type="button" title="目录" onclick="document.querySelector('#card-toc').classList.toggle('open')"><i class="fas fa-list"></i></button><button class="top" type="button" title="返回顶部" onclick="sco.toTop()"><i class="fas fa-arrow-up"></i><span id="percent">0</span></button></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav class="show" id="nav"><div id="nav-group"><div id="blog_name"><div class="back-home-button" tabindex="-1"><i class="back-home-button-icon solitude fas fa-bars-progress"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网站</div><div class="back-menu-list"><a class="back-menu-item" href="https://dsanying.github.io/" title="博客"><span class="back-menu-item-text">博客</span></a><a class="back-menu-item" href="https://dsanying.github.io/resource/" title="网站/软件资源站"><span class="back-menu-item-text">网站/软件资源站</span></a></div></div></div></div><a id="site-name" href="/cuhksz/" title="返回博客主页"><span class="title">港中深资源站</span><i class="solitude fas fa-home"></i></a></div><div id="page-name-mask"><div id="page-name"><a id="page-name-text" onclick="sco.toTop()">LGU生存指南（一） - - 如何快速高效地上手sis</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>新生必看</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/cuhksz/IT-guide/"><i class="solitude  fas fa-book-tanakh"></i><span>IT指南</span></a></li><li><a class="site-page child" href="/cuhksz/tags/LGU%E6%8C%87%E5%8D%97"><i class="solitude  fa-solid fa-book"></i><span>LGU指南</span></a></li><li><a class="site-page child" href="/cuhksz/material/"><i class="solitude  fa-solid fa-book-bookmark"></i><span>重要资料</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>课程</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/cuhksz/course/"><i class="solitude  fa-solid fa-book-open"></i><span>课程资料/电子课本</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://47.119.147.6/index"><i class="solitude  fa-solid fa-comments"></i><span>课程评价</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>校园</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/cuhksz/map/"><i class="solitude  fa-solid fa-map-location-dot"></i><span>校园地图</span></a></li><li><a class="site-page child" href="/cuhksz/contact-school/"><i class="solitude  fa-solid fa-address-book"></i><span>联系方式</span></a></li><li><a class="site-page child" href="/cuhksz/dorm/"><i class="solitude  fa-solid fa-bed"></i><span>宿舍信息</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/cuhksz/social/"><span>社交媒体&amp;宝藏资源</span></a></div><div class="menus_item"><a class="site-page" href="/cuhksz/about/"><span>关于本站</span></a></div></div></div><div id="nav-left"></div><div id="nav-right"><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索"><i class="solitude fas fa-magnifying-glass"></i></a></div><div class="nav-button" id="nav-console"><a class="console_switchbutton" onclick="sco.showConsole()" title="中控台" href="javascript:void(0);"><label><i class="left"></i><i class="center"></i><i class="right"></i></label></a></div><div id="toggle-menu"><a class="site-page"><i class="solitude fas fa-bars"></i></a></div></div></div></nav><div class="coverdiv" id="coverdiv"><img class="nolazyload" id="post-cover" src="/cuhksz/img/1.jpg" alt="LGU生存指南（一） - - 如何快速高效地上手sis"></div><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original" title="该文章为转载或翻译文章，注意版权协议">转载或翻译</a><span class="post-meta-categories"><a class="post-meta-categories" href="/cuhksz/categories/%E6%A0%A1%E5%9B%AD/">校园</a></span><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/cuhksz/tags/LGU%E6%8C%87%E5%8D%97/"><span class="tags-name tags-punctuation"><i class="solitude fas fa-hashtag"></i>LGU指南</span></a><a class="post-meta__tags" href="/cuhksz/tags/%E6%8A%B9%E8%8C%B6Mattya/"><span class="tags-name tags-punctuation"><i class="solitude fas fa-hashtag"></i>抹茶Mattya</span></a></div></div></div></div><h1 class="post-title">LGU生存指南（一） - - 如何快速高效地上手sis</h1><div id="post-meta"><div class="meta-secondline"><span class="post-meta-date" title="发布于 2024-08-22 13:27:55"><i class="post-meta-icon solitude fas fa-calendar-days"></i><time datetime="2024-08-22T05:27:55.486Z">2024-08-22T05:27:55.486Z</time></span><span class="post-meta-date" title="最后更新于 2025-06-25 18:18:45"><i class="post-meta-icon solitude fas fa-arrows-rotate"></i><time datetime="2025-06-25T10:18:45.341Z">2025-06-25T10:18:45.341Z</time></span><span class="post-meta-wordcount"><i class="post-meta-icon solitude fas fa-file-word" title="文章字数"></i><span class="word-count">1.3k</span><span class="post-meta-separator"></span><i class="post-meta-icon solitude fas fa-clock" title="阅读耗时"></i><span>4 分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content article-container"><meta name="referrer" content="never"/>
+
+<blockquote>
+<p>文章来源于微信公众号 “抹茶 Mattya”,收录时有使用 AI 进行修改<br>原文地址: <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/mc5c_BH5jFRc6h2jLo7fCQ">LGU 生存指南（一） - - 如何快速高效地上手 sis</a></p>
+</blockquote>
+<p>又是一年入学季，又有一批对大学生活满怀期待的 LGUer 即将进入到学校之中，然而还未等待到美好的大学生活，便被许多新人学不会，老生不用学的知识给击败，如怎样使用 sis 系统方便以后安排课表，常见的缩写，课程的好坏以及评分标准。</p>
+<p>本篇文章主要针对如何使用将陪伴各位大学生活里最重要的一个工具 - - sis，即 Student Information System，是集查看课程与授课老师，选课，退课，转专业，打印成绩单等功能为一体的重要工具。</p>
+<p>就关于 sis 的使用，本篇文章给出了大部分常见问题的操作指南，部分操作需结合教务处以及各个学院不断更新的课程安排，在文中也会一并介绍。</p>
+<p>本文一切的前提建立在可以稳定连接到 sis，即可以打开</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://sis.cuhk.edu.cn/</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DJEqDsRibLTOCp0tIW4c3tIYT5ccUQeWHvjHiaaYxuoiaI3lU6e8dX2SichufnAVoNHdlCSnLtDGzibibsw/640?wx_fmt=png&from=appmsg"></p>
+<hr>
+<h2 id="本学期会开什么课程，课程有什么是我可以了解的？"><a href="#本学期会开什么课程，课程有什么是我可以了解的？" class="headerlink" title="本学期会开什么课程，课程有什么是我可以了解的？"></a>本学期会开什么课程，课程有什么是我可以了解的？</h2><p>通过查找教务处在选课前发送的多封邮件，其一般带有开设给本科生与研究生课程的附件，请以最接近选课阶段的那封邮件为准。</p>
+<p>如下图所示。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DJEqDsRibLTOCp0tIW4c3tIY01zfOjYyk3LVLtO2xOj6CvvhIibfJYTAkGsN2qmKKlJX48WgNHecPTw/640?wx_fmt=png&from=appmsg"></p>
+<p>下载并打开附件后会看到以下的表格：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DJEqDsRibLTOCp0tIW4c3tIY9Y18MICSp2sQc2yY7bkDibFluoNEEXVxgaObw3XqH5fH7cyicOrUibgMw/640?wx_fmt=png&from=appmsg"></p>
+<p>绿色方格是我们需要注意的，从左到右分别是：</p>
+<p><strong>开设这门课的学院：决定了这门课程是哪个学院开的，想要反映关于课程的事情应该找哪个学院。</strong></p>
+<p><strong>课程编号：每门课都有自己独一无二的课程编号，一般是三位英语字母缩写加上四位数字。</strong>英语缩写代表课程性质，而四位数字的字母表示课程难度，从 1 到 4 难度递增。</p>
+<p>课程所占学分：一般课程都是三个学分。</p>
+<p>课程教授</p>
+<p>课程教授语言：大部分都是英语授课，少数会采用中文授课。</p>
+<p>课程容量：决定了这门课最多能有多少同学可以选上，一般可以多 10%的超额。</p>
+<p>课程开设场所的多少</p>
+<p><strong>是否具有先修条件：一门高阶课程往往需要一门或多门的基础课程的基础铺垫，一般来说要满足先修条件才能选取高阶课程。</strong></p>
+<p>共修</p>
+<p>互斥：某些课程由于课程设置极度类似，为了防止刷分等情况，在修完某门课程后便不能继续修读类似的课程。</p>
+<p><strong>目标学生：判断一门课自己是否被列入目标学生中，即自己能不能在抢课时间选取这门课和其他同学进行争取。</strong></p>
+<p><strong>预先分配配额：课程为了保证每个年级的学生都可以抢到，在最开始的抢课阶段会人为地将课程的容量分给不同年级或不同专业的同学，在满足是目标学生的前提下，抢课期间与你竞争的其实和你一样专业或年级的同学。</strong></p>
+<p>相关课程：一般是某研究生课程的前置条件课程。</p>
+<p><strong>注意：此为课程的重要说明，如课程评分标准的不一样，课程时间的不一样，若心仪的课程含有此注意事项，请务必重视。</strong></p>
+<hr>
+<h2 id="如何了解某门课讲什么，参考教科书是什么，评分标准如何？"><a href="#如何了解某门课讲什么，参考教科书是什么，评分标准如何？" class="headerlink" title="如何了解某门课讲什么，参考教科书是什么，评分标准如何？"></a>如何了解某门课讲什么，参考教科书是什么，评分标准如何？</h2><p><strong>打开 sis，选择简体中文，在左侧找到课程管理，点击浏览目录，便可以找到。</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DJEqDsRibLTOCp0tIW4c3tIYAXBWBDgoZxS7bX1v89pJ3Ef8IawicfsJyuXHkobsiagiavRKH5UAZ9ib2Q/640?wx_fmt=png&from=appmsg"></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DJEqDsRibLTOCp0tIW4c3tIYYrRaagp39b2btZDr0FXJw4zErx0r2VpNPBEicrC88f8BKSVjGXbgyvw/640?wx_fmt=png&from=appmsg"></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DJEqDsRibLTOCp0tIW4c3tIYKcwtw6auGBzMcLLNxMvcmib8ozVNNibSQlia7Ma5HBXYYzeC2ia5YL2ib6Q/640?wx_fmt=png&from=appmsg"></p>
+<p><strong>以 FIN2020 为例，点击 “F” 大类，选择  “FIN - Finance”下列的 FIN2020  金融学基础，我们就能看到这门课的基本概述，继续点击 “ view course outline “ , 有更加具体的课程安排。</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DJEqDsRibLTOCp0tIW4c3tIY78hSBU6z3es0JRPmTD5pT7kwszVafC4pia8VES063uicXLvE65Y9Aibibg/640?wx_fmt=png&from=appmsg"></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DJEqDsRibLTOCp0tIW4c3tIYxYRRBJ4Elzc2MOoDy4o3vTGc1kznh0w4bkBtibrEJTRxskLITqmZ1dw/640?wx_fmt=png&from=appmsg"></p>
+<hr>
+<h2 id="如何查看这门课以前开过没有？"><a href="#如何查看这门课以前开过没有？" class="headerlink" title="如何查看这门课以前开过没有？"></a>如何查看这门课以前开过没有？</h2><p><strong>由于课程的安排复杂，并不是 sis 里所有的课程都会在学期内开设，想要知道一门课会在什么时候开设，可以参考以往的开设时间，以此来调整自己的学习计划。</strong></p>
+<p><strong>依旧以 FIN2020 为例，点击 “F” 大类，选择  “FIN - Finance”下列的 FIN2020  金融学基础，我们就能看到这门课的基本概述，点击 “  查看课程时段 “ , 找到提供时段，便可以看到往年课程的开设时段。在这里也可以看到课程的主讲教授和上课的地点和时间，以及每个时间段的容量。</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DJEqDsRibLTOCp0tIW4c3tIYtDEAVRtMvNSHaOPrpKFJlBSlwCfMS3bz6vbLCE9cft4jnLTS6Ye1eg/640?wx_fmt=png&from=appmsg"></p>
+<hr>
+<h2 id="选好心仪的课程和老师后，想要验证自己的排课有没有时间冲突？"><a href="#选好心仪的课程和老师后，想要验证自己的排课有没有时间冲突？" class="headerlink" title="选好心仪的课程和老师后，想要验证自己的排课有没有时间冲突？"></a>选好心仪的课程和老师后，想要验证自己的排课有没有时间冲突？</h2><p><strong>将课程选取后可以在 “专业设定” - “  注册购物车”  里验证。</strong></p>
+<p><strong>点击想要验证的课程，输入验证码，点击 “  验证 ” ，便可以知道这门课是否可以在后续抢课时间内被选到。</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DJEqDsRibLTOCp0tIW4c3tIY8YH4ye2HkAaO6h7DzxRrwtCoXbGbgOk3FV4Na45YDLTia3iayD55PN4A/640?wx_fmt=png&from=appmsg"></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DJEqDsRibLTOCp0tIW4c3tIY8U1Rzu2ExicfibZjVQPkRr6dHpPzMOteOasHmAbnTIL4gdDKd2QNMm5g/640?wx_fmt=png&from=appmsg"></p>
+<p><strong>若是可以的话，会出现如下结果：</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DJEqDsRibLTOCp0tIW4c3tIYVamNDfqNEoia9jDREaHgU7T0Ofkh1Nia9GPibIDDFL2KWMxf5th3FgDmg/640?wx_fmt=png&from=appmsg"></p>
+<p><strong>若是失败的话，会自动显示为何不能选取的原因：</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DJEqDsRibLTOCp0tIW4c3tIYqRJL7nr3qD15c1TuTtfic63vQ7dPkicp336qtWzrBmJ4NXAeRY65ibcNg/640?wx_fmt=png&from=appmsg"></p>
+</article><div class="post-copyright"><div class="post-copyright__author_group"><div class="post-copyright__author_img"><img class="post-copyright__author_img_front" src="/cuhksz/img/avatar.jpg"></div><div class="post-copyright__author_name">暗影</div><div class="post-copyright__author_desc"></div></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div id="quit-box" onclick="RemoveRewardMask()"></div><div class="post-reward"><div class="reward-button" title="赞赏作者" onclick="AddRewardMask()"><i class="solitude fas fa-heart"></i>赞赏作者</div><div class="reward-main"><ul class="reward-all"><span class="reward-title">感谢大佬的打赏!</span><ul class="reward-group"><li class="reward-item"><a href="/cuhksz/img/wechatpay.png"><img class="post-qr-code-img nolazyload" src="/cuhksz/img/wechatpay.png" alt="微信" style="border-color: var(--efu-black)"></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/cuhksz/img/alipay.png"><img class="post-qr-code-img nolazyload" src="/cuhksz/img/alipay.png" alt="支付宝" style="border-color: var(--efu-black)"></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/cuhksz/about/#about-reward"><div class="reward-text">赞赏名单</div><div class="reward-dec">你的支持是我前进的动力!</div></a></ul></div></div><script>function RemoveRewardMask() {
+    let rewardMainElements = document.querySelectorAll(".reward-main");
+    let quitBoxElement = document.querySelector("#quit-box");
+
+    rewardMainElements.forEach(element => {
+        element.style.display = "none";
+    });
+
+    if (quitBoxElement) {
+        quitBoxElement.style.display = "none";
+    }
+}
+
+function AddRewardMask() {
+    let rewardMainElements = document.querySelectorAll(".reward-main");
+    let quitBoxElement = document.querySelector("#quit-box");
+
+    rewardMainElements.forEach(element => {
+        element.style.display = "flex";
+    });
+
+    if (quitBoxElement) {
+        quitBoxElement.style.display = "flex";
+    }
+}</script></div></div><div class="social-share"><a class="social-share-ico icon-qq" target="_blank" rel="noopener" href="https://connect.qq.com/widget/shareqq/index.html?url=https%3A%2F%2Fdsanying.github.io%2Fcuhksz%2Fcuhksz%2Flgu-guide-1%2F&amp;title=LGU%E7%94%9F%E5%AD%98%E6%8C%87%E5%8D%97%EF%BC%88%E4%B8%80%EF%BC%89%20-%20-%20%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E9%AB%98%E6%95%88%E5%9C%B0%E4%B8%8A%E6%89%8Bsis&amp;desc=undefined&amp;summary=undefined&amp;site=LGU%E7%94%9F%E5%AD%98%E6%8C%87%E5%8D%97%EF%BC%88%E4%B8%80%EF%BC%89%20-%20-%20%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E9%AB%98%E6%95%88%E5%9C%B0%E4%B8%8A%E6%89%8Bsis&amp;pics=%2Fimg%2F1.jpg" title="分享到QQ"><i class="solitude fab fa-qq"></i></a><div class="social-share-ico icon-link" onclick="utils.copy(&quot;https://dsanying.github.io/cuhksz/cuhksz/lgu-guide-1/&quot;)" title="复制文章链接"><i class="solitude fas fa-link"></i></div><div class="social-share-ico icon-qrcode" title="使用手机扫码阅读这篇文章"><i class="solitude fas fa-qrcode"></i><div class="share-main"><div class="share-main-all"><div id="qrcode"></div><div class="reward-dec">使用手机扫码阅读这篇文章</div></div></div><script pjax>typeof QRCode === 'function' && new QRCode(document.getElementById("qrcode"), {
+    text: 'https://dsanying.github.io/cuhksz/cuhksz/lgu-guide-1/',
+    correctLevel : QRCode.CorrectLevel.L
+});
+window.addEventListener('DOMContentLoaded', () => {
+    new QRCode(document.getElementById("qrcode"), {
+        text: 'https://dsanying.github.io/cuhksz/cuhksz/lgu-guide-1/',
+        correctLevel : QRCode.CorrectLevel.L
+    });
+});
+</script></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本文是转载或翻译文章，版权归原作者所有。转载本文请联系原作者。</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/cuhksz/tags/LGU%E6%8C%87%E5%8D%97/"><span class="tags-punctuation"><i class="solitude fas fa-hashtag"></i>LGU指南<span class="tagsPageCount">11</span></span></a><a class="post-meta__tags" href="/cuhksz/tags/%E6%8A%B9%E8%8C%B6Mattya/"><span class="tags-punctuation"><i class="solitude fas fa-hashtag"></i>抹茶Mattya<span class="tagsPageCount">9</span></span></a></div></div></div><nav class="needEndHide pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/cuhksz/lgu-guide-2/"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">LGU生存指南（二） - - 如何交表 + 如何科学使用 Add &amp; Drop Week</div></div></a></div><div class="next-post pull-right"><a href="/cuhksz/IT-guide/"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">IT指南</div></div></a></div></nav>
+        <div class="relatedPosts">
+            <div class="headline">
+                <i class="solitude fas fa-star"></i>
+                <span>喜欢这篇的人也看了</span>
+                <div class="relatedPosts-link">
+                    <a onclick="event.preventDefault(); toRandomPost();" href="javascript:void(0);" rel="external nofollow" data-pjax-state="">随便逛逛</a>
+                </div>
+            </div>
+            <div class="relatedPosts-list">
+            <div>
+                <a href="/cuhksz/lgu-guide-11/" title="LGU生存指南（六） - - SALL Centre">
+                    <img class="cover" src="/cuhksz/img/2.jpg" alt="cover">
+                    <div class="content is-center">
+                        <div class="title">LGU生存指南（六） - - SALL Centre</div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/cuhksz/lgu-guide-9/" title="LGU生存指南（五） - - 自由选修pf课程推荐">
+                    <img class="cover" src="/cuhksz/img/2.jpg" alt="cover">
+                    <div class="content is-center">
+                        <div class="title">LGU生存指南（五） - - 自由选修pf课程推荐</div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/cuhksz/lgu-guide-8/" title="LGU​便捷生活（四） - - 如何成为一名合格的大学生家教Q&amp;A">
+                    <img class="cover" src="/cuhksz/img/1.jpg" alt="cover">
+                    <div class="content is-center">
+                        <div class="title">LGU​便捷生活（四） - - 如何成为一名合格的大学生家教Q&amp;A</div>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="solitude fas fa-bars"></i><span>文章目录</span></div><div class="toc-content" id="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%AD%A6%E6%9C%9F%E4%BC%9A%E5%BC%80%E4%BB%80%E4%B9%88%E8%AF%BE%E7%A8%8B%EF%BC%8C%E8%AF%BE%E7%A8%8B%E6%9C%89%E4%BB%80%E4%B9%88%E6%98%AF%E6%88%91%E5%8F%AF%E4%BB%A5%E4%BA%86%E8%A7%A3%E7%9A%84%EF%BC%9F"><span class="toc-text">本学期会开什么课程，课程有什么是我可以了解的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BA%86%E8%A7%A3%E6%9F%90%E9%97%A8%E8%AF%BE%E8%AE%B2%E4%BB%80%E4%B9%88%EF%BC%8C%E5%8F%82%E8%80%83%E6%95%99%E7%A7%91%E4%B9%A6%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86%E5%A6%82%E4%BD%95%EF%BC%9F"><span class="toc-text">如何了解某门课讲什么，参考教科书是什么，评分标准如何？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E8%BF%99%E9%97%A8%E8%AF%BE%E4%BB%A5%E5%89%8D%E5%BC%80%E8%BF%87%E6%B2%A1%E6%9C%89%EF%BC%9F"><span class="toc-text">如何查看这门课以前开过没有？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E5%A5%BD%E5%BF%83%E4%BB%AA%E7%9A%84%E8%AF%BE%E7%A8%8B%E5%92%8C%E8%80%81%E5%B8%88%E5%90%8E%EF%BC%8C%E6%83%B3%E8%A6%81%E9%AA%8C%E8%AF%81%E8%87%AA%E5%B7%B1%E7%9A%84%E6%8E%92%E8%AF%BE%E6%9C%89%E6%B2%A1%E6%9C%89%E6%97%B6%E9%97%B4%E5%86%B2%E7%AA%81%EF%BC%9F"><span class="toc-text">选好心仪的课程和老师后，想要验证自己的排课有没有时间冲突？</span></a></li></ol></div></div><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><div class="top-group"><div class="sayhi" id="sayhi" onclick="sco.changeWittyWord()"></div></div></div><div class="avatar"><img alt="头像" src="/cuhksz/img/avatar.jpg"></div><div class="description"><center><span style="color:red;">❤</span>(◍•ᴗ•◍)<span style="color:red;">❤</span></center></div><div class="bottom-group"><span class="left"><div class="name">暗影</div><div class="desc">暗影无际,暗夜无边</div></span><div class="social-icons is-center"><a class="social-icon" target="_blank" rel="noopener" href="https://github.com/dsanying" title="Github"><i class="solitude  fab fa-github"></i></a><a class="social-icon" href="mailto:119548583@qq.com" title="Email"><i class="solitude  fas fa-envelope"></i></a></div></div></div></div><div class="card-widget card-tags card-archives card-webinfo card-allinfo"><div class="card-tag-cloud"><a href="/cuhksz/tags/LGU%E6%8C%87%E5%8D%97/">LGU指南<sup>11</sup></a><a href="/cuhksz/tags/%E6%8A%B9%E8%8C%B6Mattya/">抹茶Mattya<sup>9</sup></a><a href="/cuhksz/tags/%E7%A5%9E%E4%BB%99%E6%B9%96%E7%95%94%E7%9A%84%E8%96%AF%E5%A1%94/">神仙湖畔的薯塔<sup>2</sup></a></div><style>.card-tag-cloud::after {
+    display: none !important;
+}</style><hr><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章总数 :</div><div class="item-count">23</div></div><div class="webinfo-item"><div class="item-name">建站天数 :</div><div class="item-count" id="runtimeshow"></div></div><div class="webinfo-item"><div class="item-name">最后更新 :</div><time class="item-count" datetime="2025-06-26T04:44:30.642Z"></time></div></div></div></div></div></main><footer id="footer"><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div class="copyright">© 2024 - 2025 By&nbsp;<a class="footer-bar-link" href="/cuhksz/"><img class="author-avatar" src="/cuhksz/img/cuhksz.jpg">暗影</a></div><div class="beian-group"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://hexo.io/">框架：Hexo</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/everfu/hexo-theme-solitude">主题：Solitude</a></div></div></div></div></footer></div><!-- right_menu--><!-- inject body--><div><script src="/cuhksz/js/utils.js?v=3.0.19"></script><script src="/cuhksz/js/main.js?v=3.0.19"></script><script src="/cuhksz/js/third_party/waterfall.min.js?v=3.0.19"></script><script src="https://fastly.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="https://fastly.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script><script src="https://fastly.jsdelivr.net/npm/typeit@8.8.7/dist/index.umd.min.js"></script><script src="/cuhksz/js/third_party/universe.min.js?v=3.0.19"></script><script>dark()
+</script><script src="/cuhksz/js/tw_cn.js?v=3.0.19"></script><script src="https://fastly.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script src="https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.min.js"></script><script src="/cuhksz/js/post_ai.js?v=3.0.19"></script><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+utils.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+</script><script src="https://fastly.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div class="js-pjax"></div></div><!-- pjax--><script>const pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: ["title","#body-wrap","#site-config","meta[name=\"description\"]",".js-pjax","meta[property^=\"og:\"]","#config-diff",".rs_show",".rs_hide"],
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+})
+
+document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+})
+
+document.addEventListener('pjax:complete', () => {
+    window.refreshFn()
+
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+        const newScript = document.createElement('script')
+        const content = item.text || item.textContent || item.innerHTML || ""
+        Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+        newScript.appendChild(document.createTextNode(content))
+        item.parentNode.replaceChild(newScript, item)
+    })
+
+    GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+    if (e.request.status === 404) {
+        pjax.loadUrl('/404.html')
+    }
+})</script><!-- google adsense--><!-- search--><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="solitude fas fa-xmark"></i></button></nav><div class="search-wrap"><div class="search-box"><input class="search-box-input" id="search-input" type="text" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="输入关键词快速查找"></div><div id="search-results"><div id="search-hits"></div></div><div id="search-pagination"></div><div id="search-tips"></div></div></div><div id="search-mask"></div></div><script src="/cuhksz/js/search/local.js?v=3.0.19"></script><!-- music--></body></html>
+        <script>
+            const posts = ["CEC1010/","IT-guide/","PED/","about/","dorm/","contact-school/","course/","lgu-guide-1/","lgu-guide-11/","ios-printing-bug/","lgu-guide-2/","lgu-guide-10/","lgu-guide-3/","lgu-guide-5/","lgu-guide-6/","lgu-guide-7/","lgu-guide-8/","lgu-guide-4/","lgu-guide-9/","map/","material/","medical-insurance/","social/"];
+            function toRandomPost() {
+                const randomPost = posts[Math.floor(Math.random() * posts.length)];
+                pjax.loadUrl(GLOBAL_CONFIG.root + randomPost);
+            }
+        </script>

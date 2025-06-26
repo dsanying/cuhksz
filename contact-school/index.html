@@ -1,0 +1,540 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>学校联系方式 | 港中深资源站</title><noscript>开启JavaScript才能访问本站哦~</noscript><link rel="icon" href="/cuhksz/img/cuhksz.jpg"><!-- index.css--><link rel="stylesheet" href="/cuhksz/css/index.css?v=3.0.19"><!-- inject head--><meta name="msvalidate.01" content="394CFA1E21959CC3AF8C3B1E67448E75"><meta name="google-site-verification" content="P7QAlvkk47jv0OecO5UGRPx96l5A8dcZqvNaV-gdNJk"><link rel="canonical" href="https://dsanying.github.io/cuhksz/contact-school/"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"><!-- aplayer--><!-- swiper--><!-- fancybox ui--><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.min.css"><!-- katex--><!-- Open Graph--><meta name="description" content="学校地址:深圳市龙岗区龙翔大道2001号电话:(86) 755 8427 3000邮编:518172 本科生招生电话:(86) 755 8427 3500邮箱:&amp;#x61;&amp;#x64;&amp;#x6d;&amp;#105;&amp;#115;&amp;#x73;&amp;#x69;&amp;#111;&amp;#110;&amp;#115;&amp;#64;&amp;amp;#99"><!-- pwa--><meta name="apple-mobile-web-app-capable" content="港中深资源站"><meta name="theme-color" content="var(--efu-main)"><meta name="apple-mobile-web-app-status-bar-style" content="var(--efu-main)"><link rel="bookmark" href="/cuhksz/img/cuhksz.jpg"><link rel="apple-touch-icon" href="/cuhksz/img/cuhksz.jpg" sizes="180x180"><script>console.log(' %c Solitude %c ' + '3.0.19' + ' %c https://github.com/everfu/hexo-theme-solitude',
+    'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+    'background:#ff9a9a ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+    'background:unset ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff')
+</script><script>let mdate = "7-7,9-18,12-13";
+mdate = (mdate.split(","));
+let ndate = new Date();
+for (let i of mdate) {
+    if (i === (ndate.getMonth()+1) + "-" + (ndate.getDate())) {
+        document.documentElement.classList.add('memorial');
+    }
+}
+</script><script>(()=>{
+        const saveToLocal = {
+            set: function setWithExpiry(key, value, ttl) {
+                if (ttl === 0)
+                    return
+                const now = new Date()
+                const expiryDay = ttl * 86400000
+                const item = {
+                    value: value,
+                    expiry: now.getTime() + expiryDay
+                }
+                localStorage.setItem(key, JSON.stringify(item))
+            },
+            get: function getWithExpiry(key) {
+                const itemStr = localStorage.getItem(key)
+
+                if (!itemStr) {
+                    return undefined
+                }
+                const item = JSON.parse(itemStr)
+                const now = new Date()
+
+                if (now.getTime() > item.expiry) {
+                    localStorage.removeItem(key)
+                    return undefined
+                }
+                return item.value
+            }
+        };
+        window.utils = {
+            saveToLocal: saveToLocal,
+            getCSS: (url, id = false) => new Promise((resolve, reject) => {
+              const link = document.createElement('link')
+              link.rel = 'stylesheet'
+              link.href = url
+              if (id) link.id = id
+              link.onerror = reject
+              link.onload = link.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                link.onload = link.onreadystatechange = null
+                resolve()
+              }
+              document.head.appendChild(link)
+            }),
+            getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+              const script = document.createElement('script')
+              script.src = url
+              script.async = true
+              script.onerror = reject
+              script.onload = script.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                script.onload = script.onreadystatechange = null
+                resolve()
+              }
+
+              Object.keys(attr).forEach(key => {
+                script.setAttribute(key, attr[key])
+              })
+
+              document.head.appendChild(script)
+            }),
+            addGlobalFn: (key, fn, name = false, parent = window) => {
+                const globalFn = parent.globalFn || {}
+                const keyObj = globalFn[key] || {}
+
+                if (name && keyObj[name]) return
+
+                name = name || Object.keys(keyObj).length
+                keyObj[name] = fn
+                globalFn[key] = keyObj
+                parent.globalFn = globalFn
+            },
+            addEventListenerPjax: (ele, event, fn, option = false) => {
+              ele.addEventListener(event, fn, option)
+              utils.addGlobalFn('pjax', () => {
+                  ele.removeEventListener(event, fn, option)
+              })
+            },
+            diffDateFormat: (selector) => {
+                selector.forEach(item => {
+                    const date = new Date(item.getAttribute('datetime') || item.textContent);
+                    item.textContent = (date.getMonth() + 1).toString()+'/'+date.getDate().toString();
+                });
+            },
+        }
+    })()</script><!-- theme--><script>initTheme = () => {
+    let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const cachedMode = utils.saveToLocal.get('theme');
+    if (cachedMode === undefined) {
+        const nowMode =
+            isDarkMode ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', nowMode);
+    } else {
+        document.documentElement.setAttribute('data-theme', cachedMode);
+    }
+    typeof rm === 'object' && rm.mode(cachedMode === 'dark' && isDarkMode)
+}
+initTheme()</script><!-- global head--><script>const GLOBAL_CONFIG = {
+    root: '/cuhksz/',
+    algolia: undefined,
+    localsearch: {"preload":false,"path":"/search.xml"},
+    runtime: '2024-08-01 00:00:00',
+    lazyload: {
+        enable: false,
+        error: '/img/error_load.avif'
+    },
+    copyright: false,
+    highlight: {"limit":200,"expand":true,"copy":true,"syntax":"highlight.js"},
+    randomlink: false,
+    lang: {"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"day":"天前","hour":"小时前","just":"刚刚","min":"分钟前","month":"个月前"},"day":" 天","f12":"开发者模式已打开，请遵循GPL协议。","totalk":"无需删除空行，直接输入评论即可","search":{"empty":"找不到你查询的内容：${query}","hit":"找到 ${hits} 条结果，用时 ${time} 毫秒","placeholder":"输入关键词快速查找","count":"共 <b>${count}</b> 条结果。","loading":"搜索中..."}},
+    aside: {
+        state: {
+            morning: "早上好~",
+            noon: "中午好~",
+            afternoon: "下午好~",
+            night: "晚上好~",
+            goodnight: "😴晚安玛卡巴卡~",
+        },
+        witty_words: ["(＾• ω •＾)","(ฅ^•ﻌ•^ฅ)","(＾▽＾)","(≧∇≦)","(●ˊωˋ●)"],
+        witty_comment: {
+            prefix: '好久不见，',
+            back: '欢迎再次回来，',
+        },
+    },
+    covercolor: {
+        enable: false
+    },
+    comment: false,
+    lightbox: 'fancybox',
+    right_menu: false,
+    translate: {"translateDelay":0,"defaultEncoding":2},
+    lure: false,
+    expire: {"time":30,"position":"top","text_prev":"此文章最后更新于","text_next":"天前,请注意辨别数据的时效性。"},
+};</script><!-- page-config head--><script id="config-diff">var PAGE_CONFIG = {
+    is_post: true,
+    is_page: false,
+    is_home: false,
+    page: '',
+    toc: true,
+    comment: false,
+    ai_text: false,
+    color: false,
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body id="body"><!-- universe--><canvas id="universe"></canvas><!-- background img--><!-- loading--><!-- console--><div id="console"><div class="close-btn" onclick="sco.hideConsole()"><i class="solitude fas fa-xmark"></i></div><div class="console-card-group"><div class="console-card-group-right"><div class="console-card tags" onclick="sco.hideConsole()"><div class="card-content"><div class="author-content-item-tips">标签</div><div class="author-content-item-title">寻找感兴趣的领域</div></div><div class="card-tag-cloud"><a href="/cuhksz/tags/LGU%E6%8C%87%E5%8D%97/">LGU指南<sup>11</sup></a><a href="/cuhksz/tags/%E6%8A%B9%E8%8C%B6Mattya/">抹茶Mattya<sup>9</sup></a><a href="/cuhksz/tags/%E7%A5%9E%E4%BB%99%E6%B9%96%E7%95%94%E7%9A%84%E8%96%AF%E5%A1%94/">神仙湖畔的薯塔<sup>2</sup></a></div></div><div class="console-card history" onclick="sco.hideConsole()"><ul class="card-archive-list"><li class="item"><a href="/archives/2025/03/"><span class="date">2025/03</span><div class="count-group"><span class="count">1</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2024/11/"><span class="date">2024/11</span><div class="count-group"><span class="count">2</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2024/09/"><span class="date">2024/09</span><div class="count-group"><span class="count">7</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2024/08/"><span class="date">2024/08</span><div class="count-group"><span class="count">13</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/"><span class="date">全部文章</span><div class="count-group"><span class="count">23</span><span class="unit">篇</span></div></a></li></ul></div></div></div><div class="button-group"><div class="console-btn-item"><span class="darkmode_switchbutton" onclick="sco.switchDarkMode()" title="昼夜切换"><i class="solitude fas fa-circle-half-stroke"></i></span></div><div class="console-btn-item" id="consoleHideAside"><span class="asideSwitch" onclick="sco.switchHideAside()" title="边栏显示控制"><i class="solitude fas fa-arrows-left-right-to-line"></i></span></div></div><div class="console-mask" onclick="sco.hideConsole()"></div></div><!-- sidebar--><div id="sidebar" style="zoom: 1;"><div id="menu-mask" style="display: none;"></div><div id="sidebar-menus"><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/cuhksz/archives/"><div class="headline">文章</div><div class="length-num">23</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/cuhksz/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/cuhksz/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div></div></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><span class="darkmode_switchbutton menu-child" onclick="sco.switchDarkMode()"><i class="solitude fas fa-circle-half-stroke"></i><span>显示模式</span></span></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网站</div><div class="back-menu-list"><a class="back-menu-item" href="https://dsanying.github.io/" title="博客"><span class="back-menu-item-text">博客</span></a><a class="back-menu-item" href="https://dsanying.github.io/resource/" title="网站/软件资源站"><span class="back-menu-item-text">网站/软件资源站</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>新生必看</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/cuhksz/IT-guide/"><i class="solitude  fas fa-book-tanakh"></i><span>IT指南</span></a></li><li><a class="site-page child" href="/cuhksz/tags/LGU%E6%8C%87%E5%8D%97"><i class="solitude  fa-solid fa-book"></i><span>LGU指南</span></a></li><li><a class="site-page child" href="/cuhksz/material/"><i class="solitude  fa-solid fa-book-bookmark"></i><span>重要资料</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>课程</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/cuhksz/course/"><i class="solitude  fa-solid fa-book-open"></i><span>课程资料/电子课本</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://47.119.147.6/index"><i class="solitude  fa-solid fa-comments"></i><span>课程评价</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>校园</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/cuhksz/map/"><i class="solitude  fa-solid fa-map-location-dot"></i><span>校园地图</span></a></li><li><a class="site-page child" href="/cuhksz/contact-school/"><i class="solitude  fa-solid fa-address-book"></i><span>联系方式</span></a></li><li><a class="site-page child" href="/cuhksz/dorm/"><i class="solitude  fa-solid fa-bed"></i><span>宿舍信息</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/cuhksz/social/"><span>社交媒体&amp;宝藏资源</span></a></div><div class="menus_item"><a class="site-page" href="/cuhksz/about/"><span>关于本站</span></a></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="card-tag-cloud"><a href="/cuhksz/tags/LGU%E6%8C%87%E5%8D%97/">LGU指南<sup>11</sup></a><a href="/cuhksz/tags/%E6%8A%B9%E8%8C%B6Mattya/">抹茶Mattya<sup>9</sup></a><a href="/cuhksz/tags/%E7%A5%9E%E4%BB%99%E6%B9%96%E7%95%94%E7%9A%84%E8%96%AF%E5%A1%94/">神仙湖畔的薯塔<sup>2</sup></a></div></div></div></div><!-- keyboard--><!-- righhtside--><div class="needEndHide" id="rightside"><div class="rs_hide"><button class="translate" type="button" title="简繁转换">简</button><button class="mode" type="button" title="显示模式切换" onclick="sco.switchDarkMode()"><i class="fas fa-circle-half-stroke"></i></button><button class="aside pc" type="button" title="侧边栏" onclick="sco.switchHideAside()"><i class="fas fa-arrows-alt-h"></i></button></div><div class="rs_show"><button class="config" type="button" title="扩展" onclick="document.querySelector(&quot;.rs_hide&quot;).classList.toggle(&quot;show&quot;)"><i class="fas fa-gear fa-spin"></i></button><button class="mobile toc" type="button" title="目录" onclick="document.querySelector('#card-toc').classList.toggle('open')"><i class="fas fa-list"></i></button><button class="top" type="button" title="返回顶部" onclick="sco.toTop()"><i class="fas fa-arrow-up"></i><span id="percent">0</span></button></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav class="show" id="nav"><div id="nav-group"><div id="blog_name"><div class="back-home-button" tabindex="-1"><i class="back-home-button-icon solitude fas fa-bars-progress"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网站</div><div class="back-menu-list"><a class="back-menu-item" href="https://dsanying.github.io/" title="博客"><span class="back-menu-item-text">博客</span></a><a class="back-menu-item" href="https://dsanying.github.io/resource/" title="网站/软件资源站"><span class="back-menu-item-text">网站/软件资源站</span></a></div></div></div></div><a id="site-name" href="/cuhksz/" title="返回博客主页"><span class="title">港中深资源站</span><i class="solitude fas fa-home"></i></a></div><div id="page-name-mask"><div id="page-name"><a id="page-name-text" onclick="sco.toTop()">学校联系方式</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>新生必看</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/cuhksz/IT-guide/"><i class="solitude  fas fa-book-tanakh"></i><span>IT指南</span></a></li><li><a class="site-page child" href="/cuhksz/tags/LGU%E6%8C%87%E5%8D%97"><i class="solitude  fa-solid fa-book"></i><span>LGU指南</span></a></li><li><a class="site-page child" href="/cuhksz/material/"><i class="solitude  fa-solid fa-book-bookmark"></i><span>重要资料</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>课程</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/cuhksz/course/"><i class="solitude  fa-solid fa-book-open"></i><span>课程资料/电子课本</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://47.119.147.6/index"><i class="solitude  fa-solid fa-comments"></i><span>课程评价</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>校园</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/cuhksz/map/"><i class="solitude  fa-solid fa-map-location-dot"></i><span>校园地图</span></a></li><li><a class="site-page child" href="/cuhksz/contact-school/"><i class="solitude  fa-solid fa-address-book"></i><span>联系方式</span></a></li><li><a class="site-page child" href="/cuhksz/dorm/"><i class="solitude  fa-solid fa-bed"></i><span>宿舍信息</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/cuhksz/social/"><span>社交媒体&amp;宝藏资源</span></a></div><div class="menus_item"><a class="site-page" href="/cuhksz/about/"><span>关于本站</span></a></div></div></div><div id="nav-left"></div><div id="nav-right"><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索"><i class="solitude fas fa-magnifying-glass"></i></a></div><div class="nav-button" id="nav-console"><a class="console_switchbutton" onclick="sco.showConsole()" title="中控台" href="javascript:void(0);"><label><i class="left"></i><i class="center"></i><i class="right"></i></label></a></div><div id="toggle-menu"><a class="site-page"><i class="solitude fas fa-bars"></i></a></div></div></div></nav><div class="coverdiv" id="coverdiv"><img class="nolazyload" id="post-cover" src="/cuhksz/img/1.jpg" alt="学校联系方式"></div><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original" title="该文章为原创文章，注意版权协议">原创</a><span class="post-meta-categories"><a class="post-meta-categories" href="/cuhksz/categories/%E6%A0%A1%E5%9B%AD/">校园</a></span><div class="tag_share"><div class="post-meta__tag-list"></div></div></div></div><h1 class="post-title">学校联系方式</h1><div id="post-meta"><div class="meta-secondline"><span class="post-meta-date" title="发布于 2024-08-20 08:32:54"><i class="post-meta-icon solitude fas fa-calendar-days"></i><time datetime="2024-08-20T00:32:54.918Z">2024-08-20T00:32:54.918Z</time></span><span class="post-meta-date" title="最后更新于 2025-06-25 16:30:14"><i class="post-meta-icon solitude fas fa-arrows-rotate"></i><time datetime="2025-06-25T08:30:14.689Z">2025-06-25T08:30:14.689Z</time></span><span class="post-meta-wordcount"><i class="post-meta-icon solitude fas fa-file-word" title="文章字数"></i><span class="word-count">1k</span><span class="post-meta-separator"></span><i class="post-meta-icon solitude fas fa-clock" title="阅读耗时"></i><span>4 分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content article-container"><h2 id="学校"><a href="#学校" class="headerlink" title="学校"></a>学校</h2><p>地址:深圳市龙岗区龙翔大道2001号<br>电话:(86) 755 8427 3000<br>邮编:518172</p>
+<blockquote>
+<p>本科生招生<br>电话:(86) 755 8427 3500<br>邮箱:<a href="mailto:&#x61;&#x64;&#x6d;&#105;&#115;&#x73;&#x69;&#111;&#110;&#115;&#64;&#99;&#x75;&#104;&#x6b;&#x2e;&#x65;&#100;&#117;&#46;&#x63;&#x6e;">&#x61;&#x64;&#x6d;&#105;&#115;&#x73;&#x69;&#111;&#110;&#115;&#64;&#99;&#x75;&#104;&#x6b;&#x2e;&#x65;&#100;&#117;&#46;&#x63;&#x6e;</a></p>
+</blockquote>
+<blockquote>
+<p>国际(外籍)本科招生<br>电话:(86) 755 8427 3284<br>邮箱:<a href="mailto:&#105;&#110;&#x74;&#108;&#x61;&#x64;&#x6d;&#105;&#115;&#x73;&#105;&#x6f;&#110;&#115;&#64;&#x63;&#x75;&#x68;&#107;&#x2e;&#x65;&#x64;&#117;&#46;&#99;&#110;">&#105;&#110;&#x74;&#108;&#x61;&#x64;&#x6d;&#105;&#115;&#x73;&#105;&#x6f;&#110;&#115;&#64;&#x63;&#x75;&#x68;&#107;&#x2e;&#x65;&#x64;&#117;&#46;&#99;&#110;</a></p>
+</blockquote>
+<blockquote>
+<p>研究生招生<br>电话:(86) 755 8427 3900<br>邮箱:<a href="mailto:&#103;&#115;&#x40;&#x63;&#x75;&#x68;&#x6b;&#46;&#101;&#x64;&#x75;&#46;&#x63;&#110;">&#103;&#115;&#x40;&#x63;&#x75;&#x68;&#x6b;&#46;&#101;&#x64;&#x75;&#46;&#x63;&#110;</a></p>
+</blockquote>
+<h2 id="学院"><a href="#学院" class="headerlink" title="学院"></a>学院</h2><table>
+  <tr>
+    <td>
+      <b>经管学院</b> 
+      <br>电话: 0755-23518500
+      <br>电子邮件: smeug@cuhk.edu.cn
+    </td>
+    <td>
+      <b>理工学院</b>
+      <br>电话: 0755-84273833
+      <br>电子邮件: sse@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>人文社科学院</b>
+      <br>电话: 0755-84273199
+      <br>电子邮件: shssug@cuhk.edu.cn
+    </td>
+    <td>
+      <b>数据科学学院</b>
+      <br>电话: 0755-23517000
+      <br>电子邮件: sds@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>医学院(临床医学)</b>
+      <br>电话: 0755-23516100
+      <br>电子邮件: medicine@cuhk.edu.cn
+    </td>
+    <td>
+      <b>医学院(基础医学)</b>
+      <br>电话: 0755-23519000
+      <br>电子邮件: lhs@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>音乐学院</b>
+      <br>电话: 0755-23516222
+      <br>电子邮件: mus@cuhk.edu.cn
+    </td>
+    <td>
+      <b>公共政策学院</b>
+      <br>电话: 0755-23517999
+      <br>电子邮件: spp@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>研究生院</b>
+      <br>电话: 0755-84273900
+      <br>电子邮件: gs@cuhk.edu.cn
+    </td>
+  </tr>
+</table>
+
+<h2 id="书院"><a href="#书院" class="headerlink" title="书院"></a>书院</h2><table>
+  <tr>
+    <td>
+      <b>逸夫书院</b>
+      <br>电话: 0755-84273098
+      <br>电子邮件: shaw@cuhk.edu.cn
+    </td>
+    <td>
+      <b>学勤书院</b>
+      <br>电话: 0755-84273912
+      <br>电子邮件: diligentia@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>思廷书院</b>
+      <br>电话: 0755-84273960
+      <br>电子邮件: muse@cuhk.edu.cn
+    </td>
+    <td>
+      <b>祥波书院</b>
+      <br>电话: 0755-23515400
+      <br>电子邮件: harmonia@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>道扬书院</b>
+      <br>电话: 0755-23515825
+      <br>电子邮件: ling@cuhk.edu.cn
+    </td>
+    <td>
+      <b>厚含书院</b>
+      <br>电话: 0755-23516380
+      <br>电子邮件: minerva@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>第七书院</b>
+      <br>电话: 0755-23517380
+      <br>电子邮件: 7thcollege@cuhk.edu.cn
+    </td>
+  </tr>
+</table>
+
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><table>
+  <tr>
+    <td>
+      <b>安保办公室</b>
+      <br>电话: 0755-84273200
+      <br>电子邮件: securityoffice@cuhk.edu.cn
+    </td>
+    <td>
+      <b>财务处</b>
+      <br>电话: 0755-84273701
+      <br>电子邮件: financeoffice@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>传讯及公共关系处</b>
+      <br>电话: 0755-84273524
+      <br>电子邮件: cpr@cuhk.edu.cn
+    </td>
+    <td>
+      <b>创意创新创业中心</b>
+      <br>电话: 0755-23518770
+      <br>电子邮件: cide@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>大学发展处</b>
+      <br>电话: 0755-84273765
+      <br>电子邮件: udo@cuhk.edu.cn
+    </td>
+    <td>
+      <b>大学艺术中心</b>
+      <br>电话: 0755-84273943
+      <br>电子邮件: uac@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>国内本科招生</b>
+      <br>电话: 0755-84273500
+      <br>电子邮件: admissions@cuhk.edu.cn
+    </td>
+    <td>
+      <b>国际学者学生服务</b>
+      <br>电话: 0755-23516304
+      <br>电子邮件: isss@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>行政事务处</b>
+      <br>电话: 0755-84273010
+      <br>电子邮件: aso@cuhk.edu.cn
+    </td>
+    <td>
+      <b>科技成果转化中心</b>
+      <br>电话: 0755-23516333
+      <br>电子邮件: ttc@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>科研处</b>
+      <br>电话: 0755-84273262
+      <br>电子邮件: rao@cuhk.edu.cn
+    </td>
+    <td>
+      <b>楼宇与设施管理处</b>
+      <br>电话: 0755-23516358
+      <br>电子邮件: bfmo@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>人力资源处</b>
+      <br>电子邮件: hr@cuhk.edu.cn
+    </td>
+    <td>
+      <b>设备与资产管理处</b>
+      <br>电话: 0755-23516955
+      <br>电子邮件: Eamo@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>图书馆</b>
+      <br>电话: 0755-23515151
+      <br>电子邮件: library@cuhk.edu.cn
+    </td>
+    <td>
+      <b>拓展处/基金会</b>
+      <br>电话: 0755-84273799
+      <br>电子邮件: foundation@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>校长办公室</b>
+      <br>电话: 0755-84273555
+      <br>电子邮件: presidentoffice@cuhk.edu.cn
+    </td>
+    <td>
+      <b>校友事务办公室</b>
+      <br>电话: 0755-84273683
+      <br>电子邮件: alumni@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>校园发展处</b>
+      <br>电话: 0755-23515458
+      <br>电子邮件: cdo@cuhk.edu.cn
+    </td>
+    <td>
+      <b>学能提升研究中心</b>
+      <br>电话: 0755-84273940
+      <br>电子邮件: clear@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>学生事务处</b>
+      <br>电话: 0755-84273671
+      <br>电子邮件: osa@cuhk.edu.cn
+    </td>
+    <td>
+      <b>学术交流处</b>
+      <br>电话: 0755-84273519
+      <br>电子邮件: oal@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>教务处</b>
+      <br>电话: 0755-84273626
+      <br>电子邮件: registry@cuhk.edu.cn
+    </td>
+    <td>
+      <b>职业规划与发展处</b>
+      <br>电话: 0755-23515888
+      <br>电子邮件: careerservice@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>中大合作办公室</b>
+      <br>电话: 0755-84273273
+      <br>电子邮件: ccco@cuhk.edu.cn
+    </td>
+    <td>
+      <b>资讯科技服务处</b>
+      <br>电话: 0755-84273333
+      <br>电子邮件: iSupport@cuhk.edu.cn
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>校园卡服务中心</b>
+      <br>电话: 0755-84273125
+      <br>电子邮件: ecard@cuhk.edu.cn
+    </td>
+    <td>
+      <b>上园医务室</b>
+      <br>地址: 上园服务中心一楼
+      <br>电话: 0755-84273033
+      <br>24小时值班电话: 13510913120
+      <br>开诊时间: 周一至周日, 24小时 (学期期间) <br> 周一至周日, 8:30 ~ 21:00 (春节/寒暑假)
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>下园医务室</b>
+      <br>地址: 下园教学楼D栋下首层
+      <br>联系电话: 0755-84273120
+      <br>开诊时间: 周一至周日, 8:30~21:00 (学期期间) <br> 周一至周日, 8:30~17:30 (学生寒暑假开放时间)
+    </td>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<h2 id="办公场所查询"><a href="#办公场所查询" class="headerlink" title="办公场所查询"></a>办公场所查询</h2><p>查询网址: <a target="_blank" rel="noopener" href="https://booking.cuhk.edu.cn/a/office/mobile/home">https://booking.cuhk.edu.cn/a/office/mobile/home</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author_group"><div class="post-copyright__author_img"><img class="post-copyright__author_img_front" src="/cuhksz/img/avatar.jpg"></div><div class="post-copyright__author_name">暗影</div><div class="post-copyright__author_desc"></div></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div id="quit-box" onclick="RemoveRewardMask()"></div><div class="post-reward"><div class="reward-button" title="赞赏作者" onclick="AddRewardMask()"><i class="solitude fas fa-heart"></i>赞赏作者</div><div class="reward-main"><ul class="reward-all"><span class="reward-title">感谢大佬的打赏!</span><ul class="reward-group"><li class="reward-item"><a href="/cuhksz/img/wechatpay.png"><img class="post-qr-code-img nolazyload" src="/cuhksz/img/wechatpay.png" alt="微信" style="border-color: var(--efu-black)"></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/cuhksz/img/alipay.png"><img class="post-qr-code-img nolazyload" src="/cuhksz/img/alipay.png" alt="支付宝" style="border-color: var(--efu-black)"></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/cuhksz/about/#about-reward"><div class="reward-text">赞赏名单</div><div class="reward-dec">你的支持是我前进的动力!</div></a></ul></div></div><script>function RemoveRewardMask() {
+    let rewardMainElements = document.querySelectorAll(".reward-main");
+    let quitBoxElement = document.querySelector("#quit-box");
+
+    rewardMainElements.forEach(element => {
+        element.style.display = "none";
+    });
+
+    if (quitBoxElement) {
+        quitBoxElement.style.display = "none";
+    }
+}
+
+function AddRewardMask() {
+    let rewardMainElements = document.querySelectorAll(".reward-main");
+    let quitBoxElement = document.querySelector("#quit-box");
+
+    rewardMainElements.forEach(element => {
+        element.style.display = "flex";
+    });
+
+    if (quitBoxElement) {
+        quitBoxElement.style.display = "flex";
+    }
+}</script></div></div><div class="social-share"><a class="social-share-ico icon-qq" target="_blank" rel="noopener" href="https://connect.qq.com/widget/shareqq/index.html?url=https%3A%2F%2Fdsanying.github.io%2Fcuhksz%2Fcuhksz%2Fcontact-school%2F&amp;title=%E5%AD%A6%E6%A0%A1%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F&amp;desc=undefined&amp;summary=undefined&amp;site=%E5%AD%A6%E6%A0%A1%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F&amp;pics=%2Fimg%2F1.jpg" title="分享到QQ"><i class="solitude fab fa-qq"></i></a><div class="social-share-ico icon-link" onclick="utils.copy(&quot;https://dsanying.github.io/cuhksz/cuhksz/contact-school/&quot;)" title="复制文章链接"><i class="solitude fas fa-link"></i></div><div class="social-share-ico icon-qrcode" title="使用手机扫码阅读这篇文章"><i class="solitude fas fa-qrcode"></i><div class="share-main"><div class="share-main-all"><div id="qrcode"></div><div class="reward-dec">使用手机扫码阅读这篇文章</div></div></div><script pjax>typeof QRCode === 'function' && new QRCode(document.getElementById("qrcode"), {
+    text: 'https://dsanying.github.io/cuhksz/cuhksz/contact-school/',
+    correctLevel : QRCode.CorrectLevel.L
+});
+window.addEventListener('DOMContentLoaded', () => {
+    new QRCode(document.getElementById("qrcode"), {
+        text: 'https://dsanying.github.io/cuhksz/cuhksz/contact-school/',
+        correctLevel : QRCode.CorrectLevel.L
+    });
+});
+</script></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>协议，完整转载请注明来自<a href="/cuhksz/">港中深资源站</a></span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__tag-list"></div></div></div><nav class="needEndHide pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/cuhksz/about/"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">关于本站</div></div></a></div><div class="next-post pull-right"><a href="/cuhksz/map/"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">校园地图</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="solitude fas fa-bars"></i><span>文章目录</span></div><div class="toc-content" id="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E6%A0%A1"><span class="toc-text">学校</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E9%99%A2"><span class="toc-text">学院</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%A6%E9%99%A2"><span class="toc-text">书院</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E5%AE%83"><span class="toc-text">其它</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9E%E5%85%AC%E5%9C%BA%E6%89%80%E6%9F%A5%E8%AF%A2"><span class="toc-text">办公场所查询</span></a></li></ol></div></div><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><div class="top-group"><div class="sayhi" id="sayhi" onclick="sco.changeWittyWord()"></div></div></div><div class="avatar"><img alt="头像" src="/cuhksz/img/avatar.jpg"></div><div class="description"><center><span style="color:red;">❤</span>(◍•ᴗ•◍)<span style="color:red;">❤</span></center></div><div class="bottom-group"><span class="left"><div class="name">暗影</div><div class="desc">暗影无际,暗夜无边</div></span><div class="social-icons is-center"><a class="social-icon" target="_blank" rel="noopener" href="https://github.com/dsanying" title="Github"><i class="solitude  fab fa-github"></i></a><a class="social-icon" href="mailto:119548583@qq.com" title="Email"><i class="solitude  fas fa-envelope"></i></a></div></div></div></div><div class="card-widget card-tags card-archives card-webinfo card-allinfo"><div class="card-tag-cloud"><a href="/cuhksz/tags/LGU%E6%8C%87%E5%8D%97/">LGU指南<sup>11</sup></a><a href="/cuhksz/tags/%E6%8A%B9%E8%8C%B6Mattya/">抹茶Mattya<sup>9</sup></a><a href="/cuhksz/tags/%E7%A5%9E%E4%BB%99%E6%B9%96%E7%95%94%E7%9A%84%E8%96%AF%E5%A1%94/">神仙湖畔的薯塔<sup>2</sup></a></div><style>.card-tag-cloud::after {
+    display: none !important;
+}</style><hr><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章总数 :</div><div class="item-count">23</div></div><div class="webinfo-item"><div class="item-name">建站天数 :</div><div class="item-count" id="runtimeshow"></div></div><div class="webinfo-item"><div class="item-name">最后更新 :</div><time class="item-count" datetime="2025-06-26T04:44:30.647Z"></time></div></div></div></div></div></main><footer id="footer"><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div class="copyright">© 2024 - 2025 By&nbsp;<a class="footer-bar-link" href="/cuhksz/"><img class="author-avatar" src="/cuhksz/img/cuhksz.jpg">暗影</a></div><div class="beian-group"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://hexo.io/">框架：Hexo</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/everfu/hexo-theme-solitude">主题：Solitude</a></div></div></div></div></footer></div><!-- right_menu--><!-- inject body--><div><script src="/cuhksz/js/utils.js?v=3.0.19"></script><script src="/cuhksz/js/main.js?v=3.0.19"></script><script src="/cuhksz/js/third_party/waterfall.min.js?v=3.0.19"></script><script src="https://fastly.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="https://fastly.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script><script src="https://fastly.jsdelivr.net/npm/typeit@8.8.7/dist/index.umd.min.js"></script><script src="/cuhksz/js/third_party/universe.min.js?v=3.0.19"></script><script>dark()
+</script><script src="/cuhksz/js/tw_cn.js?v=3.0.19"></script><script src="https://fastly.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script src="https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.min.js"></script><script src="/cuhksz/js/post_ai.js?v=3.0.19"></script><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+utils.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+</script><script src="https://fastly.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div class="js-pjax"></div></div><!-- pjax--><script>const pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: ["title","#body-wrap","#site-config","meta[name=\"description\"]",".js-pjax","meta[property^=\"og:\"]","#config-diff",".rs_show",".rs_hide"],
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+})
+
+document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+})
+
+document.addEventListener('pjax:complete', () => {
+    window.refreshFn()
+
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+        const newScript = document.createElement('script')
+        const content = item.text || item.textContent || item.innerHTML || ""
+        Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+        newScript.appendChild(document.createTextNode(content))
+        item.parentNode.replaceChild(newScript, item)
+    })
+
+    GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+    if (e.request.status === 404) {
+        pjax.loadUrl('/404.html')
+    }
+})</script><!-- google adsense--><!-- search--><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="solitude fas fa-xmark"></i></button></nav><div class="search-wrap"><div class="search-box"><input class="search-box-input" id="search-input" type="text" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="输入关键词快速查找"></div><div id="search-results"><div id="search-hits"></div></div><div id="search-pagination"></div><div id="search-tips"></div></div></div><div id="search-mask"></div></div><script src="/cuhksz/js/search/local.js?v=3.0.19"></script><!-- music--></body></html>
+        <script>
+            const posts = ["CEC1010/","IT-guide/","PED/","about/","dorm/","contact-school/","course/","lgu-guide-1/","lgu-guide-11/","ios-printing-bug/","lgu-guide-2/","lgu-guide-10/","lgu-guide-3/","lgu-guide-5/","lgu-guide-6/","lgu-guide-7/","lgu-guide-8/","lgu-guide-4/","lgu-guide-9/","map/","material/","medical-insurance/","social/"];
+            function toRandomPost() {
+                const randomPost = posts[Math.floor(Math.random() * posts.length)];
+                pjax.loadUrl(GLOBAL_CONFIG.root + randomPost);
+            }
+        </script>
