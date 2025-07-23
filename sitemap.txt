@@ -1,10 +1,11 @@
+https://dsanying.github.io/cuhksz/IT-guide/
+https://dsanying.github.io/cuhksz/lgu-guide-11/
 https://dsanying.github.io/cuhksz/about/
 https://dsanying.github.io/cuhksz/social/
 https://dsanying.github.io/cuhksz/PED/
 https://dsanying.github.io/cuhksz/medical-insurance/
 https://dsanying.github.io/cuhksz/material/
 https://dsanying.github.io/cuhksz/map/
-https://dsanying.github.io/cuhksz/lgu-guide-11/
 https://dsanying.github.io/cuhksz/lgu-guide-10/
 https://dsanying.github.io/cuhksz/lgu-guide-9/
 https://dsanying.github.io/cuhksz/lgu-guide-8/
@@ -15,7 +16,6 @@ https://dsanying.github.io/cuhksz/lgu-guide-4/
 https://dsanying.github.io/cuhksz/lgu-guide-3/
 https://dsanying.github.io/cuhksz/lgu-guide-2/
 https://dsanying.github.io/cuhksz/lgu-guide-1/
-https://dsanying.github.io/cuhksz/IT-guide/
 https://dsanying.github.io/cuhksz/dorm/
 https://dsanying.github.io/cuhksz/course/
 https://dsanying.github.io/cuhksz/CEC1010/
@@ -25,8 +25,8 @@ https://dsanying.github.io/cuhksz/tags/
 https://dsanying.github.io/cuhksz/categories/
 https://dsanying.github.io/cuhksz
 https://dsanying.github.io/cuhksz/tags/LGU%E6%8C%87%E5%8D%97/
-https://dsanying.github.io/cuhksz/tags/%E6%8A%B9%E8%8C%B6Mattya/
 https://dsanying.github.io/cuhksz/tags/%E7%A5%9E%E4%BB%99%E6%B9%96%E7%95%94%E7%9A%84%E8%96%AF%E5%A1%94/
-https://dsanying.github.io/cuhksz/categories/%E6%A0%A1%E5%9B%AD/
+https://dsanying.github.io/cuhksz/tags/%E6%8A%B9%E8%8C%B6Mattya/
 https://dsanying.github.io/cuhksz/categories/%E8%AF%BE%E7%A8%8B/
+https://dsanying.github.io/cuhksz/categories/%E6%A0%A1%E5%9B%AD/
 https://dsanying.github.io/cuhksz/categories/%E7%94%9F%E6%B4%BB/
