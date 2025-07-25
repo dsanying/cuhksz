@@ -1,3 +1,4 @@
+https://dsanying.github.io/cuhksz/dorm/
 https://dsanying.github.io/cuhksz/IT-guide/
 https://dsanying.github.io/cuhksz/lgu-guide-11/
 https://dsanying.github.io/cuhksz/about/
@@ -16,7 +17,6 @@ https://dsanying.github.io/cuhksz/lgu-guide-4/
 https://dsanying.github.io/cuhksz/lgu-guide-3/
 https://dsanying.github.io/cuhksz/lgu-guide-2/
 https://dsanying.github.io/cuhksz/lgu-guide-1/
-https://dsanying.github.io/cuhksz/dorm/
 https://dsanying.github.io/cuhksz/course/
 https://dsanying.github.io/cuhksz/CEC1010/
 https://dsanying.github.io/cuhksz/contact-school/
