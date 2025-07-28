@@ -118,7 +118,7 @@ initTheme()</script><!-- global head--><script>const GLOBAL_CONFIG = {
         enable: false,
         error: '/img/error_load.avif'
     },
-    copyright: false,
+    copyright: {"limit":50,"author":"作者: 暗影","link":"链接: ","source":"来源: 港中深资源站","info":"著作权归作者所有。 商业转载请联系作者获得授权，非商业转载请注明出处。"},
     highlight: {"limit":200,"expand":true,"copy":true,"syntax":"highlight.js"},
     randomlink: false,
     lang: {"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"day":"天前","hour":"小时前","just":"刚刚","min":"分钟前","month":"个月前"},"day":" 天","f12":"开发者模式已打开，请遵循GPL协议。","totalk":"无需删除空行，直接输入评论即可","search":{"empty":"找不到你查询的内容：${query}","hit":"找到 ${hits} 条结果，用时 ${time} 毫秒","placeholder":"输入关键词快速查找","count":"共 <b>${count}</b> 条结果。","loading":"搜索中..."}},
@@ -199,7 +199,7 @@ document.addEventListener('pjax:error', (e) => {
     }
 })</script><!-- google adsense--><!-- search--><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="solitude fas fa-xmark"></i></button></nav><div class="search-wrap"><div class="search-box"><input class="search-box-input" id="search-input" type="text" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="输入关键词快速查找"></div><div id="search-results"><div id="search-hits"></div></div><div id="search-pagination"></div><div id="search-tips"></div></div></div><div id="search-mask"></div></div><script src="/cuhksz/js/search/local.js?v=3.0.19"></script><!-- music--></body></html>
         <script>
-            const posts = ["CEC1010/","IT-guide/","PED/","about/","course/","dorm/","contact-school/","ios-printing-bug/","lgu-guide-1/","lgu-guide-10/","lgu-guide-11/","lgu-guide-2/","lgu-guide-3/","lgu-guide-4/","lgu-guide-5/","lgu-guide-6/","lgu-guide-7/","lgu-guide-8/","lgu-guide-9/","material/","map/","medical-insurance/","social/"];
+            const posts = ["CEC1010/","PED/","about/","course/","IT-guide/","dorm/","ios-printing-bug/","contact-school/","lgu-guide-11/","lgu-guide-10/","lgu-guide-3/","lgu-guide-2/","lgu-guide-4/","lgu-guide-1/","lgu-guide-6/","lgu-guide-7/","lgu-guide-5/","lgu-guide-8/","map/","lgu-guide-9/","medical-insurance/","material/","social/"];
             function toRandomPost() {
                 const randomPost = posts[Math.floor(Math.random() * posts.length)];
                 pjax.loadUrl(GLOBAL_CONFIG.root + randomPost);
