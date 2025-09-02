@@ -1,8 +1,13 @@
-https://dsanying.github.io/cuhksz/lgu-food-guide/
-https://dsanying.github.io/cuhksz/IT-guide/
-https://dsanying.github.io/cuhksz/dorm/
 https://dsanying.github.io/cuhksz/about/
+https://dsanying.github.io/cuhksz/guide-lgu-2/
+https://dsanying.github.io/cuhksz/guide-lgu-6/
+https://dsanying.github.io/cuhksz/guide-lgu-5/
+https://dsanying.github.io/cuhksz/guide-lgu-4/
+https://dsanying.github.io/cuhksz/guide-lgu-1/
+https://dsanying.github.io/cuhksz/guide-lgu-3/
 https://dsanying.github.io/cuhksz/social/
+https://dsanying.github.io/cuhksz/dorm/
+https://dsanying.github.io/cuhksz/guide-IT/
 https://dsanying.github.io/cuhksz/course/
 https://dsanying.github.io/cuhksz/checklist/
 https://dsanying.github.io/cuhksz/PED/
