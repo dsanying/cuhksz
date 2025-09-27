@@ -291,7 +291,7 @@ document.addEventListener('pjax:error', (e) => {
     }
 })</script><!-- google adsense--><!-- search--><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="solitude fas fa-xmark"></i></button></nav><div class="search-wrap"><div class="search-box"><input class="search-box-input" id="search-input" type="text" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="输入关键词快速查找"></div><div id="search-results"><div id="search-hits"></div></div><div id="search-pagination"></div><div id="search-tips"></div></div></div><div id="search-mask"></div></div><script src="/cuhksz/js/search/local.js?v=3.0.19"></script><!-- music--></body></html>
         <script>
-            const posts = ["CEC1010/","about/","contact-school/","checklist/","PED/","course/","guide-IT/","dorm/","guide-lgu-2/","guide-lgu-4/","guide-lgu-5/","guide-lgu-6/","guide-lgu-1/","guide-lgu-3/","map/","material/","social/","medical-insurance/"];
+            const posts = ["CEC1010/","PED/","checklist/","about/","contact-school/","course/","dorm/","guide-IT/","guide-lgu-2/","guide-lgu-1/","guide-lgu-3/","guide-lgu-5/","guide-lgu-4/","guide-lgu-6/","map/","material/","social/","medical-insurance/"];
             function toRandomPost() {
                 const randomPost = posts[Math.floor(Math.random() * posts.length)];
                 pjax.loadUrl(GLOBAL_CONFIG.root + randomPost);

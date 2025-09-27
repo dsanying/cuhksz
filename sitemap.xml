@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dsanying.github.io/cuhksz/guide-IT/</loc>
+    
+    <lastmod>2025-09-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://dsanying.github.io/cuhksz/about/</loc>
     
     <lastmod>2025-09-02</lastmod>
@@ -68,15 +77,6 @@
     <loc>https://dsanying.github.io/cuhksz/social/</loc>
     
     <lastmod>2025-09-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dsanying.github.io/cuhksz/guide-IT/</loc>
-    
-    <lastmod>2025-08-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -184,7 +184,7 @@
 
   <url>
     <loc>https://dsanying.github.io/cuhksz</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -192,21 +192,21 @@
   
   <url>
     <loc>https://dsanying.github.io/cuhksz/tags/LGU%E6%8C%87%E5%8D%97/</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dsanying.github.io/cuhksz/tags/%E6%8A%B9%E8%8C%B6Mattya/</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dsanying.github.io/cuhksz/tags/%E7%A5%9E%E4%BB%99%E6%B9%96%E7%95%94%E7%9A%84%E8%96%AF%E5%A1%94/</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -215,21 +215,21 @@
   
   <url>
     <loc>https://dsanying.github.io/cuhksz/categories/%E8%AF%BE%E7%A8%8B/</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dsanying.github.io/cuhksz/categories/%E6%A0%A1%E5%9B%AD/</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dsanying.github.io/cuhksz/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
