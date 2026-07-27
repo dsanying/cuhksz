@@ -144,6 +144,10 @@ tag_ui: index
 rounded_corners_ui: true
 display_mode: light
 
+# 全站正文基准字号；标题、导航等相对字号会随此基准等比例调整。
+font:
+  global_font_size: 16px
+
 pjax:
   enable: false
 lazyload:
