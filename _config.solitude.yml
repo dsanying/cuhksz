@@ -14,7 +14,7 @@ nav:
         id: theme-toggle
   menu:
     首页: /
-    新生入门:
+    校园生活:
       入学清单: /checklist/ || fas fa-clipboard-check
       书院与住宿: /dorm/ || fas fa-building-columns
       校园地图: /map/ || fas fa-map-location-dot
@@ -26,8 +26,6 @@ nav:
     资源社区:
       重要资料: /material/ || fas fa-folder-open
       社群与资源: /social/ || fas fa-users
-      全部分类: /categories/ || fas fa-shapes
-      搜索: javascript:Solitude.search() || fas fa-magnifying-glass
     关于:
       本站: /about/ || fas fa-circle-info
 
