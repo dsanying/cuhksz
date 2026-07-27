@@ -18,6 +18,7 @@ const outputPath = resolve(root, outputFlag >= 0 ? args[outputFlag + 1] : "sourc
 const rootFolderId = process.env.LANZOU_CLASSIC_ROOT_FOLDER_ID || "13698202"
 const apiOrigin = "https://up.woozooo.com"
 const requestDelay = Number(process.env.LANZOU_CLASSIC_REQUEST_DELAY || 260)
+const requestTimeout = Number(process.env.LANZOU_CLASSIC_REQUEST_TIMEOUT || 15000)
 const previousSourcePath = resolve(root, process.env.COURSE_RESOURCE_PREVIOUS_SOURCE_PATH || "source/course-resources/lanzou-manifest.json")
 const previousLinks = new Map((() => {
   try {
@@ -66,9 +67,12 @@ const sleep = (milliseconds) => new Promise((resolveSleep) => setTimeout(resolve
 async function request(url, options = {}, retries = 3) {
   let lastError
   for (let attempt = 0; attempt < retries; attempt += 1) {
+    const controller = new AbortController()
+    const timeout = setTimeout(() => controller.abort(), requestTimeout)
     try {
       const response = await fetch(url, {
         ...options,
+        signal: controller.signal,
         headers: { Cookie: cookie, Referer: `${apiOrigin}/mydisk.php`, "User-Agent": "Mozilla/5.0", ...(options.headers || {}) },
       })
       if (!response.ok) throw new Error(`HTTP ${response.status}`)
@@ -76,6 +80,8 @@ async function request(url, options = {}, retries = 3) {
     } catch (error) {
       lastError = error
       await sleep((attempt + 1) * 600)
+    } finally {
+      clearTimeout(timeout)
     }
   }
   throw lastError
