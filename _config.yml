@@ -68,5 +68,5 @@ deploy: []
 swpp:
   enable: true
   serviceWorker: true
-  auto_register: true
+  auto_register: false
   gen_dom: false
