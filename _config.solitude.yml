@@ -8,17 +8,18 @@ site:
 nav:
   menu:
     首页: /
-    校园生活:
+    新生入门:
       入学清单: /checklist/ || fas fa-clipboard-check
-      书院信息: /dorm/ || fas fa-building-columns
+      书院与住宿: /dorm/ || fas fa-building-columns
       校园地图: /map/ || fas fa-map-location-dot
-      联系方式: /contact-school/ || fas fa-address-book
-    学业工具:
+      学校联系方式: /contact-school/ || fas fa-address-book
+    学业成长:
       课程资料: /course/ || fas fa-book-open
-      选课与攻略: /categories/课程/ || fas fa-graduation-cap
-      IT 指南: /guide-IT/ || fas fa-laptop-code
-    探索:
-      宝藏资源: /social/ || fas fa-wand-magic-sparkles
+      选课与攻略: /categories/学业/ || fas fa-graduation-cap
+      数字校园: /guide-IT/ || fas fa-laptop-code
+    资源社区:
+      重要资料: /material/ || fas fa-folder-open
+      社群与资源: /social/ || fas fa-users
       全部分类: /categories/ || fas fa-shapes
       搜索: javascript:Solitude.search() || fas fa-magnifying-glass
     关于:

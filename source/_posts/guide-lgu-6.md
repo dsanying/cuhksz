@@ -2,7 +2,10 @@
 title: "教科书与论文文献获取指南"
 slug: guide-lgu-6
 date: "2025-09-02 18:51:02"
-category: "课程"
+category: "资源"
+tags:
+  - "教材"
+reprint: true
 source: "已从 guide-lgu-6/index.html 的发布产物恢复"
 content_format: html
 ---
@@ -11,9 +14,6 @@ content_format: html
 
 <meta name="referrer" content="never"/>
 
-<blockquote>
-<p>文章参考微信公众号 <strong>抹茶Mattya</strong><br>原文链接：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/_phiw6xJLQyAWebY1tULzA">LGU生存指南（八） - 如何寻找和下载教科书和论文文献</a></p>
-</blockquote>
 <h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><p>本文目的是在香港中文大学（深圳）图书馆无法找到对应资源的情况下，为读者提供额外的参考方法。作者尊重所有创作者的知识产权。部分网址可能需要特定网络环境访问，若主站无法访问，可尝试使用对应的镜像网站。</p>
 <h2 id="教科书获取途径"><a href="#教科书获取途径" class="headerlink" title="教科书获取途径"></a>教科书获取途径</h2><h3 id="个人收集"><a href="#个人收集" class="headerlink" title="个人收集"></a>个人收集</h3><p><a href="../course" target="_blank">课程资料&#x2F;电子课本</a></p>
 <h3 id="英文教科书搜索路径"><a href="#英文教科书搜索路径" class="headerlink" title="英文教科书搜索路径"></a>英文教科书搜索路径</h3><p>推荐搜索顺序：Z-Library → Anna’s Archive → Library Genesis → 直接Google（书名 + pdf）</p>

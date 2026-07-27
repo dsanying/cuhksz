@@ -2,7 +2,10 @@
 title: "自由选修pf课程推荐"
 slug: guide-lgu-4
 date: "2025-09-02 18:39:10"
-category: "课程"
+category: "学业"
+tags:
+  - "选课"
+reprint: true
 source: "已从 guide-lgu-4/index.html 的发布产物恢复"
 content_format: html
 ---
@@ -11,9 +14,6 @@ content_format: html
 
 <meta name="referrer" content="never"/>
 
-<blockquote>
-<p>文章参考微信公众号 <strong>抹茶Mattya</strong><br>原文链接：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/IPlJJmKToBMWG2CoSlgXEw">LGU生存指南（五） - 自由选修pf课程推荐</a></p>
-</blockquote>
 <h2 id="自由选修与PF课程说明"><a href="#自由选修与PF课程说明" class="headerlink" title="自由选修与PF课程说明"></a>自由选修与PF课程说明</h2><p>自由选修指专业之外选取的其他课程，是毕业的必要条件之一。PF制度课程指仅有合格与不合格的评分标准且不计入学分绩点（GPA）计算的课程。</p>
 <h2 id="必拿的自由选修学分"><a href="#必拿的自由选修学分" class="headerlink" title="必拿的自由选修学分"></a>必拿的自由选修学分</h2><p>修读完CEC1000和CEC2000后，教务处会统一发送是否将其转化为GEW的邮件。根据香港中文大学（深圳）通识教育修读规则（2023-24学年及以后入学学生适用，2023年7月修订）：</p>
 <ul>

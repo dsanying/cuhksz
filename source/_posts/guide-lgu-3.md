@@ -2,7 +2,10 @@
 title: "跨学院转专业攻略"
 slug: guide-lgu-3
 date: "2025-09-02 18:08:21"
-category: "课程"
+category: "学业"
+tags:
+  - "选课"
+reprint: true
 source: "已从 guide-lgu-3/index.html 的发布产物恢复"
 content_format: html
 ---
@@ -11,9 +14,6 @@ content_format: html
 
 <meta name="referrer" content="never"/>
 
-<blockquote>
-<p>文章参考微信公众号 <strong>抹茶Mattya</strong><br>原文链接：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Tk9Qjd38TTiTKs0VQeRNWA">LGU 生存指南（四） - 如何实现跨学院转专业</a></p>
-</blockquote>
 <h2 id="转专业政策"><a href="#转专业政策" class="headerlink" title="转专业政策"></a>转专业政策</h2><p>根据香港中文大学（深圳）教务处官网（ <a target="_blank" rel="noopener" href="https://registry.cuhk.edu.cn/page/25">https://registry.cuhk.edu.cn/page/25</a> ），申请跨学院转专业学生须满足以下三项条件中的至少一项，方可获学院考虑批准转专业：</p>
 <ol>
 <li>已修拟转入专业课程的 6 个学分，并平均成绩不低于 B-</li>

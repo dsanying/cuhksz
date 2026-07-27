@@ -2,7 +2,10 @@
 title: "SALL Centre使用指南"
 slug: guide-lgu-5
 date: "2025-09-02 18:42:55"
-category: "课程"
+category: "学业"
+tags:
+  - "学习支持"
+reprint: true
 source: "已从 guide-lgu-5/index.html 的发布产物恢复"
 content_format: html
 ---
@@ -11,9 +14,6 @@ content_format: html
 
 <meta name="referrer" content="never"/>
 
-<blockquote>
-<p>文章参考微信公众号 <strong>抹茶Mattya</strong><br>原文链接：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/MbP7Tqf0fx6NBPmfVGgmKw">LGU生存指南（六） - SALL Centre</a></p>
-</blockquote>
 <h2 id="SALL-Centre简介"><a href="#SALL-Centre简介" class="headerlink" title="SALL Centre简介"></a>SALL Centre简介</h2><p>SALL Centre全称为Self-Access Language Learning Centre（自主语言学习中心），是集语言学习与写作反馈修改多功能为一体的语言中心，为学生提供多样化的语言学习支持与资源。</p>
 <h2 id="可获取的资源与帮助"><a href="#可获取的资源与帮助" class="headerlink" title="可获取的资源与帮助"></a>可获取的资源与帮助</h2><p>SALL Centre主要提供以下资源与帮助：</p>
 <h3 id="写作指导与反馈"><a href="#写作指导与反馈" class="headerlink" title="写作指导与反馈"></a>写作指导与反馈</h3><p>针对ENG&#x2F;CHI系列课程的不同Essay、GE课程的Reading Journal（RJ）与Term Paper（TP），除向教授咨询外，学生可向SALL Centre的老师寻求专业的咨询和修改建议，这对提升写作能力和课程成绩有重要帮助。</p>

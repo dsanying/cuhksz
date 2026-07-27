@@ -3,6 +3,8 @@ title: "IT 指南"
 slug: guide-IT
 date: "2024-08-22 09:15:57"
 category: "校园"
+tags:
+  - "数字校园"
 source: "已从 guide-IT/index.html 的发布产物恢复"
 content_format: html
 ---
