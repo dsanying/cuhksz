@@ -29,7 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
   if (cards.length) {
     const announcement = document.createElement('div')
     announcement.className = 'index-announcement'
-    announcement.textContent = '资料与攻略持续整理；如发现失效链接或内容问题，欢迎通过“关于”页反馈。'
+    announcement.setAttribute('role', 'note')
+    announcement.innerHTML = `
+      <div class="index-announcement__copy">
+        <span class="index-announcement__title">资料征集</span>
+        <span>持续收集电子教材、历年 Exam/Quiz、Cheating Paper 等课程资料；提交时请注明“届别 + 网名/姓名”，未注明默认匿名。</span>
+      </div>
+      <a class="index-announcement__action" href="mailto:dsanying@qq.com">邮件提交 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    `
     recentPosts.prepend(announcement)
   }
 

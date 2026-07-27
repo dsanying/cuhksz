@@ -113,7 +113,7 @@ aside:
       link: https://github.com/dsanying/cuhksz
   card_announcement:
     enable: true
-    content: '资料与攻略持续整理；如发现失效链接或内容问题，欢迎通过“关于”页反馈。'
+    content: '<strong>资料征集</strong><br>持续收集电子教材、历年 Exam/Quiz、Cheating Paper 等课程资料。请注明“届别 + 网名/姓名”；未注明默认匿名。<br><a href="mailto:dsanying@qq.com">邮件提交 →</a>'
   card_recent_post:
     enable: false
     limit: 5
