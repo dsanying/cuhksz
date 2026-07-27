@@ -68,6 +68,5 @@ deploy: []
 swpp:
   enable: true
   serviceWorker: true
-  # hexo-swpp registers /sw.js by default, while this site is deployed below /cuhksz/.
-  auto_register: false
+  auto_register: true
   gen_dom: false

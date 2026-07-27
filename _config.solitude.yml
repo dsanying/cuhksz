@@ -6,12 +6,6 @@ site:
   icon: /img/logo.png
 
 nav:
-  right:
-    custom:
-      - name: 昼夜模式
-        onclick: Solitude.toggleTheme()
-        icon: fas fa-circle-half-stroke
-        id: theme-toggle
   menu:
     首页: /
     校园生活:
@@ -167,11 +161,6 @@ console:
   card:
     tags: false
     archive: month
-
-extends:
-  head:
-    - <link rel="stylesheet" href="/cuhksz/css/site.css">
-    - <script>navigator.serviceWorker&&navigator.serviceWorker.register('/cuhksz/sw.js',{scope:'/cuhksz/'}).catch(console.error)</script>
 
 lightbox: true
 mediumZoom: true
