@@ -23,6 +23,7 @@
 .course-resource-filter { padding: .5rem .75rem; border: 1px solid var(--card-border); border-radius: 99px; background: var(--card-bg); color: var(--font-color); cursor: pointer; }
 .course-resource-filter b { margin-left: .25rem; color: inherit; opacity: .65; font-weight: 500; }
 .course-resource-filter.is-active { border-color: var(--theme-color); background: var(--theme-color); color: #fff; }
+.course-resource-result-count { margin: 0 0 .65rem; color: var(--font-color); font-size: .9rem; opacity: .7; }
 .course-resource-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; }
 .course-resource-card { min-height: 132px; padding: 1.15rem; border: 1px solid var(--card-border); border-radius: 8px; background: var(--card-bg); box-shadow: var(--card-box-shadow); color: var(--font-color); text-align: left; cursor: pointer; transition: transform .18s ease, border-color .18s ease; }
 .course-resource-card:hover { transform: translateY(-3px); border-color: var(--theme-color); }

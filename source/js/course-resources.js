@@ -25,7 +25,7 @@
       const filteredCourses = () => manifest.courses.filter((course) => {
         const needle = state.query.trim().toLowerCase()
         const categoryMatch = state.category === 'all' || course.files.some((file) => file.category === state.category)
-        const queryMatch = !needle || course.name.toLowerCase().includes(needle) || course.files.some((file) => `${file.name} ${file.path}`.toLowerCase().includes(needle))
+        const queryMatch = !needle || course.name.toLowerCase().includes(needle) || course.files.some((file) => file.name.toLowerCase().includes(needle))
         return categoryMatch && queryMatch
       })
 
@@ -73,7 +73,7 @@
           <div class="course-resource-stats"><span><b>${manifest.stats.courseCount}</b> 门课程</span><span><b>${manifest.stats.fileCount}</b> 个文件</span><span><b>${formatSize(manifest.stats.totalSize)}</b> 已整理资料</span></div>
           <div class="course-resource-toolbar"><label><span>搜索</span><input id="course-resource-search" value="${escapeHtml(state.query)}" placeholder="课程代码、文件名或关键词"></label><a href="mailto:dsanying@qq.com?subject=课程资料提交">提交资料 / 反馈问题</a></div>
           <div class="course-resource-filters">${categoryButtons}</div>
-          ${state.selectedCourse ? renderDetail() : `<div class="course-resource-grid">${renderCards()}</div>`}
+          ${state.selectedCourse ? renderDetail() : `<p class="course-resource-result-count" aria-live="polite">已找到 ${filteredCourses().length} 门课程</p><div class="course-resource-grid">${renderCards()}</div>`}
           <p class="course-resource-note">资料仅供校内学习参考。若发现失效链接、内容问题或涉及权利，请发送邮件至 <a href="mailto:dsanying@qq.com">dsanying@qq.com</a>。</p>
         </section>`
         bind()
