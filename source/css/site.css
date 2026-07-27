@@ -99,26 +99,38 @@
   transition: none;
 }
 
-/* Reflow the author card into a compact vertical contact card. */
+/* Replace the theme's spacious profile banner with a compact contact card. */
 #aside-content .card-info {
-  min-height: 356px;
+  min-height: 0;
+  background: var(--efu-card-bg);
+  border: var(--style-border-always);
+}
+
+#aside-content .card-info::before {
+  display: none;
 }
 
 #aside-content .card-info .card-content {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 18px 16px 14px;
+  padding: 14px;
 }
 
 #aside-content .card-info .avatar {
   position: relative;
   top: auto;
   right: auto;
-  width: 82px;
-  height: 82px;
-  min-width: 82px;
-  min-height: 82px;
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  min-height: 64px;
+}
+
+#aside-content .card-info .avatar img {
+  border-width: 3px;
 }
 
 #aside-content .card-info .bottom-group {
@@ -126,10 +138,10 @@
   left: auto;
   bottom: auto;
   width: 100%;
-  padding: 12px 0 0;
+  padding: 9px 0 0;
   flex-direction: column;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
 }
 
 #aside-content .card-info .bottom-group .left,
@@ -144,23 +156,24 @@
 
 #aside-content .card-info .bottom-group .name {
   margin: 0;
-  font-size: 18px;
+  color: var(--efu-fontcolor);
+  font-size: 17px;
 }
 
 #aside-content .card-info .bottom-group::before {
   order: 1;
-  width: 196px;
-  height: 70px;
+  width: 178px;
+  height: 64px;
   content: '';
   background: url('/cuhksz/img/dsanying_search.jpg') center / cover no-repeat;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.14);
 }
 
 #aside-content .card-info .bottom-group::after {
   order: 2;
   content: '微信公众号 · 暗夜孤残影';
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--efu-secondtext);
   font-size: 12px;
   line-height: 1.2;
 }
@@ -171,6 +184,8 @@
 }
 
 #aside-content .card-info .bottom-group .social-icons .social-icon i {
+  background: var(--efu-theme);
+  color: #fff;
   width: 34px;
   height: 34px;
   font-size: 16px;
