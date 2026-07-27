@@ -1,3 +1,8 @@
 node_modules/
-dist/
+public/
+.cache/
 .astro/
+dist/
+db.json
+.deploy*/
+.DS_Store

@@ -1,0 +1,66 @@
+# 香港中文大学（深圳）学生资源站
+title: 港中深资源站
+subtitle: CUHK-Shenzhen Student Resource Hub
+description: 面向港中深学生的校园、课程与生活资源导航。
+keywords: 港中深,CUHK-SZ,香港中文大学（深圳）,校园资源,新生指南
+author: CUHK-SZ Student Community
+language: zh-CN
+timezone: Asia/Shanghai
+
+# GitHub Pages 项目站点地址。保持末尾斜杠，链接可在本地和线上一致工作。
+url: https://dsanying.github.io/cuhksz/
+root: /cuhksz/
+permalink: :title/
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render: []
+
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: false
+prismjs:
+  preprocess: true
+  line_number: false
+
+index_generator:
+  path: ''
+  per_page: 12
+  order_by: -date
+
+default_category: 未分类
+per_page: 12
+pagination_dir: page
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: mtime
+
+theme: solitude
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
+deploy: []

@@ -1,19 +1,32 @@
 {
   "name": "cuhksz-resource-hub",
+  "version": "2.0.0",
   "private": true,
-  "version": "1.0.0",
-  "type": "module",
+  "description": "香港中文大学（深圳）学生资源导航",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview"
+    "clean": "hexo clean",
+    "dev": "hexo server",
+    "build": "hexo generate",
+    "preview": "hexo server"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "hexo": {
+    "version": "8.1.2"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.37.6",
-    "astro": "^5.13.5"
-  },
-  "devDependencies": {
-    "@astrojs/check": "^0.9.4",
-    "typescript": "^5.7.3"
+    "hexo": "^8.1.2",
+    "hexo-cli": "^4.3.2",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-searchdb": "^1.5.0",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-marked": "^7.0.1",
+    "hexo-renderer-pug": "^3.0.0",
+    "hexo-renderer-stylus": "^3.0.1",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-solitude": "^4.0.0"
   }
 }

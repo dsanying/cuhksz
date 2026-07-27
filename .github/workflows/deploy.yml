@@ -1,4 +1,4 @@
-name: Deploy static site
+name: Deploy GitHub Pages
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: public
   deploy:
     needs: build
     runs-on: ubuntu-latest

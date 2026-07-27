@@ -1,0 +1,180 @@
+# 只覆盖 Solitude 的必要选项；其余均跟随主题 4.x 的官方默认值。
+site:
+  name:
+    class: text
+    custom: 港中深资源站
+  icon: /img/logo.png
+
+nav:
+  menu:
+    首页: / || fas fa-house
+    校园生活:
+      入学清单: /checklist/ || fas fa-clipboard-check
+      书院信息: /dorm/ || fas fa-building-columns
+      校园地图: /map/ || fas fa-map-location-dot
+      联系方式: /contact-school/ || fas fa-address-book
+    学业工具:
+      课程资料: /course/ || fas fa-book-open
+      选课与攻略: /categories/课程/ || fas fa-graduation-cap
+      IT 指南: /guide-IT/ || fas fa-laptop-code
+    探索:
+      周边美食: /guide-lgu-1/ || fas fa-utensils
+      全部分类: /categories/ || fas fa-shapes
+      搜索: javascript:Solitude.search() || fas fa-magnifying-glass
+    关于:
+      本站: /about/ || fas fa-circle-info
+
+hometop:
+  enable: true
+  banner:
+    title: 在港中深，<br>少一点找路。
+    desc:
+      - 课程、校园与生活信息，集中在这里
+      - 给每一位刚到深圳的同学
+  group:
+    新生必看: /checklist/ || fas fa-compass || linear-gradient(120deg,#1f6b58,#c6a15b)
+    校园地图: /map/ || fas fa-map || linear-gradient(120deg,#295a88,#79aec8)
+    课程资料: /course/ || fas fa-book || linear-gradient(120deg,#914d36,#d99b6f)
+  recommendList:
+    - order: 1
+      sup: 从这里开始
+      title: 入学前准备清单
+      url: /checklist/
+      img: /img/cuhksz.jpg
+      color: none
+    - order: 2
+      sup: 校园生活
+      title: 八大书院信息与住宿参考
+      url: /dorm/
+      img: /img/avatar.jpg
+      color: none
+
+aside:
+  home:
+    noSticky: about
+    Sticky: allInfo
+  post:
+    noSticky: about
+    Sticky: newestPost
+  page:
+    noSticky: about
+    Sticky: newestPost,allInfo
+  position: 1
+  my_card:
+    author:
+      img: /img/logo.png
+    description: 港中深学生资源导航
+    content: 把有用的信息留在能被找到的地方。
+    information:
+      GitHub: https://github.com/dsanying/cuhksz || fab fa-github
+  toc:
+    post: true
+    page: true
+    vague: true
+  tags:
+    enable: true
+    limit: 12
+  siteinfo:
+    postcount: true
+    wordcount: false
+    pv: false
+    uv: false
+    updatetime: true
+    runtimeenable: true
+    runtime: '2024-08-20 00:00:00'
+
+index_post_list:
+  direction: row
+  column: 3
+  cover: both
+
+page:
+  archives: 0
+  default:
+    cover:
+      - /img/cuhksz.jpg
+
+post:
+  default:
+    cover:
+      - /img/cuhksz.jpg
+    locate: Shenzhen, China
+    copyright:
+      enable: false
+  meta:
+    date: true
+    updated: true
+    locate: false
+    wordcount: false
+    readtime: false
+    pv: false
+    comment: false
+  share:
+    enable: true
+    list:
+      - link
+      - qrcode
+
+theme_color:
+  light: '#1f6b58'
+  dark: '#d3b06c'
+  nav_hover_text:
+    light: '#ffffff'
+    dark: '#1b1c20'
+
+display_mode:
+  type: auto
+  universe: false
+
+font:
+  font-size: 16px
+  code-font-size: 15px
+  font-family: '"Noto Serif SC", "Songti SC", STSong, serif'
+  code-font-family: '"SFMono-Regular", Consolas, monospace'
+
+footer:
+  information:
+    left:
+      GitHub: https://github.com/dsanying/cuhksz || fab fa-github
+  group:
+    校园导航:
+      校园地图: /map/
+      新生清单: /checklist/
+      课程资料: /course/
+    站点:
+      分类: /categories/
+      归档: /archives/
+      关于本站: /about/
+
+loading:
+  fullpage: false
+  pace: true
+
+rightside:
+  enable: true
+  percent: true
+  hide:
+    enable: true
+    translate: false
+    mode: true
+    aside: true
+
+search:
+  enable: true
+  type: local
+  local:
+    preload: true
+
+lightbox: true
+mediumZoom: true
+lazyload:
+  enable: true
+  field: post
+  errorimg: /img/error_load.avif
+
+CDN:
+  internal: local
+  third_party: cdnjs
+  version: true
+
+css_prefix: false
