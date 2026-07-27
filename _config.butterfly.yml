@@ -144,6 +144,22 @@ tag_ui: index
 rounded_corners_ui: true
 display_mode: light
 
+# 统一使用低饱和石板灰，避免默认亮蓝在页脚、翻页和目录选中态中过于突兀。
+theme_color:
+  enable: true
+  main: '#48515c'
+  paginator: '#596574'
+  button_hover: '#36404b'
+  text_selection: '#596574'
+  link_color: '#456d9f'
+  hr_color: '#596574'
+  toc_color: '#596574'
+  blockquote_padding_color: '#596574'
+  blockquote_background_color: '#596574'
+  scrollbar_color: '#596574'
+  meta_theme_color_light: '#ffffff'
+  meta_theme_color_dark: '#111318'
+
 # 全站正文基准字号；标题、导航等相对字号会随此基准等比例调整。
 font:
   global_font_size: 16px
