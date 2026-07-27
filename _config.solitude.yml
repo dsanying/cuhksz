@@ -118,15 +118,6 @@ footer:
   information:
     left:
       GitHub: https://github.com/dsanying/cuhksz || fab fa-github
-  group:
-    校园导航:
-      校园地图: /map/
-      新生清单: /checklist/
-      课程资料: /course/
-    站点:
-      分类: /categories/
-      归档: /archives/
-      关于本站: /about/
 
 loading:
   fullpage: false
