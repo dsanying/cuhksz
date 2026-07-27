@@ -1,0 +1,4 @@
+/* 首页文章卡片可点击。具体跳转逻辑由 card-click.js 处理。 */
+#recent-posts .recent-post-item:not(.ads-wrap) {
+  cursor: pointer;
+}

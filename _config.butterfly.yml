@@ -164,6 +164,13 @@ theme_color:
 font:
   global_font_size: 16px
 
+# 使用 Butterfly 官方 inject 机制加载站点级交互微调。
+inject:
+  head:
+    - <link rel="stylesheet" href="/cuhksz/css/butterfly-overrides.css">
+  bottom:
+    - <script defer src="/cuhksz/js/card-click.js"></script>
+
 pjax:
   enable: false
 lazyload:
