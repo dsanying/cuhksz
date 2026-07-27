@@ -18,7 +18,7 @@ nav:
       选课与攻略: /categories/课程/ || fas fa-graduation-cap
       IT 指南: /guide-IT/ || fas fa-laptop-code
     探索:
-      周边美食: /guide-lgu-1/ || fas fa-utensils
+      宝藏资源: /social/ || fas fa-wand-magic-sparkles
       全部分类: /categories/ || fas fa-shapes
       搜索: javascript:Solitude.search() || fas fa-magnifying-glass
     关于:
