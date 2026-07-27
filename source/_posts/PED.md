@@ -21,7 +21,7 @@ content_format: html
 <h2 id="免费资源-点击对应板块跳转"><a href="#免费资源-点击对应板块跳转" class="headerlink" title="免费资源(点击对应板块跳转)"></a>免费资源(点击对应板块跳转)</h2><blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/dsanying/CUHKSZ_sourse/tree/main/PED">考核标准</a></p>
 </blockquote>
-<h2 id="课程评价"><a href="#课程评价" class="headerlink" title="课程评价"></a>课程评价</h2><p><a target="_blank" rel="noopener" href="http://47.119.147.6/index">点此跳转</a></p>
+<h2 id="课程评价"><a href="#课程评价" class="headerlink" title="课程评价"></a>课程评价</h2><blockquote><p><strong>经验提示（往届学生反馈，2024 年整理）</strong>：任课教师、考核方式、课程容量和课堂体验都可能随学期变化。以下内容仅供了解课程风格，不应用作选课承诺或成绩判断依据。</p></blockquote><p><a target="_blank" rel="noopener" href="http://47.119.147.6/index">点此跳转</a></p>
 <blockquote>
 <p>以下数据来自微信公众号”神仙湖畔的薯塔”</p>
 <table>

@@ -12,10 +12,10 @@ content_format: html
 <blockquote>
 <p>完整 IT 手册请查看网址: <a target="_blank" rel="noopener" href="https://itso.cuhk.edu.cn/student">https://itso.cuhk.edu.cn/student</a></p>
 </blockquote>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>本篇文章包含基本的校园 IT 知识</p>
+<h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><p>本页汇总常用校园 IT 服务。系统入口、权限与办理流程可能调整，遇到问题请优先查看 ITSO 官方学生手册或联系 ITSO。</p>
 <h2 id="CUHK-SZ-账号"><a href="#CUHK-SZ-账号" class="headerlink" title="CUHK(SZ)账号"></a>CUHK(SZ)账号</h2><p>账号是一串数字，也是你的学号。学校所有系统的账号与密码都是统一的。<br>本科生查询网址: <a target="_blank" rel="noopener" href="https://ug-inquiry.cuhk.edu.cn/index.html">https://ug-inquiry.cuhk.edu.cn/index.html</a><br>研究生和国际生的账号与密码会发送到个人邮箱里。</p>
 <p>访问密码自助服务平台 (<a target="_blank" rel="noopener" href="https://myid.cuhk.edu.cn/">https://myid.cuhk.edu.cn/</a>) 以便激活账号、修改密码、绑定密保手机&#x2F;邮箱。</p>
-<p><strong>直接使用给你的账号与初始密码登录即可，<span style="color:red">不要点击”忘记密码”或者”解锁账号”<span></strong></p>
+<p>新生请按学校发出的激活指引完成首次登录；忘记密码或账号被锁定时，按密码自助服务平台的提示办理。</p>
 <h2 id="电子邮箱"><a href="#电子邮箱" class="headerlink" title="电子邮箱"></a>电子邮箱</h2><p>每位同学都拥有一个学校邮箱，即”(学号)@link.cuhk.edu.cn”。<br>学生可以使用 CUHK(SZ)账号与密码登录学校邮箱。<br>例如:</p>
 <blockquote>
 <p>邮箱账号: <a href="mailto:&#x31;&#50;&#x30;&#57;&#x39;&#x39;&#x39;&#57;&#57;&#64;&#108;&#105;&#x6e;&#107;&#x2e;&#99;&#117;&#x68;&#107;&#46;&#101;&#x64;&#117;&#x2e;&#99;&#x6e;">&#x31;&#50;&#x30;&#57;&#x39;&#x39;&#x39;&#57;&#57;&#64;&#108;&#105;&#x6e;&#107;&#x2e;&#99;&#117;&#x68;&#107;&#46;&#101;&#x64;&#117;&#x2e;&#99;&#x6e;</a><br>密码: 学校账号密码</p>
@@ -27,7 +27,8 @@ content_format: html
 <li>手机端: 任意邮箱软件选择 Exchange 类型，一般输入邮箱及密码即可自动添加(不要输入用户名等其它东西)</li>
 </ul>
 <h2 id="Office-365"><a href="#Office-365" class="headerlink" title="Office 365"></a>Office 365</h2><p>要查看拥有的 Office 365 权限并安装相关应用，请访问 <a target="_blank" rel="noopener" href="https://portal.office.com/account">Office 365 账户门户</a>，使用学校邮箱和密码进行登录。</p>
-<h2 id="校园卡"><a href="#校园卡" class="headerlink" title="校园卡"></a>校园卡</h2><p>每位同学都将收到一张校园卡（学生卡），卡上有你的姓名、学号、照片和书院等信息。此卡可以在新生报到注册当天领取。<br><strong>校园卡除了考试和进入游泳馆、功能房等部分场地外基本就没用了，<span style="color:red">千万不要往校园卡里充钱。</span></strong><br>如需在别的地方使用(例如进出校门)可以使用电子校园卡(微信搜索小程序”港中深虚拟校园卡”)</p>
+<h2 id="校园卡"><a href="#校园卡" class="headerlink" title="校园卡"></a>校园卡</h2><p>校园卡主要用于身份识别、门禁、考试、图书借阅和部分场地。遗失、补卡和账户问题可向校园卡服务中心或 ITSO 咨询。</p>
+<blockquote><p><strong>使用提示</strong>：校内日常消费可使用微信或支付宝；目前没有需要使用校园卡余额消费的场景，因此无需向校园卡充值。</p></blockquote>
 <h2 id="校园网络"><a href="#校园网络" class="headerlink" title="校园网络"></a>校园网络</h2><h3 id="无线-有线网络"><a href="#无线-有线网络" class="headerlink" title="无线&#x2F;有线网络"></a>无线&#x2F;有线网络</h3><p>直接连接网络即可，在弹出的认证页面使用学校账号及密码登录即可。</p>
 <p>如果没有弹出认证页面可以手动访问网址 <a href="10.10.10.10">10.10.10.10</a> 。如果该网址无法访问请检查 VPN、代理服务器等设置，确保都是自动获取。</p>
 <h3 id="eduroam"><a href="#eduroam" class="headerlink" title="eduroam"></a>eduroam</h3><p>同学出访其他参加 eduroam 联盟的学校时可使用 eduroam 免费上网。<br>登录账号为”学号@cuhk.edu.cn”(注意后缀)，密码为学校账号密码。</p>

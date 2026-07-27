@@ -12,6 +12,8 @@ content_format: html
 
 <meta name="referrer" content="never"/>
 
+<blockquote><p><strong>时效提示</strong>：SIS 的页面、选课安排和课程资料会随学期调整。本文用于了解常见功能，具体操作请以 SIS、教务处邮件和当学期通知为准。</p></blockquote>
+
 <h2 id="SIS系统概述"><a href="#SIS系统概述" class="headerlink" title="SIS系统概述"></a>SIS系统概述</h2><p>SIS（Student Information System）是港中深学生最重要的工具之一，集查看课程与授课老师、选课、退课、转专业、打印成绩单等功能于一体。使用前需确保已激活学校账号并可正常登录。</p>
 <p><strong>登录地址</strong>：<a target="_blank" rel="noopener" href="https://sis.cuhk.edu.cn/">https://sis.cuhk.edu.cn/</a></p>
 <p><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DJEqDsRibLTOCp0tIW4c3tIYT5ccUQeWHvjHiaaYxuoiaI3lU6e8dX2SichufnAVoNHdlCSnLtDGzibibsw/"></p>

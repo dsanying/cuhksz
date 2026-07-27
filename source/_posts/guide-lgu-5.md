@@ -12,6 +12,8 @@ content_format: html
 
 <meta name="referrer" content="never"/>
 
+<blockquote><p><strong>时效提示</strong>：活动类型、预约次数、取消规则和邮件发布时间会随学期调整。请以 SALL Centre 官网、预约系统和当周邮件为准。</p></blockquote>
+
 <h2 id="SALL-Centre简介"><a href="#SALL-Centre简介" class="headerlink" title="SALL Centre简介"></a>SALL Centre简介</h2><p>SALL Centre全称为Self-Access Language Learning Centre（自主语言学习中心），是集语言学习与写作反馈修改多功能为一体的语言中心，为学生提供多样化的语言学习支持与资源。</p>
 <h2 id="可获取的资源与帮助"><a href="#可获取的资源与帮助" class="headerlink" title="可获取的资源与帮助"></a>可获取的资源与帮助</h2><p>SALL Centre主要提供以下资源与帮助：</p>
 <h3 id="写作指导与反馈"><a href="#写作指导与反馈" class="headerlink" title="写作指导与反馈"></a>写作指导与反馈</h3><p>针对ENG&#x2F;CHI系列课程的不同Essay、GE课程的Reading Journal（RJ）与Term Paper（TP），除向教授咨询外，学生可向SALL Centre的老师寻求专业的咨询和修改建议，这对提升写作能力和课程成绩有重要帮助。</p>
@@ -32,12 +34,5 @@ content_format: html
 <li>注册成功后，SALL Centre会自动发送邮件通知。<br><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DKibWf8IpBDHjKJYMFr9kL6UZYEJyV0kdSaLFsEmeG0qmtGPDN6GIJUNg3zD3Hor0ZbaRENbX36CXw/"></li>
 <li>若想预约的时间段已满，可加入Waiting List等待补位，成功概率较高。<br><img src="https://mmbiz.qpic.cn/mmbiz_png/Vj5GibmSe1DKibWf8IpBDHjKJYMFr9kL6UO1IGydjH9lsvQh6Qlx23vpk5T7WibVxUPVFeOvvlib06CgtT4w5YbmjA/"></li>
 </ul>
-<h3 id="参加次数限制"><a href="#参加次数限制" class="headerlink" title="参加次数限制"></a>参加次数限制</h3><ul>
-<li>学生可根据需要报名参加任意数量的SALL Centre活动。</li>
-<li>每种类型的活动一个学期内只能参加一次。例如：可在一周内同时参加Conversation Table和Reading Roundtable，但一个学期内只能参加一个Conversation Table和一个Reading Roundtable。</li>
-</ul>
-<h3 id="取消预约规则"><a href="#取消预约规则" class="headerlink" title="取消预约规则"></a>取消预约规则</h3><ul>
-<li>如需取消已预约的活动，需在活动开始前两小时操作。</li>
-<li>未取消且缺席活动的学生，将被限制参加SALL Centre后续活动。</li>
-</ul>
+<h3 id="参加次数与取消规则"><a href="#参加次数与取消规则" class="headerlink" title="参加次数与取消规则"></a>参加次数与取消规则</h3><p>不同活动的报名次数、候补和取消截止时间以预约系统显示为准。预约后如无法参加，应尽早取消；无故缺席可能影响后续预约资格。</p>
 <h3 id="预约操作说明"><a href="#预约操作说明" class="headerlink" title="预约操作说明"></a>预约操作说明</h3><p>预约时无需点击特定活动下方的预约按钮，可点击任意活动进入网站，网站内会展示所有活动的时间段供选择。</p>

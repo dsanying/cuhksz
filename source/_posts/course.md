@@ -9,7 +9,8 @@ content_format: html
 
 <!-- 原始正文：为避免自动转换损失链接、表格、图片和嵌入内容，暂保留 HTML。 -->
 
-<p>课程资料和电子课本都放在存储站里啦~</p>
+<blockquote><p><strong>使用提示</strong>：资料仅供个人学习参考。请尊重课程教师、出版社和资源提供方的版权与使用规则；版本、可访问性和课程适用范围以当学期课程要求为准。</p></blockquote>
+<p>课程资料和电子课本可在以下存储站查找：</p>
 <p>【推荐】 <a target="_blank" rel="noopener" href="https://www.ilanzou.com/s/ZALy1I5c">蓝奏云存储站</a></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/dsanying/CUHKSZ_sourse/">Github存储站</a><br><a target="_blank" rel="noopener" href="https://gitcode.com/dsanying/CUHKSZ_sourse/">国内镜像站</a></p>
 <p>为了方便下载，在QQ交流群里有<strong>部分电子课本</strong>存档~</p>
