@@ -4,6 +4,7 @@ subtitle: CUHK-Shenzhen Student Resource Hub
 description: 面向港中深学生的校园、课程与生活资源导航。
 keywords: 港中深,CUHK-SZ,香港中文大学（深圳）,校园资源,新生指南
 author: 暗影
+avatar: /img/avatar.jpg
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -55,7 +56,7 @@ date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 updated_option: mtime
 
-theme: solitude
+theme: butterfly
 
 search:
   path: search.xml

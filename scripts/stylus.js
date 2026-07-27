@@ -1,10 +1,9 @@
 /**
- * Solitude 4.0.0 ships CSS variables that clash with nib's legacy `opacity()`
- * mixin. The theme does not import nib, so render its Stylus with the current
- * compiler directly instead of injecting nib globally. This is deterministic
- * in local development and GitHub Actions, without modifying node_modules.
+ * Butterfly 的 Stylus 源码依赖 nib。显式加载该依赖，保持本地与部署构建一致，
+ * 且不修改主题目录中的任何文件。
  */
 const stylus = require('stylus');
+const nib = require('nib');
 
 function getConfig(object, key) {
   const parts = key.replace(/\[(\w+)\]/g, '.$1').replace(/^\./, '').split('.');
@@ -20,6 +19,7 @@ function renderStylus(data, options, callback) {
   const config = this.config.stylus || {};
   const compiler = stylus(data.text)
     .define('hexo-config', (key) => getConfig(this.theme.config, key.val))
+    .use(nib())
     .use((style) => this.execFilterSync('stylus:renderer', style, { context: this }))
     .set('filename', data.path)
     .set('sourcemap', config.sourcemaps)

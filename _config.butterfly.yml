@@ -1,0 +1,152 @@
+# Butterfly 主题配置：站点配置与主题源码分离，主题升级时不会覆盖本文件。
+
+nav:
+  display_title: true
+  display_post_title: true
+  fixed: true
+
+menu:
+  首页: / || fas fa-home
+  校园生活:
+    入学清单: /checklist/ || fas fa-clipboard-check
+    书院与住宿: /dorm/ || fas fa-building
+    校园地图: /map/ || fas fa-map-location-dot
+    学校联系方式: /contact-school/ || fas fa-address-book
+    IT 指南: /guide-IT/ || fas fa-laptop
+  学业成长:
+    课程资料: /course/ || fas fa-book
+    选课与攻略: /categories/%E5%AD%A6%E4%B8%9A/ || fas fa-graduation-cap
+  资源社区:
+    重要资料: /material/ || fas fa-folder-open
+    社群与资源: /social/ || fas fa-users
+  关于: /about/ || fas fa-circle-info
+
+favicon: /img/pwa/favicon.png
+avatar:
+  img: /img/avatar.jpg
+  effect: false
+
+disable_top_img: true
+footer_img: false
+background:
+
+cover:
+  index_enable: false
+  aside_enable: false
+  archives_enable: false
+
+# 官方瀑布流卡片布局；不强制为文章添加封面图。
+index_layout: 6
+index_post_content:
+  method: false
+
+post_meta:
+  page:
+    date_type: created
+    date_format: date
+    categories: true
+    tags: false
+  post:
+    position: left
+    date_type: both
+    date_format: date
+    categories: true
+    tags: false
+
+code_blocks:
+  theme: darker
+  copy: true
+  language: true
+  shrink: false
+
+toc:
+  post: true
+  page: true
+  number: true
+  expand: false
+  scroll_percent: true
+
+post_copyright:
+  enable: true
+  decode: false
+  author_href: /
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+search:
+  use: local_search
+  placeholder: 搜索站内文章
+  local_search:
+    preload: false
+    top_n_per_article: 1
+    unescape: true
+
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  display:
+    archive: false
+    tag: false
+    category: true
+  card_author:
+    enable: true
+    description: '<img src="/cuhksz/img/dsanying_search.jpg" alt="微信公众号：暗夜孤残影" style="width: 180px; max-width: 100%; height: auto;">'
+    button:
+      enable: true
+      icon: fab fa-github
+      text: GitHub
+      link: https://github.com/dsanying/cuhksz
+  card_announcement:
+    enable: false
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date
+  card_categories:
+    enable: true
+    limit: 8
+    expand: none
+  card_tags:
+    enable: false
+  card_archives:
+    enable: false
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    runtime_date: 2024/08/21 00:00:00
+
+footer:
+  nav:
+  owner:
+    enable: true
+    since: 2024
+  copyright:
+    enable: false
+  custom_text:
+
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: false
+
+readmode: true
+rightside_scroll_percent: true
+rightside_item_order:
+  enable: false
+rightside_config_animation: false
+
+category_ui: index
+tag_ui: index
+rounded_corners_ui: true
+display_mode: light
+
+pjax:
+  enable: false
+lazyload:
+  enable: false
+pwa:
+  enable: false
