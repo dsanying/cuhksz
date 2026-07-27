@@ -165,8 +165,8 @@
 
 #aside-content .card-info .bottom-group::before {
   order: 1;
-  width: 164px;
-  height: 59px;
+  width: 220px;
+  height: 79px;
   content: '';
   background: url('/cuhksz/img/dsanying_search.jpg') center / cover no-repeat;
   border-radius: 8px;
