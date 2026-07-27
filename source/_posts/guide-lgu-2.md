@@ -1,5 +1,5 @@
 ---
-title: "如何快速高效地上手SIS"
+title: "如何快速高效地上手 SIS"
 slug: guide-lgu-2
 date: "2025-09-02 16:46:44"
 category: "学业"

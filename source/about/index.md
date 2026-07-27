@@ -1,5 +1,5 @@
 ---
-title: "本站"
+title: "关于本站"
 slug: about
 date: "2024-08-21 16:51:58"
 category: ""

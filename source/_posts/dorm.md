@@ -1,5 +1,5 @@
 ---
-title: "书院信息"
+title: "书院与住宿"
 slug: dorm
 date: "2024-09-03 10:30:43"
 category: "校园"

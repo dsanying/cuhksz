@@ -1,5 +1,5 @@
 ---
-title: "SALL Centre使用指南"
+title: "SALL Centre 使用指南"
 slug: guide-lgu-5
 date: "2025-09-02 18:42:55"
 category: "学业"

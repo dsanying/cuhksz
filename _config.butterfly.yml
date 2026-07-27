@@ -14,12 +14,12 @@ menu:
     学校联系方式: /contact-school/ || fas fa-address-book
     IT 指南: /guide-IT/ || fas fa-laptop
   学业成长:
-    课程资料: /course/ || fas fa-book
-    选课与攻略: /categories/%E5%AD%A6%E4%B8%9A/ || fas fa-graduation-cap
+    课程资料与电子课本: /course/ || fas fa-book
+    学业: /categories/%E5%AD%A6%E4%B8%9A/ || fas fa-graduation-cap
   资源社区:
-    重要资料: /material/ || fas fa-folder-open
-    社群与资源: /social/ || fas fa-users
-  关于: /about/ || fas fa-circle-info
+    重要资料汇总: /material/ || fas fa-folder-open
+    社交媒体与宝藏资源: /social/ || fas fa-users
+  关于本站: /about/ || fas fa-circle-info
 
 favicon: /img/pwa/favicon.png
 avatar:

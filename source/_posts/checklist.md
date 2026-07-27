@@ -55,7 +55,7 @@ content_format: html
 <li>床边挂篮，床桌</li>
 <li>床垫（部分书院提供）</li>
 </ul>
-<p><strong>提示</strong>：不同书院、楼栋的床位尺寸可能不同；购买前请查看<a href="../dorm">书院信息</a>并以入住现场为准。</p>
+<p><strong>提示</strong>：不同书院、楼栋的床位尺寸可能不同；购买前请查看<a href="../dorm">书院与住宿</a>并以入住现场为准。</p>
 <p><strong>座位准备</strong>：</p>
 <ul>
 <li>镜子</li>

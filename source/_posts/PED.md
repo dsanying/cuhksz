@@ -1,5 +1,5 @@
 ---
-title: "PED 体育课测评"
+title: "PED 体育课程测评"
 slug: PED
 date: "2024-08-23 13:06:48"
 category: "学业"

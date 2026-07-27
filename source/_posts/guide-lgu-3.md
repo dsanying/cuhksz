@@ -1,5 +1,5 @@
 ---
-title: "跨学院转专业攻略"
+title: "跨学院转专业指南"
 slug: guide-lgu-3
 date: "2025-09-02 18:08:21"
 category: "学业"

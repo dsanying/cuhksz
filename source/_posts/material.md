@@ -1,5 +1,5 @@
 ---
-title: "重要资料"
+title: "重要资料汇总"
 slug: material
 date: "2024-09-03 13:10:49"
 category: "资源"

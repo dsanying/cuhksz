@@ -1,5 +1,5 @@
 ---
-title: "自由选修pf课程推荐"
+title: "自由选修 PF 课程推荐"
 slug: guide-lgu-4
 date: "2025-09-02 18:39:10"
 category: "学业"

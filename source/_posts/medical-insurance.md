@@ -1,5 +1,5 @@
 ---
-title: "港中深医保指南"
+title: "港中深医疗保险指南"
 slug: medical-insurance
 date: "2024-09-04 22:31:51"
 category: "校园"

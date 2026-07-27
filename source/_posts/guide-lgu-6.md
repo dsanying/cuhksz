@@ -13,7 +13,7 @@ content_format: html
 
 <h2 id="教科书"><a href="#教科书" class="headerlink" title="教科书"></a>教科书</h2>
 <ol>
-<li>先在<a href="../course" target="_blank">课程资料/电子课本</a>、课程教学平台和课程大纲中确认版本、ISBN 和是否有指定章节。</li>
+<li>先在<a href="../course" target="_blank">课程资料与电子课本</a>、课程教学平台和课程大纲中确认版本、ISBN 和是否有指定章节。</li>
 <li>通过图书馆目录搜索纸本书、电子书和教学参考书；馆藏没有时，可提交资源请求或读者荐购。</li>
 <li>校外访问图书馆电子资源时，按图书馆的<a target="_blank" rel="noopener" href="https://library.cuhk.edu.cn/zh-hans/off-campus">电子资源校外访问指引</a>使用 VPN 或机构登录。</li>
 </ol>
