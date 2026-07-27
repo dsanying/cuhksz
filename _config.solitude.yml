@@ -7,7 +7,7 @@ site:
 
 nav:
   menu:
-    首页: / || fas fa-house
+    首页: /
     校园生活:
       入学清单: /checklist/ || fas fa-clipboard-check
       书院信息: /dorm/ || fas fa-building-columns
@@ -46,7 +46,7 @@ hometop:
       sup: 校园生活
       title: 八大书院信息与住宿参考
       url: /dorm/
-      img: /img/avatar.jpg
+      img: /img/1.jpg
       color: none
 
 aside:
@@ -62,7 +62,7 @@ aside:
   position: 1
   my_card:
     author:
-      img: /img/logo.png
+      img: /cuhksz/img/avatar.jpg
     description: 港中深学生资源导航
     content: 把有用的信息留在能被找到的地方。
     information:
@@ -84,20 +84,15 @@ aside:
     runtime: '2024-08-20 00:00:00'
 
 index_post_list:
-  direction: row
+  direction: column
   column: 3
   cover: both
 
 page:
   archives: 0
-  default:
-    cover:
-      - /img/cuhksz.jpg
 
 post:
   default:
-    cover:
-      - /img/cuhksz.jpg
     locate: Shenzhen, China
     copyright:
       enable: false
