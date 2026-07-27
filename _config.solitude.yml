@@ -48,8 +48,8 @@ aside:
   my_card:
     author:
       img: /cuhksz/img/avatar.jpg
-    description: 港中深学生资源导航
-    content: 把有用的信息留在能被找到的地方。
+    description: ''
+    content: ''
     information:
       GitHub: https://github.com/dsanying/cuhksz || fab fa-github
   toc:
