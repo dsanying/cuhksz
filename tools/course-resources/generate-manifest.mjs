@@ -2,8 +2,8 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs"
 import { dirname, extname, resolve } from "node:path"
 
 const root = resolve(import.meta.dirname, "../..")
-const sourcePath = resolve(root, "source/course-resources/lanzou-manifest.json")
-const outputPath = resolve(root, "source/course-resources/manifest.json")
+const sourcePath = resolve(root, process.env.COURSE_RESOURCE_SOURCE_PATH || "source/course-resources/lanzou-manifest.json")
+const outputPath = resolve(root, process.env.COURSE_RESOURCE_OUTPUT_PATH || "source/course-resources/manifest.json")
 
 const categoryDefinitions = [
   ["learning", "学习资料", "学习资料"],
@@ -22,6 +22,11 @@ function classify(path) {
 
 const source = JSON.parse(readFileSync(sourcePath, "utf8"))
 const byCourse = new Map()
+const verifiedFolders = new Map(
+  (source.courseFolders || [])
+    .filter((folder) => folder.verified === true && folder.lanzouUrl)
+    .map((folder) => [folder.course, folder]),
+)
 
 for (const entry of source.files || []) {
   const path = String(entry.path || "").replaceAll("\\", "/")
@@ -48,11 +53,14 @@ for (const entry of source.files || []) {
 const courses = [...byCourse.entries()]
   .map(([name, files]) => {
     files.sort((a, b) => a.path.localeCompare(b.path, "zh-Hans-CN"))
+    const folder = verifiedFolders.get(name)
     return {
       name,
       fileCount: files.length,
       totalSize: files.reduce((sum, file) => sum + file.size, 0),
       latestUpdate: files.reduce((latest, file) => latest > file.updatedAt ? latest : file.updatedAt, ""),
+      folderUrl: folder?.lanzouUrl || "",
+      folderPassword: folder?.password || "",
       files,
     }
   })

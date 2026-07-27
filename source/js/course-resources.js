@@ -12,11 +12,22 @@
   const escapeHtml = (value) => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char])
   const formatDate = (value) => value ? new Intl.DateTimeFormat('zh-CN', { year: 'numeric', month: 'short', day: 'numeric' }).format(new Date(value)) : '—'
 
-  fetch(app.dataset.manifest)
-    .then((response) => {
-      if (!response.ok) throw new Error('索引加载失败')
-      return response.json()
-    })
+  const loadManifest = async () => {
+    const sources = [app.dataset.liveManifest, app.dataset.manifest].filter(Boolean)
+    let lastError
+    for (const source of sources) {
+      try {
+        const response = await fetch(source, { cache: 'no-store' })
+        if (!response.ok) throw new Error(`索引加载失败：${response.status}`)
+        return await response.json()
+      } catch (error) {
+        lastError = error
+      }
+    }
+    throw lastError || new Error('索引加载失败')
+  }
+
+  loadManifest()
     .then((manifest) => {
       const params = new URLSearchParams(window.location.search)
       const state = { query: params.get('q') || '', category: 'all', selectedCourse: null, fileCategory: 'all' }
@@ -57,8 +68,9 @@
           <span class="course-resource-file-main"><b>${escapeHtml(file.name)}</b><small>${escapeHtml(file.parentPath || file.categoryLabel)}</small></span>
           <span class="course-resource-file-meta">${formatSize(file.size)}<small>${formatDate(file.updatedAt)}</small></span>
         </a>`).join('') || '<p class="course-resource-empty">该分类下暂未收录资料。</p>'
+        const folderLink = course.folderUrl ? `<a class="course-resource-folder-link" href="${escapeHtml(course.folderUrl)}" target="_blank" rel="noopener">打开课程文件夹${course.folderPassword ? `（密码：${escapeHtml(course.folderPassword)}）` : ''}</a>` : ''
         return `<section class="course-resource-detail" aria-live="polite">
-          <div class="course-resource-detail-head"><div><button class="course-resource-back" type="button">← 返回课程列表</button><h2>${escapeHtml(course.name)}</h2><p>${course.fileCount} 个文件 · 最近整理于 ${formatDate(course.latestUpdate)}</p></div></div>
+          <div class="course-resource-detail-head"><div><button class="course-resource-back" type="button">← 返回课程列表</button><h2>${escapeHtml(course.name)}</h2><p>${course.fileCount} 个文件 · 最近整理于 ${formatDate(course.latestUpdate)}</p></div>${folderLink}</div>
           <div class="course-resource-filters">${categoryButtons}</div>
           <div class="course-resource-files">${rows}</div>
         </section>`
