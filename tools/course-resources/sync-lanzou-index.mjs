@@ -214,8 +214,8 @@ if (args.includes("--list-folders")) {
   process.exit(0)
 }
 
-async function crawlFolder(folderId, pathSegments) {
-  const [folderEntries, fileEntries] = await Promise.all([listFolders(folderId, session), listFiles(folderId, session)])
+async function crawlFolder(currentFolderId, pathSegments) {
+  const [folderEntries, fileEntries] = await Promise.all([listFolders(currentFolderId, session), listFiles(currentFolderId, session)])
   const fileRecords = await concurrentMap(fileEntries, 3, async (entry) => {
     const id = fileId(entry)
     try {
