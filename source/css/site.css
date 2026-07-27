@@ -89,3 +89,12 @@
 #aside-content .card-info #sayhi {
   display: none;
 }
+
+/* Keep the author avatar stable when the card is hovered. */
+#aside-content .card-info .avatar,
+#aside-content .card-info .avatar .sticker,
+#aside-content .card-info:hover .avatar,
+#aside-content .card-info:hover .avatar .sticker {
+  transform: none;
+  transition: none;
+}
