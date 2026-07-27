@@ -12,7 +12,6 @@ concurrency:
 
 jobs:
   sync:
-    if: ${{ secrets.LANZOU_CLASSIC_COOKIE != '' }}
     runs-on: ubuntu-latest
     env:
       LANZOU_CLASSIC_COOKIE: ${{ secrets.LANZOU_CLASSIC_COOKIE }}
@@ -22,6 +21,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Verify Lanzou credential
+        run: |
+          if [ -z "$LANZOU_CLASSIC_COOKIE" ]; then
+            echo "::error::缺少 LANZOU_CLASSIC_COOKIE，无法同步课程索引。"
+            exit 1
+          fi
       - name: Build the latest index from Lanzou
         run: |
           node tools/course-resources/sync-lanzou-index.mjs --output "$RUNNER_TEMP/lanzou-manifest.json"
