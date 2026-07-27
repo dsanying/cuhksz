@@ -28,7 +28,6 @@ content_format: html
 </ul>
 <h2 id="Office-365"><a href="#Office-365" class="headerlink" title="Office 365"></a>Office 365</h2><p>要查看拥有的 Office 365 权限并安装相关应用，请访问 <a target="_blank" rel="noopener" href="https://portal.office.com/account">Office 365 账户门户</a>，使用学校邮箱和密码进行登录。</p>
 <h2 id="校园卡"><a href="#校园卡" class="headerlink" title="校园卡"></a>校园卡</h2><p>校园卡主要用于身份识别、门禁、考试、图书借阅和部分场地。遗失、补卡和账户问题可向校园卡服务中心或 ITSO 咨询。</p>
-<blockquote><p><strong>使用提示</strong>：校内日常消费可使用微信或支付宝；目前没有需要使用校园卡余额消费的场景，因此无需向校园卡充值。</p></blockquote>
 <h2 id="校园网络"><a href="#校园网络" class="headerlink" title="校园网络"></a>校园网络</h2><h3 id="无线-有线网络"><a href="#无线-有线网络" class="headerlink" title="无线&#x2F;有线网络"></a>无线&#x2F;有线网络</h3><p>直接连接网络即可，在弹出的认证页面使用学校账号及密码登录即可。</p>
 <p>如果没有弹出认证页面可以手动访问网址 <a href="10.10.10.10">10.10.10.10</a> 。如果该网址无法访问请检查 VPN、代理服务器等设置，确保都是自动获取。</p>
 <h3 id="eduroam"><a href="#eduroam" class="headerlink" title="eduroam"></a>eduroam</h3><p>同学出访其他参加 eduroam 联盟的学校时可使用 eduroam 免费上网。<br>登录账号为”学号@cuhk.edu.cn”(注意后缀)，密码为学校账号密码。</p>

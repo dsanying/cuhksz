@@ -12,8 +12,6 @@ content_format: html
 
 <meta name="referrer" content="never"/>
 
-<blockquote><p><strong>时效提示</strong>：课程开设、学分归属、PF 规则和适用年级可能调整。下列内容仅作往届选课参考，提交选课前务必以 SIS、培养方案和教务处当学年通知为准。</p></blockquote>
-
 <h2 id="自由选修与PF课程说明"><a href="#自由选修与PF课程说明" class="headerlink" title="自由选修与PF课程说明"></a>自由选修与PF课程说明</h2><p>自由选修指专业之外选取的其他课程，是毕业的必要条件之一。PF制度课程指仅有合格与不合格的评分标准且不计入学分绩点（GPA）计算的课程。</p>
 <h2 id="可计入自由选修的学分"><a href="#可计入自由选修的学分" class="headerlink" title="可计入自由选修的学分"></a>可计入自由选修的学分</h2><p>部分入学年份的学生在修读 CEC1000、CEC2000 后可按教务处通知申请或确认转换为 GEW。适用规则请以本人入学年份的通识教育修读规则为准：</p>
 <ul>

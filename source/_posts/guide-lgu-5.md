@@ -12,8 +12,6 @@ content_format: html
 
 <meta name="referrer" content="never"/>
 
-<blockquote><p><strong>时效提示</strong>：活动类型、预约次数、取消规则和邮件发布时间会随学期调整。请以 SALL Centre 官网、预约系统和当周邮件为准。</p></blockquote>
-
 <h2 id="SALL-Centre简介"><a href="#SALL-Centre简介" class="headerlink" title="SALL Centre简介"></a>SALL Centre简介</h2><p>SALL Centre全称为Self-Access Language Learning Centre（自主语言学习中心），是集语言学习与写作反馈修改多功能为一体的语言中心，为学生提供多样化的语言学习支持与资源。</p>
 <h2 id="可获取的资源与帮助"><a href="#可获取的资源与帮助" class="headerlink" title="可获取的资源与帮助"></a>可获取的资源与帮助</h2><p>SALL Centre主要提供以下资源与帮助：</p>
 <h3 id="写作指导与反馈"><a href="#写作指导与反馈" class="headerlink" title="写作指导与反馈"></a>写作指导与反馈</h3><p>针对ENG&#x2F;CHI系列课程的不同Essay、GE课程的Reading Journal（RJ）与Term Paper（TP），除向教授咨询外，学生可向SALL Centre的老师寻求专业的咨询和修改建议，这对提升写作能力和课程成绩有重要帮助。</p>

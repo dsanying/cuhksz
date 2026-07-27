@@ -9,8 +9,6 @@ content_format: html
 
 <!-- 原始正文：为避免自动转换损失链接、表格、图片和嵌入内容，暂保留 HTML。 -->
 
-<blockquote><p><strong>使用提示</strong>：本页尺寸、房型和设施信息来自往届资料，仅供购买用品前参考。书院、楼栋和入住批次可能不同，购买床品或大件前请以书院当期通知和现场测量为准。</p></blockquote>
-
 <meta name="referrer" content="never"/>
 
 <h2 id="宿舍查询链接"><a href="#宿舍查询链接" class="headerlink" title="宿舍查询链接"></a>宿舍查询链接</h2><p><a target="_blank" rel="noopener" href="https://apply.cuhk.edu.cn/matrix-base/apply/dorm_check">https://apply.cuhk.edu.cn/matrix-base/apply/dorm_check</a></p>
