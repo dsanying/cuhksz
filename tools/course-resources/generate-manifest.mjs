@@ -45,7 +45,6 @@ for (const entry of source.files || []) {
   byCourse.set(course, files)
 }
 
-const folders = new Map((source.courseFolders || []).map((item) => [item.course, item]))
 const courses = [...byCourse.entries()]
   .map(([name, files]) => {
     files.sort((a, b) => a.path.localeCompare(b.path, "zh-Hans-CN"))
@@ -54,8 +53,6 @@ const courses = [...byCourse.entries()]
       fileCount: files.length,
       totalSize: files.reduce((sum, file) => sum + file.size, 0),
       latestUpdate: files.reduce((latest, file) => latest > file.updatedAt ? latest : file.updatedAt, ""),
-      folderUrl: folders.get(name)?.lanzouUrl || "",
-      folderPassword: folders.get(name)?.password || "",
       files,
     }
   })

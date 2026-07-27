@@ -57,9 +57,8 @@
           <span class="course-resource-file-main"><b>${escapeHtml(file.name)}</b><small>${escapeHtml(file.parentPath || file.categoryLabel)}</small></span>
           <span class="course-resource-file-meta">${formatSize(file.size)}<small>${formatDate(file.updatedAt)}</small></span>
         </a>`).join('') || '<p class="course-resource-empty">该分类下暂未收录资料。</p>'
-        const folderLink = course.folderUrl ? `<a class="course-resource-folder-link" href="${escapeHtml(course.folderUrl)}" target="_blank" rel="noopener">打开课程文件夹${course.folderPassword ? `（密码：${escapeHtml(course.folderPassword)}）` : ''}</a>` : ''
         return `<section class="course-resource-detail" aria-live="polite">
-          <div class="course-resource-detail-head"><div><button class="course-resource-back" type="button">← 返回课程列表</button><h2>${escapeHtml(course.name)}</h2><p>${course.fileCount} 个文件 · 最近整理于 ${formatDate(course.latestUpdate)}</p></div>${folderLink}</div>
+          <div class="course-resource-detail-head"><div><button class="course-resource-back" type="button">← 返回课程列表</button><h2>${escapeHtml(course.name)}</h2><p>${course.fileCount} 个文件 · 最近整理于 ${formatDate(course.latestUpdate)}</p></div></div>
           <div class="course-resource-filters">${categoryButtons}</div>
           <div class="course-resource-files">${rows}</div>
         </section>`
