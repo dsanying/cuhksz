@@ -116,11 +116,19 @@ async function listFolders(folderId, session) {
 
 async function listFiles(folderId, session) {
   const files = []
+  const seenFileIds = new Set()
   for (let page = 1; ; page += 1) {
     const response = await postTask({ task: "5", folder_id: String(folderId), pg: String(page), vei: session.vei }, session.uid)
     if (response?.zt !== 1) break
-    files.push(...(response.text || []))
-    if (String(response.info) === "0") break
+    const pageFiles = response.text || []
+    const newFiles = pageFiles.filter((entry) => {
+      const id = fileId(entry)
+      if (!id || seenFileIds.has(id)) return false
+      seenFileIds.add(id)
+      return true
+    })
+    files.push(...newFiles)
+    if (String(response.info) === "0" || !pageFiles.length || !newFiles.length) break
   }
   return files
 }
