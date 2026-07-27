@@ -162,6 +162,10 @@ console:
     tags: false
     archive: month
 
+extends:
+  head:
+    - <link rel="stylesheet" href="/cuhksz/css/site.css">
+
 lightbox: true
 mediumZoom: true
 lazyload:

@@ -1,0 +1,86 @@
+/* Contrast corrections for Solitude 4.0.0 in this site's slate colour scheme. */
+[data-theme='dark'] .article-container p a:not(.fancybox),
+[data-theme='dark'] .article-container a:not(.headerlink):not(.fancybox) {
+  color: #a9c7ff;
+  border-bottom-color: rgba(169, 199, 255, 0.7);
+}
+
+[data-theme='dark'] .article-container p a:not(.fancybox):hover,
+[data-theme='dark'] .article-container a:not(.headerlink):not(.fancybox):hover {
+  color: #eff6ff;
+  background-color: rgba(169, 199, 255, 0.18);
+}
+
+[data-theme='light'] .article-container p a:not(.fancybox),
+[data-theme='light'] .article-container a:not(.headerlink):not(.fancybox) {
+  color: #365c9b;
+  border-bottom-color: rgba(54, 92, 155, 0.48);
+}
+
+[data-theme='light'] .article-container p a:not(.fancybox):hover,
+[data-theme='light'] .article-container a:not(.headerlink):not(.fancybox):hover {
+  color: #1e3a6d;
+  background-color: rgba(54, 92, 155, 0.12);
+}
+
+[data-theme='dark'] .article-container blockquote {
+  color: #cbd5e1;
+  background: #272b36;
+  border-color: #475569;
+}
+
+[data-theme='dark'] .article-container blockquote p,
+[data-theme='dark'] .article-container blockquote strong {
+  color: inherit;
+}
+
+[data-theme='light'] .article-container blockquote {
+  color: #475569;
+  background: #f8fafc;
+  border-color: #dbe4f0;
+}
+
+[data-theme='dark'] #card-toc .toc-content .toc-link {
+  color: #cbd5e1;
+}
+
+[data-theme='dark'] #card-toc .toc-content .toc-link:not(.active) span {
+  color: #cbd5e1;
+  opacity: 0.82;
+}
+
+[data-theme='dark'] #card-toc .toc-content .toc-link.active {
+  color: #f8fafc;
+  background: #334155;
+}
+
+[data-theme='dark'] #card-toc .toc-content .toc-link:hover {
+  color: #f8fafc;
+  background: #26364d;
+}
+
+[data-theme='dark'] .category-bar-item.select a {
+  color: #f8fafc;
+  background: #64748b;
+  border-color: #64748b;
+}
+
+[data-theme='dark'] .category-bar-item:not(.select) a,
+[data-theme='dark'] .category-bar-more,
+[data-theme='dark'] .category-bar-next {
+  color: #d5dbe5;
+}
+
+[data-theme='dark'] .card-info .bottom-group .name,
+[data-theme='dark'] .card-info .bottom-group .desc,
+[data-theme='dark'] .card-info .description {
+  color: #f8fafc;
+}
+
+[data-theme='dark'] #nav-console .console_switchbutton label i {
+  background: #e2e8f0;
+}
+
+[data-theme='light'] #nav-console .console_switchbutton label i {
+  background: #334155;
+}
