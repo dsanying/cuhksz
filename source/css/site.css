@@ -98,3 +98,80 @@
   transform: none;
   transition: none;
 }
+
+/* Reflow the author card into a compact vertical contact card. */
+#aside-content .card-info {
+  min-height: 356px;
+}
+
+#aside-content .card-info .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 16px 14px;
+}
+
+#aside-content .card-info .avatar {
+  position: relative;
+  top: auto;
+  right: auto;
+  width: 82px;
+  height: 82px;
+  min-width: 82px;
+  min-height: 82px;
+}
+
+#aside-content .card-info .bottom-group {
+  position: relative;
+  left: auto;
+  bottom: auto;
+  width: 100%;
+  padding: 12px 0 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+#aside-content .card-info .bottom-group .left,
+#aside-content .card-info .bottom-group .social-icons {
+  flex: none;
+}
+
+#aside-content .card-info .bottom-group .left {
+  order: 0;
+  text-align: center;
+}
+
+#aside-content .card-info .bottom-group .name {
+  margin: 0;
+  font-size: 18px;
+}
+
+#aside-content .card-info .bottom-group::before {
+  order: 1;
+  width: 196px;
+  height: 70px;
+  content: '';
+  background: url('/cuhksz/img/dsanying_search.jpg') center / cover no-repeat;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+#aside-content .card-info .bottom-group::after {
+  order: 2;
+  content: '微信公众号 · 暗夜孤残影';
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+#aside-content .card-info .bottom-group .social-icons {
+  order: 3;
+  flex-direction: column;
+}
+
+#aside-content .card-info .bottom-group .social-icons .social-icon i {
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+}
