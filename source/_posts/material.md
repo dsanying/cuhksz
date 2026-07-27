@@ -11,7 +11,7 @@ content_format: html
 
 <h2 id="报到流程参考-2024-年数据"><a href="#报到流程参考-2024-年数据" class="headerlink" title="报到流程参考(2024 年数据)"></a>报到流程参考(2024 年数据)</h2><img src="registry.jpg">
 
-<h2 id="常用中英文对照表"><a href="#常用中英文对照表" class="headerlink" title="常用中英文对照表"></a>常用中英文对照表</h2><p><a target="_blank" rel="noopener" href="https://github.com/dsanying/CUHKSZ_sourse/blob/main/%E5%85%B6%E5%AE%83%E8%B5%84%E6%96%99/%E6%B8%AF%E4%B8%AD%E6%B7%B1%E5%B8%B8%E8%A7%81%E4%B8%AD%E8%8B%B1%E6%96%87%E5%AF%B9%E7%85%A7.pdf">港中深常见英文缩写、单词和短语.pdf</a></p>
+<h2 id="常用中英文对照表"><a href="#常用中英文对照表" class="headerlink" title="常用中英文对照表"></a>常用中英文对照表</h2><p>原文件链接已下线；如有可用版本，欢迎发送至 <a href="mailto:dsanying@qq.com">dsanying@qq.com</a> 补充。</p>
 <h2 id="学校相关数据参考信息"><a href="#学校相关数据参考信息" class="headerlink" title="学校相关数据参考信息"></a>学校相关数据参考信息</h2><blockquote>
 <p>数据来源于学校官方</p>
 </blockquote>
@@ -64,4 +64,4 @@ content_format: html
   <tr><td>U 不及格</td><td>U</td><td>不计入积点</td></tr>
 </table>
 
-<h3 id="学生体测评分表"><a href="#学生体测评分表" class="headerlink" title="学生体测评分表"></a>学生体测评分表</h3><p><a target="_blank" rel="noopener" href="https://github.com/dsanying/CUHKSZ_sourse/blob/main/%E5%85%B6%E5%AE%83%E8%B5%84%E6%96%99/%E5%AD%A6%E7%94%9F%E4%BD%93%E8%B4%A8%E5%81%A5%E5%BA%B7%E6%B5%8B%E8%AF%95%E8%AF%84%E5%88%86%E8%A1%A8.pdf">学生体质健康测试评分表.pdf</a></p>
+<h3 id="学生体测评分表"><a href="#学生体测评分表" class="headerlink" title="学生体测评分表"></a>学生体测评分表</h3><p>原文件链接已下线；如有可用版本，欢迎发送至 <a href="mailto:dsanying@qq.com">dsanying@qq.com</a> 补充。</p>

@@ -113,7 +113,7 @@ aside:
       link: https://github.com/dsanying/cuhksz
   card_announcement:
     enable: true
-    content: '<strong>资料征集</strong><br>持续收集电子教材、历年 Exam/Quiz、Cheating Paper 等课程资料。请注明“届别 + 网名/姓名”；未注明默认匿名。<br><a href="mailto:dsanying@qq.com">邮件提交 →</a>'
+    content: '<strong>资料征集</strong><br>持续收集电子教材、历年 Exam/Quiz、Cheating Paper 等课程资料。请发送至 <a href="mailto:dsanying@qq.com">dsanying@qq.com</a>，并注明“届别 + 网名/姓名”；未注明默认匿名。'
   card_recent_post:
     enable: false
     limit: 5
@@ -195,8 +195,10 @@ font:
 inject:
   head:
     - <link rel="stylesheet" href="/cuhksz/css/butterfly-overrides.css">
+    - <link rel="stylesheet" href="/cuhksz/css/course-resources.css">
   bottom:
     - <script defer src="/cuhksz/js/card-click.js"></script>
+    - <script defer src="/cuhksz/js/course-resources.js"></script>
 
 pjax:
   enable: false

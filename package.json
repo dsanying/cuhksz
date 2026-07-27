@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "hexo clean",
     "dev": "hexo server",
+    "prebuild": "node tools/course-resources/generate-manifest.mjs",
     "build": "hexo generate",
     "preview": "hexo server"
   },
