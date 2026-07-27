@@ -4,3 +4,8 @@
 #sidebar-menus > .menus_items + .sidebar-menu-item-title + .card-tags {
   display: none;
 }
+
+/* Keep the site copyright while hiding the Hexo and Solitude attribution links. */
+#footer .beian-group {
+  display: none;
+}
