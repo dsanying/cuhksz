@@ -17,8 +17,9 @@ const outputFlag = args.indexOf("--output")
 const outputPath = resolve(root, outputFlag >= 0 ? args[outputFlag + 1] : "source/course-resources/lanzou-manifest.json")
 const rootFolderId = process.env.LANZOU_CLASSIC_ROOT_FOLDER_ID || "13698202"
 const apiOrigin = "https://up.woozooo.com"
-const requestDelay = Number(process.env.LANZOU_CLASSIC_REQUEST_DELAY || 260)
+const requestDelay = Number(process.env.LANZOU_CLASSIC_REQUEST_DELAY || 100)
 const requestTimeout = Number(process.env.LANZOU_CLASSIC_REQUEST_TIMEOUT || 15000)
+const rootConcurrency = Math.max(1, Math.min(3, Number(process.env.LANZOU_CLASSIC_ROOT_CONCURRENCY || 3)))
 const previousSourcePath = resolve(root, process.env.COURSE_RESOURCE_PREVIOUS_SOURCE_PATH || "source/course-resources/lanzou-manifest.json")
 const previousLinks = new Map((() => {
   try {
@@ -28,6 +29,13 @@ const previousLinks = new Map((() => {
     return []
   }
 })().filter(([, url]) => url))
+const previousSource = (() => {
+  try {
+    return JSON.parse(readFileSync(previousSourcePath, "utf8"))
+  } catch {
+    return null
+  }
+})()
 
 function firefoxCookieHeaders() {
   const profilesRoot = resolve(process.env.HOME || "", "Library/Application Support/Firefox/Profiles")
@@ -181,7 +189,7 @@ function parseSize(value) {
 function entryDate(entry) {
   const raw = first(entry, ["time", "upload_time", "updated_at", "ctime"])
   const parsed = raw ? new Date(raw) : null
-  return parsed && !Number.isNaN(parsed.valueOf()) ? parsed.toISOString() : new Date().toISOString()
+  return parsed && !Number.isNaN(parsed.valueOf()) ? parsed.toISOString() : ""
 }
 
 function directUrl(entry, share) {
@@ -274,9 +282,9 @@ async function crawlFolder(currentFolderId, pathSegments) {
 
 const rootFolders = await listFolders(rootFolderId, session)
 const courseFolders = []
-console.log(`开始扫描蓝奏云根目录：${rootFolders.length} 个一级目录。`)
+console.log(`开始扫描蓝奏云根目录：${rootFolders.length} 个一级目录，并发 ${rootConcurrency}。`)
 let scannedRootFolderCount = 0
-const filesByCourse = await concurrentMap(rootFolders, 1, async (entry) => {
+const filesByCourse = await concurrentMap(rootFolders, rootConcurrency, async (entry) => {
   const course = entryName(entry)
   const courseFolderId = folderId(entry)
   if (!courseFolderId) return []
@@ -298,9 +306,18 @@ const manifest = {
   generatedAt: new Date().toISOString(),
   source: "lanzou-classic-readonly",
   rootFolderId,
-  files: filesByCourse.flat(),
-  courseFolders,
-  failures,
+  files: filesByCourse.flat().sort((a, b) => a.path.localeCompare(b.path, "zh-Hans-CN")),
+  courseFolders: courseFolders.sort((a, b) => `${a.course}/${a.folderId}`.localeCompare(`${b.course}/${b.folderId}`, "zh-Hans-CN")),
+  failures: failures.sort((a, b) => a.path.localeCompare(b.path, "zh-Hans-CN")),
+}
+
+if (previousSource) {
+  const previousComparable = { ...previousSource, generatedAt: "" }
+  const currentComparable = { ...manifest, generatedAt: "" }
+  if (JSON.stringify(previousComparable) === JSON.stringify(currentComparable)) {
+    manifest.generatedAt = previousSource.generatedAt
+    console.log("蓝奏云目录没有实质变化，保留现有索引时间戳。")
+  }
 }
 
 writeFileSync(outputPath, `${JSON.stringify(manifest)}\n`)

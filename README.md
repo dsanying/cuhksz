@@ -37,10 +37,14 @@ npm run build
 日常维护可直接运行一键命令：
 
 ```bash
-npm run course:publish
+./sync-course-index.sh
 ```
 
-它会依次同步、构建、检查差异，并且**只暂存**两个课程索引文件；有变化才创建 `chore(course): 同步蓝奏云课程索引` 提交并推送。推送后由仓库现有的 GitHub Pages 流程部署。它不会暂存或提交其他正在编辑的文件，也不会对蓝奏云执行写操作。
+首次使用时为脚本授予执行权限：`chmod +x sync-course-index.sh`。也可直接使用等价的 `npm run course:publish`。
+
+它会依次校验分支和暂存区、同步、构建、检查差异，并且**只暂存**两个课程索引文件；有变化才创建 `chore(course): 同步蓝奏云课程索引` 提交并推送。推送后由仓库现有的 GitHub Pages 流程部署。它不会暂存或提交其他正在编辑的文件，也不会对蓝奏云执行写操作。
+
+为缩短运行时间，扫描会复用已有文件直链、以 3 个一级目录并发读取，并在目录内容没有实质变化时保留原索引时间戳，因此不会产生无意义的提交与部署。默认限速为每个工作线程 100ms；若遇蓝奏云限流，可临时改为 `LANZOU_CLASSIC_ROOT_CONCURRENCY=1 LANZOU_CLASSIC_REQUEST_DELAY=300 ./sync-course-index.sh`。
 
 ## 课程资料维护规范
 
