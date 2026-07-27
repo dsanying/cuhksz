@@ -6,7 +6,7 @@
  * It reads the owner's folder tree and produces the raw manifest consumed by
  * generate-manifest.mjs. It never uploads, deletes or changes Lanzou files.
  */
-import { copyFileSync, existsSync, mkdtempSync, readdirSync, rmSync, writeFileSync } from "node:fs"
+import { copyFileSync, existsSync, mkdtempSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs"
 import { resolve } from "node:path"
 import { tmpdir } from "node:os"
 import { execFileSync } from "node:child_process"
@@ -31,13 +31,19 @@ const previousLinks = new Map((() => {
 function firefoxCookieHeader() {
   const profilesRoot = resolve(process.env.HOME || "", "Library/Application Support/Firefox/Profiles")
   if (!existsSync(profilesRoot)) return ""
-  for (const profile of readdirSync(profilesRoot)) {
-    const cookieDb = resolve(profilesRoot, profile, "cookies.sqlite")
-    if (!existsSync(cookieDb)) continue
+  const profiles = readdirSync(profilesRoot)
+    .map((profile) => ({ profile, cookieDb: resolve(profilesRoot, profile, "cookies.sqlite") }))
+    .filter(({ cookieDb }) => existsSync(cookieDb))
+    .sort((a, b) => statSync(b.cookieDb).mtimeMs - statSync(a.cookieDb).mtimeMs)
+  for (const { cookieDb } of profiles) {
     const temporaryDirectory = mkdtempSync(resolve(tmpdir(), "lanzou-cookie-"))
     const temporaryDb = resolve(temporaryDirectory, "cookies.sqlite")
     try {
       copyFileSync(cookieDb, temporaryDb)
+      for (const suffix of ["-wal", "-shm"]) {
+        const sidecar = `${cookieDb}${suffix}`
+        if (existsSync(sidecar)) copyFileSync(sidecar, `${temporaryDb}${suffix}`)
+      }
       const raw = execFileSync("sqlite3", [temporaryDb, "SELECT host || '|' || name || '|' || value FROM moz_cookies WHERE host LIKE '%woozooo%' ORDER BY host, name"], { encoding: "utf8" })
       const cookies = raw.trim().split("\n").filter(Boolean).flatMap((row) => {
         const [host, name, ...value] = row.split("|")
@@ -189,6 +195,22 @@ if (args.includes("--inspect")) {
     folderFields: Object.keys(sampleFolder || {}).sort(),
     fileFields: Object.keys(files[0] || {}).sort(),
   }, null, 2))
+  process.exit(0)
+}
+
+if (args.includes("--list-folders")) {
+  const collectFolderPaths = async (parentId, path = []) => {
+    const children = await listFolders(parentId, session)
+    const results = []
+    for (const child of children) {
+      const name = entryName(child)
+      const nextPath = [...path, name]
+      results.push(nextPath.join("/"))
+      results.push(...await collectFolderPaths(folderId(child), nextPath))
+    }
+    return results
+  }
+  console.log(JSON.stringify(await collectFolderPaths(rootFolderId), null, 2))
   process.exit(0)
 }
 
