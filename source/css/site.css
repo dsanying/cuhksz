@@ -9,3 +9,8 @@
 #footer .beian-group {
   display: none;
 }
+
+/* The homepage already lists every article, so the duplicate archive entry is hidden. */
+#category-bar-items #archives {
+  display: none;
+}

@@ -114,8 +114,7 @@ font:
 
 footer:
   information:
-    left:
-      GitHub: https://github.com/dsanying/cuhksz || fab fa-github
+    left: {}
 
 loading:
   fullpage: false
