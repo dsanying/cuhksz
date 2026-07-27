@@ -22,6 +22,7 @@ function classify(path) {
 
 const source = JSON.parse(readFileSync(sourcePath, "utf8"))
 const byCourse = new Map()
+const seenFilePaths = new Set()
 const verifiedFolders = new Map(
   (source.courseFolders || [])
     .filter((folder) => folder.verified === true && folder.lanzouUrl)
@@ -32,6 +33,9 @@ for (const entry of source.files || []) {
   const path = String(entry.path || "").replaceAll("\\", "/")
   const [course, ...rest] = path.split("/")
   if (!course || !rest.length) continue
+  // 蓝奏云目录接口偶尔会重复返回同一路径；页面索引只保留一份。
+  if (seenFilePaths.has(path)) continue
+  seenFilePaths.add(path)
   const [category, categoryLabel] = classify(path)
   const name = entry.name || rest.at(-1)
   const files = byCourse.get(course) || []

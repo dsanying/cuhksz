@@ -19,11 +19,28 @@ npm run build
 
 ### 课程资料索引同步
 
-页面会优先读取 `course-index` 数据分支中的 `manifest.json`，读取失败时再回退到随网站发布的本地索引。因此仅更新资料索引不会触发 GitHub Pages 部署。
+索引只在本机手动更新，不使用 GitHub Action、定时任务或仓库 Secret。资料文件继续托管在蓝奏云；仓库只提交由扫描生成的索引文件。
 
-`.github/workflows/sync-course-index.yml` 每 6 小时以只读方式扫描蓝奏云目录：只同步文件名、大小、更新时间和下载入口，不会上传、删除或移动网盘文件。它只会为已确认含有文件的课程目录生成“打开课程文件夹”入口；空目录不会显示该入口。
+首次使用或登录态失效时，先在本机 Firefox 登录 [蓝奏云后台](https://up.woozooo.com/mydisk.php)，再在本仓库运行：
 
-首次启用或蓝奏云会话失效时，先在本机 Firefox 登录蓝奏云后台，然后更新仓库 Secret `LANZOU_CLASSIC_COOKIE`。工作流检测不到该 Secret 时会跳过，不会报错或部署网站。可选环境变量 `LANZOU_CLASSIC_ROOT_FOLDER_ID` 默认为当前课程资料根目录 `13698202`。
+```bash
+npm run course:inspect  # 只验证登录态和接口字段，不写文件
+npm run course:sync     # 只读扫描并更新两个本地索引文件
+git diff -- source/course-resources/
+npm run build
+```
+
+`course:sync` 会更新 `source/course-resources/lanzou-manifest.json`（蓝奏云原始目录）和 `source/course-resources/manifest.json`（页面使用的索引）。扫描过程只读取目录、文件名、大小、时间与分享入口，绝不上传、删除、移动或重命名蓝奏云文件。确认差异无误后，再按正常流程提交、推送并部署网站。
+
+默认课程资料根目录是蓝奏云的 `13698202`；如日后更换根目录，可临时指定 `LANZOU_CLASSIC_ROOT_FOLDER_ID=<新目录 ID> npm run course:sync`。
+
+日常维护可直接运行一键命令：
+
+```bash
+npm run course:publish
+```
+
+它会依次同步、构建、检查差异，并且**只暂存**两个课程索引文件；有变化才创建 `chore(course): 同步蓝奏云课程索引` 提交并推送。推送后由仓库现有的 GitHub Pages 流程部署。它不会暂存或提交其他正在编辑的文件，也不会对蓝奏云执行写操作。
 
 ## 课程资料维护规范
 

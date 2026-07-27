@@ -6,6 +6,9 @@
   "scripts": {
     "clean": "hexo clean",
     "dev": "hexo server",
+    "course:inspect": "node tools/course-resources/sync-lanzou-index.mjs --inspect",
+    "course:sync": "node tools/course-resources/sync-lanzou-index.mjs && node tools/course-resources/generate-manifest.mjs",
+    "course:publish": "node tools/course-resources/publish-course-index.mjs",
     "prebuild": "node tools/course-resources/generate-manifest.mjs",
     "build": "hexo generate",
     "preview": "hexo server"

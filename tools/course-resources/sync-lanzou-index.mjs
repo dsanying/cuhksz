@@ -6,7 +6,7 @@
  * It reads the owner's folder tree and produces the raw manifest consumed by
  * generate-manifest.mjs. It never uploads, deletes or changes Lanzou files.
  */
-import { copyFileSync, existsSync, mkdtempSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs"
+import { copyFileSync, existsSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs"
 import { resolve } from "node:path"
 import { tmpdir } from "node:os"
 import { execFileSync } from "node:child_process"
@@ -29,13 +29,14 @@ const previousLinks = new Map((() => {
   }
 })().filter(([, url]) => url))
 
-function firefoxCookieHeader() {
+function firefoxCookieHeaders() {
   const profilesRoot = resolve(process.env.HOME || "", "Library/Application Support/Firefox/Profiles")
-  if (!existsSync(profilesRoot)) return ""
+  if (!existsSync(profilesRoot)) return []
   const profiles = readdirSync(profilesRoot)
     .map((profile) => ({ profile, cookieDb: resolve(profilesRoot, profile, "cookies.sqlite") }))
     .filter(({ cookieDb }) => existsSync(cookieDb))
     .sort((a, b) => statSync(b.cookieDb).mtimeMs - statSync(a.cookieDb).mtimeMs)
+  const headers = []
   for (const { cookieDb } of profiles) {
     const temporaryDirectory = mkdtempSync(resolve(tmpdir(), "lanzou-cookie-"))
     const temporaryDb = resolve(temporaryDirectory, "cookies.sqlite")
@@ -48,19 +49,22 @@ function firefoxCookieHeader() {
       const raw = execFileSync("sqlite3", [temporaryDb, "SELECT host || '|' || name || '|' || value FROM moz_cookies WHERE host LIKE '%woozooo%' ORDER BY host, name"], { encoding: "utf8" })
       const cookies = raw.trim().split("\n").filter(Boolean).flatMap((row) => {
         const [host, name, ...value] = row.split("|")
-        return [".woozooo.com", "up.woozooo.com"].includes(host) ? [`${name}=${value.join("|")}`] : []
+        // 蓝奏云登录会在 up、accounts 等子域写入 Cookie；请求脚本自行
+        // 发送 Cookie 头，因此需要保留同一主域的完整登录态。
+        return host.endsWith("woozooo.com") ? [`${name}=${value.join("|")}`] : []
       })
-      if (cookies.length) return cookies.join("; ")
+      if (cookies.length) headers.push(cookies.join("; "))
     } catch {
       // Try the next Firefox profile.
     } finally {
       rmSync(temporaryDirectory, { recursive: true, force: true })
     }
   }
-  return ""
+  return [...new Set(headers)]
 }
 
-const cookie = process.env.LANZOU_CLASSIC_COOKIE || firefoxCookieHeader()
+const firefoxCookies = firefoxCookieHeaders()
+let cookie = process.env.LANZOU_CLASSIC_COOKIE || firefoxCookies[0] || ""
 if (!cookie) throw new Error("未找到蓝奏云登录态。请设置 LANZOU_CLASSIC_COOKIE，或先在 Firefox 登录蓝奏云网页版。")
 
 const sleep = (milliseconds) => new Promise((resolveSleep) => setTimeout(resolveSleep, milliseconds))
@@ -102,11 +106,15 @@ async function postTask(payload, uid = "") {
 }
 
 async function sessionInfo() {
-  const html = await request(`${apiOrigin}/mydisk.php`)
-  const uid = html.match(/doupload\.php\?uid=(\d+)/)?.[1] || html.match(/[?&]u=(\d+)/)?.[1] || process.env.LANZOU_CLASSIC_UID
-  const vei = html.match(/'vei'\s*:\s*'([^']+)'/)?.[1] || html.match(/"vei"\s*:\s*"([^"]+)"/)?.[1] || process.env.LANZOU_CLASSIC_VEI || "221113"
-  if (!uid) throw new Error("蓝奏云登录态已失效，无法识别用户 ID。")
-  return { uid, vei }
+  const candidates = [...new Set([cookie, ...firefoxCookies].filter(Boolean))]
+  for (const candidate of candidates) {
+    cookie = candidate
+    const html = await request(`${apiOrigin}/mydisk.php`)
+    const uid = html.match(/doupload\.php\?uid=(\d+)/)?.[1] || html.match(/[?&]u=(\d+)/)?.[1] || process.env.LANZOU_CLASSIC_UID
+    const vei = html.match(/'vei'\s*:\s*'([^']+)'/)?.[1] || html.match(/"vei"\s*:\s*"([^"]+)"/)?.[1] || process.env.LANZOU_CLASSIC_VEI || "221113"
+    if (uid) return { uid, vei }
+  }
+  throw new Error("蓝奏云登录态已失效，无法识别用户 ID。请先在 Firefox 登录蓝奏云后台后重试。")
 }
 
 async function listFolders(folderId, session) {
@@ -266,11 +274,15 @@ async function crawlFolder(currentFolderId, pathSegments) {
 
 const rootFolders = await listFolders(rootFolderId, session)
 const courseFolders = []
+console.log(`开始扫描蓝奏云根目录：${rootFolders.length} 个一级目录。`)
+let scannedRootFolderCount = 0
 const filesByCourse = await concurrentMap(rootFolders, 1, async (entry) => {
   const course = entryName(entry)
   const courseFolderId = folderId(entry)
   if (!courseFolderId) return []
   const files = await crawlFolder(courseFolderId, [course])
+  scannedRootFolderCount += 1
+  console.log(`[${scannedRootFolderCount}/${rootFolders.length}] ${course}：${files.length} 个文件`)
   if (!files.length) return []
   try {
     const share = await folderShare(courseFolderId)
