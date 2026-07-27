@@ -3,9 +3,6 @@ title: "书院信息"
 slug: dorm
 date: "2024-09-03 10:30:43"
 category: "校园"
-tags:
-  - "新生"
-  - "住宿"
 source: "已从 dorm/index.html 的发布产物恢复"
 content_format: html
 ---

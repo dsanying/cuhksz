@@ -57,13 +57,13 @@ aside:
     page: true
     vague: true
   tags:
-    enable: true
+    enable: false
     limit: 12
   siteinfo:
     postcount: true
-    wordcount: false
-    pv: false
-    uv: false
+    wordcount: true
+    pv: true
+    uv: true
     updatetime: true
     runtimeenable: true
     runtime: '2024-08-20 00:00:00'
@@ -75,12 +75,14 @@ index_post_list:
 
 page:
   archives: 0
+  tags: false
 
 post:
   default:
     locate: Shenzhen, China
     copyright:
-      enable: false
+      enable: true
+      author: /img/avatar.jpg
   meta:
     date: true
     updated: true
@@ -135,7 +137,7 @@ rightside:
   percent: true
   hide:
     enable: true
-    translate: false
+    translate: true
     mode: true
     aside: true
 
@@ -144,6 +146,44 @@ search:
   type: local
   local:
     preload: true
+
+highlight:
+  enable: true
+  limit: 200
+  copy: true
+  expand: true
+  theme: mac
+  color: default
+
+pwa:
+  enable: true
+  manifest: /manifest.json
+  theme_color: '#27272a'
+  mask_icon: /img/logo.png
+  apple_touch_icon: /img/logo.png
+  bookmark_icon: /img/logo.png
+  favicon_32_32: /img/pwa/favicon_32.png
+  favicon_16_16: /img/pwa/favicon_16.png
+
+verify_site:
+  - name: msvalidate.01
+    content: 394CFA1E21959CC3AF8C3B1E67448E75
+  - name: google-site-verification
+    content: 4cifgezwL6njlN07d6eHkI3qGhmCYo9x4rsWcoOE0-E
+
+wordcount: true
+busuanzi: true
+
+console:
+  enable: true
+  card:
+    tags: false
+    archive: month
+
+extends:
+  head:
+    - <link rel="stylesheet" href="/cuhksz/css/site.css">
+    - <script>navigator.serviceWorker&&navigator.serviceWorker.register('/cuhksz/sw.js',{scope:'/cuhksz/'}).catch(console.error)</script>
 
 lightbox: true
 mediumZoom: true

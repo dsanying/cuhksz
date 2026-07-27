@@ -3,8 +3,6 @@ title: "PED 体育课测评"
 slug: PED
 date: "2024-08-23 13:06:48"
 category: "学业"
-tags:
-  - "选课"
 source: "已从 PED/index.html 的发布产物恢复"
 content_format: html
 ---

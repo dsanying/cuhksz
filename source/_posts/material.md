@@ -3,8 +3,6 @@ title: "重要资料"
 slug: material
 date: "2024-09-03 13:10:49"
 category: "资源"
-tags:
-  - "新生"
 source: "已从 material/index.html 的发布产物恢复"
 content_format: html
 ---

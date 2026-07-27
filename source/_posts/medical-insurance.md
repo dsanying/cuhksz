@@ -3,9 +3,6 @@ title: "港中深医保指南"
 slug: medical-insurance
 date: "2024-09-04 22:31:51"
 category: "校园"
-tags:
-  - "新生"
-  - "生活"
 source: "已从 medical-insurance/index.html 的发布产物恢复"
 content_format: html
 ---

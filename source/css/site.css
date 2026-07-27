@@ -1,0 +1,6 @@
+/* Solitude 4.0.0 currently renders the sidebar tag area even when aside.tags.enable is false. */
+#sidebar-menus .site-data > .data-item:nth-child(3),
+#sidebar-menus > .menus_items + .sidebar-menu-item-title,
+#sidebar-menus > .menus_items + .sidebar-menu-item-title + .card-tags {
+  display: none;
+}

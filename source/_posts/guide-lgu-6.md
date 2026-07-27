@@ -3,8 +3,6 @@ title: "教科书与论文文献获取指南"
 slug: guide-lgu-6
 date: "2025-09-02 18:51:02"
 category: "资源"
-tags:
-  - "教材"
 reprint: true
 source: "已从 guide-lgu-6/index.html 的发布产物恢复"
 content_format: html

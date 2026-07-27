@@ -3,9 +3,6 @@ title: "如何快速高效地上手SIS"
 slug: guide-lgu-2
 date: "2025-09-02 16:46:44"
 category: "学业"
-tags:
-  - "数字校园"
-  - "选课"
 reprint: true
 source: "已从 guide-lgu-2/index.html 的发布产物恢复"
 content_format: html

@@ -1,0 +1,19 @@
+{
+  "name": "港中深资源站",
+  "short_name": "港中深资源",
+  "description": "面向港中深学生的校园、课程与生活资源导航。",
+  "id": "/cuhksz/",
+  "start_url": "/cuhksz/",
+  "scope": "/cuhksz/",
+  "display": "standalone",
+  "theme_color": "#27272a",
+  "background_color": "#27272a",
+  "icons": [
+    {
+      "src": "/cuhksz/img/logo.png",
+      "sizes": "255x255",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

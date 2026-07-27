@@ -3,8 +3,6 @@ title: "SALL Centre使用指南"
 slug: guide-lgu-5
 date: "2025-09-02 18:42:55"
 category: "学业"
-tags:
-  - "学习支持"
 reprint: true
 source: "已从 guide-lgu-5/index.html 的发布产物恢复"
 content_format: html

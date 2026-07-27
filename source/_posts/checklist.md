@@ -3,8 +3,6 @@ title: "入学清单"
 slug: checklist
 date: "2025-08-29 19:44:45"
 category: "校园"
-tags:
-  - "新生"
 source: "已从 checklist/index.html 的发布产物恢复"
 content_format: html
 ---
