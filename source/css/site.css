@@ -84,3 +84,8 @@
 [data-theme='light'] #nav-console .console_switchbutton label i {
   background: #334155;
 }
+
+/* The theme falls back to its own name when the author-card greeting is empty. */
+#aside-content .card-info #sayhi {
+  display: none;
+}
