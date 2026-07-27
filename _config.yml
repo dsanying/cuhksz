@@ -59,7 +59,7 @@ theme: solitude
 
 search:
   path: search.xml
-  field: post
+  field: all
   content: true
   format: html
 
