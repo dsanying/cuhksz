@@ -3,11 +3,11 @@
   cursor: pointer;
 }
 
-/* 宽屏下采用三列紧凑卡片；侧栏仍保留足够宽度。 */
+/* 保留侧栏时主栏采用双列，避免标题与元信息在窄卡片内被迫断行。 */
 @media screen and (min-width: 1100px) {
   #recent-posts.masonry .recent-post-items {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
     height: auto !important;
   }
