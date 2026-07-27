@@ -19,10 +19,10 @@ nav:
       书院与住宿: /dorm/ || fas fa-building-columns
       校园地图: /map/ || fas fa-map-location-dot
       学校联系方式: /contact-school/ || fas fa-address-book
+      IT 指南: /guide-IT/ || fas fa-laptop-code
     学业成长:
       课程资料: /course/ || fas fa-book-open
       选课与攻略: /categories/学业/ || fas fa-graduation-cap
-      数字校园: /guide-IT/ || fas fa-laptop-code
     资源社区:
       重要资料: /material/ || fas fa-folder-open
       社群与资源: /social/ || fas fa-users
