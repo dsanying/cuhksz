@@ -1,0 +1,38 @@
+---
+import '../styles/global.css';
+
+const { title = '港中深资源站', description = '给学生的一站式资源导航' } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#123f3a" />
+    <title>{title}</title>
+  </head>
+  <body class="portal-body">
+    <a class="skip-link" href="#content">跳到正文</a>
+    <header class="portal-nav">
+      <a class="brand" href={`${base}/`} aria-label="港中深资源站首页">
+        <span class="brand-mark">SZ</span>
+        <span>港中深<br /><em>RESOURCE HUB</em></span>
+      </a>
+      <nav aria-label="主导航">
+        <a href={`${base}/#explore`}>资源导航</a>
+        <a href={`${base}/map/`}>校园地图</a>
+        <a href={`${base}/checklist/`}>新生指南</a>
+        <a href={`${base}/social/`}>社群资源</a>
+      </nav>
+      <a class="nav-cta" href={`${base}/checklist/`}>从这里开始 <span>↗</span></a>
+    </header>
+    <main id="content"><slot /></main>
+    <footer class="portal-footer">
+      <span>港中深资源站 · 学生共建的校园资源入口</span>
+      <a href="https://github.com/dsanying/cuhksz">GitHub ↗</a>
+    </footer>
+  </body>
+</html>
