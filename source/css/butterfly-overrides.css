@@ -2,3 +2,54 @@
 #recent-posts .recent-post-item:not(.ads-wrap) {
   cursor: pointer;
 }
+
+/* 宽屏下采用三列紧凑卡片；侧栏仍保留足够宽度。 */
+@media screen and (min-width: 1100px) {
+  #recent-posts.masonry .recent-post-items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    height: auto !important;
+  }
+
+  #recent-posts.masonry .recent-post-item {
+    position: static !important;
+    width: auto;
+    margin-bottom: 0;
+    transform: none !important;
+  }
+}
+
+.index-announcement {
+  margin: 0 0 20px;
+  padding: 13px 17px;
+  border-left: 4px solid #48515c;
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--font-color);
+  box-shadow: var(--card-box-shadow);
+}
+
+.index-category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 18px;
+}
+
+.index-category-filter button {
+  padding: 5px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: var(--card-bg);
+  color: var(--font-color);
+  font: inherit;
+  cursor: pointer;
+}
+
+.index-category-filter button.is-active,
+.index-category-filter button:hover {
+  border-color: #48515c;
+  background: #48515c;
+  color: #fff;
+}

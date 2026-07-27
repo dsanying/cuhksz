@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "hexo": "^8.1.2",
+    "hexo-butterfly-extjs": "^1.5.7",
     "hexo-cli": "^4.3.2",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",

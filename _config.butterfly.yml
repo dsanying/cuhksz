@@ -66,6 +66,18 @@ toc:
   expand: false
   scroll_percent: true
 
+# 文章分享、图片查看与系列导航。
+share:
+  use: sharejs
+  sharejs:
+    sites: wechat,weibo,qq
+lightbox: medium_zoom
+series:
+  enable: true
+  orderBy: date
+  order: 1
+  number: true
+
 post_copyright:
   enable: true
   decode: false
@@ -77,7 +89,7 @@ search:
   use: local_search
   placeholder: 搜索站内文章
   local_search:
-    preload: false
+    preload: true
     top_n_per_article: 1
     unescape: true
 
@@ -100,24 +112,39 @@ aside:
       text: GitHub
       link: https://github.com/dsanying/cuhksz
   card_announcement:
-    enable: false
-  card_recent_post:
     enable: true
+    content: '资料与攻略持续整理；如发现失效链接或内容问题，欢迎通过“关于”页反馈。'
+  card_recent_post:
+    enable: false
     limit: 5
     sort: date
   card_categories:
-    enable: true
+    enable: false
     limit: 8
     expand: none
   card_tags:
     enable: false
   card_archives:
-    enable: false
+    enable: true
+    type: yearly
+    order: -1
+    limit: 8
   card_webinfo:
     enable: true
     post_count: true
     last_push_date: true
     runtime_date: 2024/08/21 00:00:00
+
+# 迁移旧站已有的站点统计：保留总浏览量，隐藏独立访客数。
+busuanzi:
+  site_uv: false
+  site_pv: true
+  page_pv: true
+wordcount:
+  enable: true
+  post_wordcount: false
+  min2read: false
+  total_wordcount: true
 
 footer:
   nav:
@@ -131,7 +158,7 @@ footer:
 darkmode:
   enable: true
   button: true
-  autoChangeMode: false
+  autoChangeMode: 1
 
 readmode: true
 rightside_scroll_percent: true
@@ -174,6 +201,24 @@ inject:
 pjax:
   enable: false
 lazyload:
-  enable: false
+  enable: true
+  native: true
+  field: site
+photofigcaption: true
 pwa:
   enable: false
+
+# 从旧站迁移的站长验证信息；不含任何新增的第三方分析服务。
+site_verification:
+  - name: msvalidate.01
+    content: 394CFA1E21959CC3AF8C3B1E67448E75
+  - name: google-site-verification
+    content: 4cifgezwL6njlN07d6eHkI3qGhmCYo9x4rsWcoOE0-E
+
+Open_Graph_meta:
+  enable: true
+
+# 内置资源及第三方资源均从本地生成目录加载。
+CDN:
+  internal_provider: local
+  third_party_provider: local
