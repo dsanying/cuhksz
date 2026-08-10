@@ -6,7 +6,7 @@ updated: "2026-07-27 16:10:00"
 category: "资源"
 ---
 
-<div id="course-resource-app" data-manifest="/cuhksz/course-resources/manifest.json" data-live-manifest="https://raw.githubusercontent.com/dsanying/cuhksz/course-index/manifest.json">
+<div id="course-resource-app" data-manifest="/cuhksz/course-resources/aliyun-manifest.json">
   <p class="course-resource-loading">正在加载课程资料索引…</p>
 </div>
 
