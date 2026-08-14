@@ -2,6 +2,7 @@
 .scan-resource { display: flex; flex-direction: column; min-width: 0; padding: 1rem; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 8px; box-shadow: var(--card-box-shadow); }
 .scan-resource__image { position: relative; width: 100%; aspect-ratio: 1; margin-bottom: .85rem; overflow: hidden; background: var(--text-bg-hover); border-radius: 6px; }
 .scan-resource__image img { position: absolute; inset: 0; display: block; width: 100% !important; height: 100% !important; max-width: none; max-height: none; object-fit: contain; }
+.scan-resource__image img:not(.medium-zoom-image--opened) { cursor: zoom-in; }
 .scan-resource h3 { margin: 0; color: var(--font-color); font-size: 1rem; line-height: 1.45; }
 .scan-resource p { margin: .28rem 0 0; color: var(--font-color); font-size: .85rem; opacity: .68; }
 @media screen and (max-width: 1024px) { .scan-resource-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
