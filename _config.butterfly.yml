@@ -198,8 +198,10 @@ inject:
     - <link rel="stylesheet" href="/cuhksz/css/butterfly-overrides.css">
     - <link rel="stylesheet" href="/cuhksz/css/course-resources.css">
     - <link rel="stylesheet" href="/cuhksz/css/campus-terms.css">
+    - <link rel="stylesheet" href="/cuhksz/css/resource-search.css">
   bottom:
     - <script defer src="/cuhksz/js/card-click.js"></script>
+    - <script defer src="/cuhksz/js/resource-search.js"></script>
     - <script defer src="/cuhksz/js/course-resources.js"></script>
     - <script defer src="/cuhksz/js/campus-terms.js"></script>
 

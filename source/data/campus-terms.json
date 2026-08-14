@@ -1,5 +1,6 @@
 {
   "source": "https://ablu6669.github.io/zzh-campus-guide/",
+  "officialSource": "https://www.cuhk.edu.cn/en/page/17430",
   "updatedAt": "2026-08-14T09:45:40.524Z",
   "terms": [
     {
@@ -1561,6 +1562,78 @@
       "english": "Zoom",
       "fullName": "",
       "chinese": "用来上网课、开会的平台"
+    },
+    {
+      "type": "term",
+      "english": "School of Humanities and Social Science",
+      "fullName": "",
+      "chinese": "人文社科学院"
+    },
+    {
+      "type": "term",
+      "english": "School of Public Policy",
+      "fullName": "",
+      "chinese": "公共政策学院"
+    },
+    {
+      "type": "term",
+      "english": "School of Artificial Intelligence",
+      "fullName": "",
+      "chinese": "人工智能学院"
+    },
+    {
+      "type": "term",
+      "english": "Graduate School",
+      "fullName": "",
+      "chinese": "研究生院"
+    },
+    {
+      "type": "term",
+      "english": "Duan Family College",
+      "fullName": "",
+      "chinese": "永平书院"
+    },
+    {
+      "type": "term",
+      "english": "Eighth College",
+      "fullName": "",
+      "chinese": "第八书院"
+    },
+    {
+      "type": "term",
+      "english": "Centre for Learning Enhancement and Research",
+      "fullName": "",
+      "chinese": "学能提升研究中心"
+    },
+    {
+      "type": "term",
+      "english": "University Arts Centre",
+      "fullName": "",
+      "chinese": "大学艺术中心"
+    },
+    {
+      "type": "term",
+      "english": "Physical Education Unit",
+      "fullName": "",
+      "chinese": "体育部"
+    },
+    {
+      "type": "term",
+      "english": "Registry",
+      "fullName": "",
+      "chinese": "教务处"
+    },
+    {
+      "type": "term",
+      "english": "Library",
+      "fullName": "",
+      "chinese": "图书馆"
+    },
+    {
+      "type": "term",
+      "english": "Student Health and Counselling Centre",
+      "fullName": "",
+      "chinese": "学生健康辅导中心"
     }
   ]
 }

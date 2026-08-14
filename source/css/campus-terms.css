@@ -34,10 +34,7 @@
 .campus-terms-hero h2 { position: relative; z-index: 1; margin: 0; color: inherit; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.04em; }
 .campus-terms-hero p { position: relative; z-index: 1; max-width: 650px; margin: 12px 0 0; color: rgba(248, 245, 238, .78); }
 
-.campus-terms-toolbar { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: center; margin-bottom: 22px; }
-.campus-terms-search { width: 100%; min-height: 46px; padding: 0 16px; color: var(--terms-ink); background: var(--terms-paper); border: 1px solid var(--terms-line); border-radius: 9px; outline: none; }
-.campus-terms-search:focus { border-color: var(--terms-accent); box-shadow: 0 0 0 3px rgba(184, 95, 45, .14); }
-.campus-terms-count { color: var(--terms-muted); font-size: 13px; white-space: nowrap; }
+.campus-terms-count { color: var(--terms-muted); }
 .campus-terms-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
 .campus-terms-filter { padding: 7px 12px; color: var(--terms-muted); font-size: 13px; background: transparent; border: 1px solid var(--terms-line); border-radius: 999px; cursor: pointer; }
 .campus-terms-filter.is-active, .campus-terms-filter:hover { color: #fff; background: var(--terms-accent); border-color: var(--terms-accent); }
@@ -47,7 +44,6 @@
 .campus-term__english { display: block; margin-bottom: 7px; color: var(--terms-ink); font-size: 17px; font-weight: 700; line-height: 1.25; }
 .campus-term__full { display: block; margin-top: -2px; margin-bottom: 8px; color: var(--terms-muted); font-size: 12px; line-height: 1.35; }
 .campus-term__chinese { color: var(--terms-accent); font-size: 14px; line-height: 1.45; }
-.campus-terms-empty { padding: 36px 16px; color: var(--terms-muted); text-align: center; background: var(--terms-paper); border: 1px dashed var(--terms-line); border-radius: 10px; }
 .campus-terms-source { margin: 26px 0 0; color: var(--terms-muted); font-size: 12px; }
 .campus-terms-source a { color: inherit; }
 
@@ -56,6 +52,5 @@
 
 @media (max-width: 650px) {
   .campus-terms-hero { padding: 28px 22px; }
-  .campus-terms-toolbar { grid-template-columns: 1fr; }
   .campus-terms-grid { grid-template-columns: 1fr; }
 }

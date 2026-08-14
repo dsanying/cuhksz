@@ -3,7 +3,7 @@
   if (!app) return
 
   document.body.classList.add('course-resources-page')
-  const escapeHtml = (value) => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char])
+  const { escapeHtml, normalise, toolbar, bind } = window.resourceSearch
 
   fetch(app.dataset.manifest, { cache: 'no-store' })
     .then((response) => {
@@ -15,7 +15,7 @@
       const sharedCount = manifest.courses.filter((course) => course.url).length
 
       const filteredCourses = () => {
-        const query = state.query.trim().toLowerCase()
+        const query = normalise(state.query)
         return manifest.courses.filter((course) => !query || course.code.toLowerCase().includes(query) || (course.aliases || []).some((alias) => alias.toLowerCase().includes(query)))
       }
 
@@ -41,18 +41,15 @@
             <span><b>${sharedCount}</b> 门已开通分享</span>
             <span><b>阿里云盘</b> 资料托管</span>
           </div>
-          <div class="course-resource-toolbar">
-            <label><span>搜索</span><input id="course-resource-search" value="${escapeHtml(state.query)}" placeholder="输入课程代码，如 CSC3001" autocomplete="off"></label>
-            <a href="mailto:dsanying@qq.com?subject=课程资料提交">提交资料 / 反馈问题</a>
-          </div>
-          <p class="course-resource-result-count">${state.query.trim() ? `已找到 ${courses.length} 门课程` : '全部课程'}</p>
+          ${toolbar({ id: 'course-resource-search', value: state.query, placeholder: '输入课程代码，如 CSC3001', action: '<a class="resource-search__action" href="mailto:dsanying@qq.com?subject=课程资料提交">提交资料 / 反馈问题</a>' })}
+          <p class="resource-search__count">${state.query.trim() ? `已找到 ${courses.length} 门课程` : '全部课程'}</p>
           <div class="course-resource-grid">${renderCards()}</div>
           <p class="course-resource-note">资料仅供校内学习参考。若发现失效链接、内容问题或涉及权利，请发送邮件至 <a href="mailto:dsanying@qq.com">dsanying@qq.com</a>。</p>
         </section>`
-        app.querySelector('#course-resource-search').addEventListener('input', (event) => {
-          state.query = event.target.value
+        bind({ root: app, input: '#course-resource-search', onQuery: (value) => {
+          state.query = value
           render()
-        })
+        } })
       }
       render()
     })
