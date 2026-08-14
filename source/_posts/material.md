@@ -11,7 +11,7 @@ content_format: html
 
 <h2 id="报到流程参考-2024-年数据"><a href="#报到流程参考-2024-年数据" class="headerlink" title="报到流程参考(2024 年数据)"></a>报到流程参考(2024 年数据)</h2><img src="registry.jpg">
 
-<h2 id="中英字典"><a href="#中英字典" class="headerlink" title="中英字典"></a>中英字典</h2><p><a href="/cuhksz/terms/">查看中英字典</a></p>
+<h2 id="中英字典"><a href="#中英字典" class="headerlink" title="中英字典"></a>中英字典</h2><p><a href="/cuhksz/dictionary/">查看中英字典</a></p>
 <h2 id="学校相关数据参考信息"><a href="#学校相关数据参考信息" class="headerlink" title="学校相关数据参考信息"></a>学校相关数据参考信息</h2><blockquote>
 <p>数据来源于学校官方</p>
 </blockquote>

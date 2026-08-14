@@ -1,6 +1,6 @@
 ---
 title: "中英字典"
-slug: terms
+slug: dictionary
 date: "2026-08-14 17:30:00"
 category: "资源"
 ---
