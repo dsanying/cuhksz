@@ -4,10 +4,5 @@
 .scan-resource__image img { position: absolute; inset: 0; display: block; width: 100% !important; height: 100% !important; max-width: none; max-height: none; object-fit: contain; }
 .scan-resource h3 { margin: 0; color: var(--font-color); font-size: 1rem; line-height: 1.45; }
 .scan-resource p { margin: .28rem 0 0; color: var(--font-color); font-size: .85rem; opacity: .68; }
-.post-content .flink-list-item { height: 124px; }
-.post-content .flink-item-desc { height: auto; min-height: 48px; padding: .2rem 10px .4rem 0; white-space: normal; overflow: visible; }
-.post-content .website-health { display: flex; align-items: center; gap: .3rem; margin-top: .25rem; color: var(--font-color); font-size: .78rem; opacity: .78; }
-.website-health::before { width: .45rem; height: .45rem; background: var(--theme-color); border-radius: 50%; content: ''; }
-.website-health.is-unavailable::before { opacity: .4; }
 @media screen and (max-width: 1024px) { .scan-resource-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media screen and (max-width: 600px) { .scan-resource-grid { grid-template-columns: 1fr; } }

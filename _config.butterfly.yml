@@ -205,7 +205,6 @@ inject:
     - <script defer src="/cuhksz/js/resource-search.js"></script>
     - <script defer src="/cuhksz/js/course-resources.js"></script>
     - <script defer src="/cuhksz/js/campus-terms.js"></script>
-    - <script defer src="/cuhksz/js/social-links-health.js"></script>
 
 pjax:
   enable: false
