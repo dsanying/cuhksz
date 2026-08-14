@@ -39,5 +39,5 @@
       }))
       render()
     })
-    .catch(() => { app.innerHTML = '<p class="campus-terms-empty">对照表暂时无法加载，请稍后重试。</p>' })
+    .catch(() => {})
 })()
