@@ -7,8 +7,7 @@
     "clean": "hexo clean",
     "dev": "hexo server",
     "build": "hexo generate",
-    "preview": "hexo server",
-    "terms:refresh": "node tools/refresh-campus-terms.js"
+    "preview": "hexo server"
   },
   "engines": {
     "node": ">=22.0.0"
