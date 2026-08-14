@@ -11,7 +11,7 @@ content_format: html
 
 <h2 id="报到流程参考-2024-年数据"><a href="#报到流程参考-2024-年数据" class="headerlink" title="报到流程参考(2024 年数据)"></a>报到流程参考(2024 年数据)</h2><img src="registry.jpg">
 
-<h2 id="常用中英文对照表"><a href="#常用中英文对照表" class="headerlink" title="常用中英文对照表"></a>常用中英文对照表</h2><p>原文件链接已下线；如有可用版本，欢迎发送至 <a href="mailto:dsanying@qq.com">dsanying@qq.com</a> 补充。</p>
+<h2 id="常用中英文对照表"><a href="#常用中英文对照表" class="headerlink" title="常用中英文对照表"></a>常用中英文对照表</h2><p><a href="/cuhksz/terms/">查看常用中英文对照表</a></p>
 <h2 id="学校相关数据参考信息"><a href="#学校相关数据参考信息" class="headerlink" title="学校相关数据参考信息"></a>学校相关数据参考信息</h2><blockquote>
 <p>数据来源于学校官方</p>
 </blockquote>

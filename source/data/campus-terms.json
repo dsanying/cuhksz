@@ -1,0 +1,1566 @@
+{
+  "source": "https://ablu6669.github.io/zzh-campus-guide/",
+  "updatedAt": "2026-08-14T09:45:40.524Z",
+  "terms": [
+    {
+      "type": "abbreviation",
+      "english": "AA",
+      "fullName": "Academic Advisor",
+      "chinese": "学术导师"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ABE",
+      "fullName": "Administration Building East",
+      "chinese": "行政楼东翼"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ABW",
+      "fullName": "Administration Building West",
+      "chinese": "行政楼西翼"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ACM",
+      "fullName": "Academic and Career Management",
+      "chinese": "学术与职业规划"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ACT",
+      "fullName": "Accounting",
+      "chinese": "会计学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "AED",
+      "fullName": "Automated External Defibrillator",
+      "chinese": "自动体外除颤仪"
+    },
+    {
+      "type": "abbreviation",
+      "english": "AIE",
+      "fullName": "Artificial Intelligence",
+      "chinese": "人工智能"
+    },
+    {
+      "type": "abbreviation",
+      "english": "AIR",
+      "fullName": "Artificial Intelligence and Robot",
+      "chinese": "人工智能与机器人"
+    },
+    {
+      "type": "abbreviation",
+      "english": "AIS",
+      "fullName": "Artificial Intelligence for Science",
+      "chinese": "人工智能科学应用"
+    },
+    {
+      "type": "abbreviation",
+      "english": "AIT",
+      "fullName": "Information Technology and AI",
+      "chinese": "信息技术与人工智能"
+    },
+    {
+      "type": "abbreviation",
+      "english": "AO",
+      "fullName": "Admission Office",
+      "chinese": "招生办公室"
+    },
+    {
+      "type": "abbreviation",
+      "english": "APA",
+      "fullName": "American Psychological Association",
+      "chinese": "英文学术引用格式"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ART",
+      "fullName": "Art",
+      "chinese": "艺术"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ASO",
+      "fullName": "Administrative Services Office",
+      "chinese": "行政事务处"
+    },
+    {
+      "type": "abbreviation",
+      "english": "AVP",
+      "fullName": "Associate Vice President",
+      "chinese": "协理副校长"
+    },
+    {
+      "type": "abbreviation",
+      "english": "AY",
+      "fullName": "Academic Year",
+      "chinese": "学年"
+    },
+    {
+      "type": "abbreviation",
+      "english": "BB",
+      "fullName": "BlackBoard",
+      "chinese": "线上学习平台"
+    },
+    {
+      "type": "abbreviation",
+      "english": "BGE",
+      "fullName": "Business General Education",
+      "chinese": "商科通识教育"
+    },
+    {
+      "type": "abbreviation",
+      "english": "BIM",
+      "fullName": "Bioinformatics",
+      "chinese": "生物信息学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "BIO",
+      "fullName": "Biology",
+      "chinese": "生物学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "Bldg",
+      "fullName": "Building",
+      "chinese": "楼"
+    },
+    {
+      "type": "abbreviation",
+      "english": "BMA",
+      "fullName": "Big Data Management and Application",
+      "chinese": "大数据管理与应用"
+    },
+    {
+      "type": "abbreviation",
+      "english": "BME",
+      "fullName": "Biomedical Science and Engineering",
+      "chinese": "生物医学工程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "BSC",
+      "fullName": "Biological Sciences",
+      "chinese": "生物科学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CBH",
+      "fullName": "Computational Biology and Health",
+      "chinese": "计算生物学与健康"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CBS",
+      "fullName": "Copenhagen Business School",
+      "chinese": "哥本哈根商学院"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CCP",
+      "fullName": "Coco Park",
+      "chinese": "校园周边的商场"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CD",
+      "fullName": "Chengdao Building",
+      "chinese": "诚道楼"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CE",
+      "fullName": "Civic Education",
+      "chinese": "国情教育"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CE",
+      "fullName": "Computer Engineering",
+      "chinese": "计算机工程专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CEC",
+      "fullName": "Civic Education",
+      "chinese": "国情教育"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CGPA",
+      "fullName": "Cumulative GPA",
+      "chinese": "累计平均绩点"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CHEM",
+      "fullName": "Chemistry",
+      "chinese": "化学专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CHI",
+      "fullName": "Chinese",
+      "chinese": "中文课"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CHM",
+      "fullName": "Chemistry",
+      "chinese": "化学课"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CIDE",
+      "fullName": "Center for Innovation Design and Entrepreneurship",
+      "chinese": "创新创意创业中心"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CIE",
+      "fullName": "Computer and Information Engineering",
+      "chinese": "计算机与信息工程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CLC",
+      "fullName": "Chinese Language and Culture",
+      "chinese": "外籍学生中文课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CLCC",
+      "fullName": "CLCC",
+      "chinese": "中国语言文化专项课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CP",
+      "fullName": "Cheating Paper",
+      "chinese": "可以带进考场的记录知识点的纸"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CPDO",
+      "fullName": "Career Planning and Development Office",
+      "chinese": "职业规划与发展处"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CPRO",
+      "fullName": "Communications and Public Relations Office",
+      "chinese": "传讯及公共关系处"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CS",
+      "fullName": "Computer Science",
+      "chinese": "计算机科学与技术专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CSC",
+      "fullName": "Computer Science",
+      "chinese": "计算机课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CSE",
+      "fullName": "Computer Science and Engineering",
+      "chinese": "计算机工程与技术专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CSS",
+      "fullName": "Computational Social Science",
+      "chinese": "计算社会科学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CUHK",
+      "fullName": "The Chinese University of Hong Kong",
+      "chinese": "香港中文大学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "CUHKSZ",
+      "fullName": "The Chinese University of Hong Kong, Shenzhen",
+      "chinese": "香港中文大学（深圳）"
+    },
+    {
+      "type": "abbreviation",
+      "english": "DAI",
+      "fullName": "Digital and AI Literacy",
+      "chinese": "数字与人工智能素养"
+    },
+    {
+      "type": "abbreviation",
+      "english": "DDA",
+      "fullName": "Data and Decision Analytics",
+      "chinese": "数据与决策分析课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "DDL",
+      "fullName": "Deadline",
+      "chinese": "截止日期"
+    },
+    {
+      "type": "abbreviation",
+      "english": "DILIGENTIA",
+      "fullName": "Diligentia College",
+      "chinese": "学勤书院"
+    },
+    {
+      "type": "abbreviation",
+      "english": "DME",
+      "fullName": "Design and Manufacturing",
+      "chinese": "设计与制造"
+    },
+    {
+      "type": "abbreviation",
+      "english": "DMS",
+      "fullName": "Decision and Management Sciences",
+      "chinese": "决策与管理科学课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "DPF",
+      "fullName": "Distinction/Pass/Failure",
+      "chinese": "一些只记作及格或不及格的课程的考评方式，不计入GPA D：优秀，及格；P：及格；F：不及格"
+    },
+    {
+      "type": "abbreviation",
+      "english": "Dr.",
+      "fullName": "Doctor",
+      "chinese": "博士"
+    },
+    {
+      "type": "abbreviation",
+      "english": "DS",
+      "fullName": "Data Science",
+      "chinese": "数据科学与大数据技术专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "DSBDT",
+      "fullName": "Data Science and Big Data Technology",
+      "chinese": "数据科学与大数据技术专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "DUM",
+      "fullName": "Dummy Subject",
+      "chinese": "占位科目（学分免修占位）"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EBP",
+      "fullName": "English Bridge Program",
+      "chinese": "基础英语"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ECE",
+      "fullName": "Electrical and Computer Engineering",
+      "chinese": "电子与计算机工程专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ECO",
+      "fullName": "Economics",
+      "chinese": "经济学课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ECO",
+      "fullName": "Economics",
+      "chinese": "经济学专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EE",
+      "fullName": "Electronic Engineering",
+      "chinese": "电子工程专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EIE",
+      "fullName": "Electronic Information Engineering",
+      "chinese": "电子信息工程课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EIE",
+      "fullName": "Electronic Information Engineering",
+      "chinese": "电子信息工程专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ENB",
+      "fullName": "English Studies",
+      "chinese": "英语研究"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ENE",
+      "fullName": "Energy Engineering",
+      "chinese": "能源工程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ENG",
+      "fullName": "English",
+      "chinese": "英语课"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ENL",
+      "fullName": "English for Language Students",
+      "chinese": "英语专业的英语课"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EPB",
+      "fullName": "Epidemiology and Biostatistics",
+      "chinese": "流行病学与生物统计学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EPC",
+      "fullName": "English Pre-sessional Course",
+      "chinese": "暑期英文先修班"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ERG",
+      "fullName": "General Engineering courses",
+      "chinese": "理工学院的介绍类课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EXFE",
+      "fullName": "Exemption for free electives",
+      "chinese": "自由选修课免修"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EXGA",
+      "fullName": "Exemption for GEA area",
+      "chinese": "通识A板块学分免修"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EXGB",
+      "fullName": "Exemption for GEB area",
+      "chinese": "通识B板块学分免修"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EXGBE",
+      "fullName": "Exemption for Requirement_GBE",
+      "chinese": "GBE要求学分免修"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EXGBI",
+      "fullName": "Exemption for Requirement_GBI",
+      "chinese": "GBI要求学分免修"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EXGC",
+      "fullName": "Exemption for GEC area",
+      "chinese": "通识C板块学分免修"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EXGD",
+      "fullName": "Exemption for GED area",
+      "chinese": "通识D板块学分免修"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EXGSCLM",
+      "fullName": "Exempt for Requirement_GSCLM",
+      "chinese": "GSCLM培养要求免修"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EXME",
+      "fullName": "Exemption for major electives",
+      "chinese": "专业选修课免修"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EXNE",
+      "fullName": "Exemption for minor electives",
+      "chinese": "辅修选修课免修"
+    },
+    {
+      "type": "abbreviation",
+      "english": "EXSE",
+      "fullName": "Exemption for second major",
+      "chinese": "第二专业学分免修"
+    },
+    {
+      "type": "abbreviation",
+      "english": "FE",
+      "fullName": "Financial Engineering",
+      "chinese": "金融工程专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "FEMBA",
+      "fullName": "Business Admin in FIN",
+      "chinese": "金融方向工商管理硕士"
+    },
+    {
+      "type": "abbreviation",
+      "english": "FEX",
+      "fullName": "Business Admin in FIN",
+      "chinese": "金融工商管理专项"
+    },
+    {
+      "type": "abbreviation",
+      "english": "FIN",
+      "fullName": "Finance",
+      "chinese": "金融学课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "FIN",
+      "fullName": "Finance",
+      "chinese": "金融学专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "FMA",
+      "fullName": "Financial Mathematics",
+      "chinese": "金融数学课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "Free",
+      "fullName": "Free Elective",
+      "chinese": "自由选修"
+    },
+    {
+      "type": "abbreviation",
+      "english": "FREN",
+      "fullName": "FREN",
+      "chinese": "法语专项课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "FRN",
+      "fullName": "France",
+      "chinese": "法语课"
+    },
+    {
+      "type": "abbreviation",
+      "english": "FTE",
+      "fullName": "Fintech",
+      "chinese": "金融科技"
+    },
+    {
+      "type": "abbreviation",
+      "english": "FTE",
+      "fullName": "Fintech",
+      "chinese": "金融科技课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GBE",
+      "fullName": "Global Business Management",
+      "chinese": "国际商务经济学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GBI",
+      "fullName": "GBI",
+      "chinese": "通识基础B板块专项"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GE",
+      "fullName": "General Education",
+      "chinese": "通识课"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GEA",
+      "fullName": "GE Areas: Area A",
+      "chinese": "通识选修范围A：中华文化传承"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GEB",
+      "fullName": "GE Areas: Area B",
+      "chinese": "通识选修范围B：自然、科学与科技"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GEC",
+      "fullName": "GE Areas: Area C",
+      "chinese": "通识选修范围C：社会与文化"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GED",
+      "fullName": "GE Areas: Area D",
+      "chinese": "通识选修范围D：自我与人文"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GER",
+      "fullName": "German",
+      "chinese": "德语课"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GERM",
+      "fullName": "GERM",
+      "chinese": "德语专项课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GEW",
+      "fullName": "GE Areas: Wide Area",
+      "chinese": "通识综合拓展板块"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GFH",
+      "fullName": "GE Foundation: Humanity",
+      "chinese": "与人文对话"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GFN",
+      "fullName": "GE Foundation: Nature",
+      "chinese": "与自然对话"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GGE",
+      "fullName": "Academic Writing & Presentation",
+      "chinese": "学术写作与演讲"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GLB",
+      "fullName": "Global Studies",
+      "chinese": "全球研究"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GMAT",
+      "fullName": "Graduate Management Admission Test",
+      "chinese": "经企管理研究生入学考试"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GNB",
+      "fullName": "Genomics and Bioinformatics",
+      "chinese": "基因组学与生物信息学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GPA",
+      "fullName": "Grade Point Average",
+      "chinese": "平均绩点"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GRE",
+      "fullName": "Graduate Record Examination",
+      "chinese": "留学研究生入学考试"
+    },
+    {
+      "type": "abbreviation",
+      "english": "GSCLM",
+      "fullName": "Global Supply Chain and Logistics Management",
+      "chinese": "环球供应链与物流管理专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "HARMONIA",
+      "fullName": "Harmonia College",
+      "chinese": "祥波书院"
+    },
+    {
+      "type": "abbreviation",
+      "english": "HKSL",
+      "fullName": "HKSL",
+      "chinese": "香港手语"
+    },
+    {
+      "type": "abbreviation",
+      "english": "HSS",
+      "fullName": "School of Humanity and Social Science",
+      "chinese": "人文社科学院"
+    },
+    {
+      "type": "abbreviation",
+      "english": "HST",
+      "fullName": "History",
+      "chinese": "历史学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "IBA",
+      "fullName": "Information Management and Business",
+      "chinese": "信息管理与商务"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ICS",
+      "fullName": "Integrated Circuits and System",
+      "chinese": "集成电路与系统"
+    },
+    {
+      "type": "abbreviation",
+      "english": "IDE",
+      "fullName": "Innovation Design & Entrepreneur",
+      "chinese": "创新设计与创业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "IEG",
+      "fullName": "Information Engineering",
+      "chinese": "信息工程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "IER",
+      "fullName": "Information Engineering",
+      "chinese": "信息工程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ITE",
+      "fullName": "Information Technology",
+      "chinese": "信息技术"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ITSO",
+      "fullName": "Information Technology Services Office",
+      "chinese": "资讯科技服务处"
+    },
+    {
+      "type": "abbreviation",
+      "english": "JAP",
+      "fullName": "Japanese",
+      "chinese": "日语"
+    },
+    {
+      "type": "abbreviation",
+      "english": "JPN",
+      "fullName": "Japanese",
+      "chinese": "日语专项课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "KOR",
+      "fullName": "Korean",
+      "chinese": "韩语"
+    },
+    {
+      "type": "abbreviation",
+      "english": "KORE",
+      "fullName": "KORE",
+      "chinese": "韩语专项课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "LAW",
+      "fullName": "Law",
+      "chinese": "法学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "LEC",
+      "fullName": "Lecture",
+      "chinese": "正课"
+    },
+    {
+      "type": "abbreviation",
+      "english": "LGU",
+      "fullName": "Longgang University",
+      "chinese": "龙岗大学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "LHS",
+      "fullName": "School of Life and Health Science",
+      "chinese": "生命健康科学学院"
+    },
+    {
+      "type": "abbreviation",
+      "english": "LIN",
+      "fullName": "Linguistics",
+      "chinese": "语言学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "LING",
+      "fullName": "Ling College",
+      "chinese": "道扬书院"
+    },
+    {
+      "type": "abbreviation",
+      "english": "LIT",
+      "fullName": "Literature",
+      "chinese": "文学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "LSC",
+      "fullName": "Supply Chain and Logistics Management",
+      "chinese": "供应链与物流管理"
+    },
+    {
+      "type": "abbreviation",
+      "english": "LT",
+      "fullName": "Letian Building",
+      "chinese": "乐天楼"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MAN",
+      "fullName": "Mandarin",
+      "chinese": "普通话"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MAT",
+      "fullName": "Mathematics",
+      "chinese": "数学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MBI",
+      "fullName": "Bioinformatics",
+      "chinese": "生物信息学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MBM",
+      "fullName": "Business Management",
+      "chinese": "工商管理"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MCE",
+      "fullName": "Communications Engineering",
+      "chinese": "通信工程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MDS",
+      "fullName": "Data Science",
+      "chinese": "数据科学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MED",
+      "fullName": "School of Medicine",
+      "chinese": "医学院"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MES",
+      "fullName": "Clinical Medicine",
+      "chinese": "临床医学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MFE",
+      "fullName": "Financial Engineering",
+      "chinese": "金融工程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MFM",
+      "fullName": "Financial Mathematics",
+      "chinese": "金融数学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MGPA",
+      "fullName": "Major GPA",
+      "chinese": "主修课程平均绩点"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MGT",
+      "fullName": "Management",
+      "chinese": "管理学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "Mid",
+      "fullName": "Midterm Exam",
+      "chinese": "期中考试"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MINERVA",
+      "fullName": "Minerva College",
+      "chinese": "厚含书院"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MIS",
+      "fullName": "Management Information System",
+      "chinese": "管理信息系统"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MKT",
+      "fullName": "Marketing",
+      "chinese": "市场营销课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MKT",
+      "fullName": "Marketing",
+      "chinese": "市场营销专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MS",
+      "fullName": "Microsoft",
+      "chinese": "办公软件"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MSE",
+      "fullName": "Materials Science & Engineering",
+      "chinese": "材料科学与工程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MU",
+      "fullName": "Music Union",
+      "chinese": "聚乐部"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MUS",
+      "fullName": "Music",
+      "chinese": "音乐课"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MUS",
+      "fullName": "School of Music",
+      "chinese": "音乐学院"
+    },
+    {
+      "type": "abbreviation",
+      "english": "MUSE",
+      "fullName": "Muse College",
+      "chinese": "思廷书院"
+    },
+    {
+      "type": "abbreviation",
+      "english": "OAL",
+      "fullName": "Office of Academic Links",
+      "chinese": "学术交流处"
+    },
+    {
+      "type": "abbreviation",
+      "english": "OCTE",
+      "fullName": "The Online Course and Teaching Evaluation",
+      "chinese": "课程评教"
+    },
+    {
+      "type": "abbreviation",
+      "english": "OSA",
+      "fullName": "Office of Student Affairs",
+      "chinese": "学生事务处"
+    },
+    {
+      "type": "abbreviation",
+      "english": "P/U",
+      "fullName": "Pass/Failure",
+      "chinese": "一些只记作及格或不及格的课程的考评方式，不计入GPA P：及格；F：不及格"
+    },
+    {
+      "type": "abbreviation",
+      "english": "PED",
+      "fullName": "Physical Education",
+      "chinese": "体育课"
+    },
+    {
+      "type": "abbreviation",
+      "english": "PEU",
+      "fullName": "Physical Education Unit",
+      "chinese": "体育部"
+    },
+    {
+      "type": "abbreviation",
+      "english": "PF",
+      "fullName": "Pass/Failure",
+      "chinese": "一些只记作及格或不及格的课程的考评方式，不计入GPA P：及格；F：不及格"
+    },
+    {
+      "type": "abbreviation",
+      "english": "PhD",
+      "fullName": "Philosophy Doctor",
+      "chinese": "博士"
+    },
+    {
+      "type": "abbreviation",
+      "english": "PHI",
+      "fullName": "Philosophy",
+      "chinese": "哲学课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "PHM",
+      "fullName": "Pharmaceutical Science",
+      "chinese": "药学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "PHY",
+      "fullName": "Physics",
+      "chinese": "物理课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "PO",
+      "fullName": "President's Office",
+      "chinese": "校长办公室"
+    },
+    {
+      "type": "abbreviation",
+      "english": "Pre",
+      "fullName": "Presentation",
+      "chinese": "公开演讲"
+    },
+    {
+      "type": "abbreviation",
+      "english": "Prof.",
+      "fullName": "Professor",
+      "chinese": "教授"
+    },
+    {
+      "type": "abbreviation",
+      "english": "PSY",
+      "fullName": "Psycology",
+      "chinese": "心理学专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "PUB",
+      "fullName": "Public Policy",
+      "chinese": "公共政策"
+    },
+    {
+      "type": "abbreviation",
+      "english": "RA",
+      "fullName": "Research A Building",
+      "chinese": "实验楼A"
+    },
+    {
+      "type": "abbreviation",
+      "english": "RA",
+      "fullName": "Researching Assistant",
+      "chinese": "研究助理"
+    },
+    {
+      "type": "abbreviation",
+      "english": "RB",
+      "fullName": "Research B Building (H. L. Tu Building)",
+      "chinese": "实验楼B（涂辉龙楼）"
+    },
+    {
+      "type": "abbreviation",
+      "english": "RJ",
+      "fullName": "Reflective Journal",
+      "chinese": "反思日志"
+    },
+    {
+      "type": "abbreviation",
+      "english": "RMS",
+      "fullName": "Risk Management Science",
+      "chinese": "风险管理科学课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SALL",
+      "fullName": "Self-Access Language Learning",
+      "chinese": "语言自学中心"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SCRSA",
+      "fullName": "Shaw College Resident Student Association",
+      "chinese": "逸夫宿生会"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SDF",
+      "fullName": "Self-Development Facilitator",
+      "chinese": "自我发展促进者"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SDS",
+      "fullName": "School of Data Science",
+      "chinese": "数据科学学院"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SFL",
+      "fullName": "Second Foreign Languages",
+      "chinese": "第二外语"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SHAW",
+      "fullName": "Shaw College",
+      "chinese": "逸夫书院"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SHCC",
+      "fullName": "Student Health and Counselling Centre",
+      "chinese": "学生健康辅导中心"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SIS",
+      "fullName": "Student Information System",
+      "chinese": "学生信息系统"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SMBU",
+      "fullName": "Shenzhen MSU-BIT University",
+      "chinese": "深圳北理莫斯科大学"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SME",
+      "fullName": "School of Management and Economics",
+      "chinese": "经管学院"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SPAN",
+      "fullName": "SPAN",
+      "chinese": "西班牙语专项课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SPN",
+      "fullName": "Spanish",
+      "chinese": "西班牙语"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SR",
+      "fullName": "Staff Residence",
+      "chinese": "教职工宿舍"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SS",
+      "fullName": "Summer Session",
+      "chinese": "暑课"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SSE",
+      "fullName": "School of Science and Engineering",
+      "chinese": "理工学院"
+    },
+    {
+      "type": "abbreviation",
+      "english": "STA",
+      "fullName": "Statistics",
+      "chinese": "统计学课程"
+    },
+    {
+      "type": "abbreviation",
+      "english": "STAT",
+      "fullName": "Statistics",
+      "chinese": "统计学专业"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SU",
+      "fullName": "Student Union",
+      "chinese": "学生会"
+    },
+    {
+      "type": "abbreviation",
+      "english": "SUD",
+      "fullName": "Sustainable Development",
+      "chinese": "可持续发展"
+    },
+    {
+      "type": "abbreviation",
+      "english": "TA",
+      "fullName": "Teaching A Building",
+      "chinese": "教学楼A"
+    },
+    {
+      "type": "abbreviation",
+      "english": "TA",
+      "fullName": "Teaching Assistant",
+      "chinese": "助教"
+    },
+    {
+      "type": "abbreviation",
+      "english": "TB",
+      "fullName": "Teaching B Building",
+      "chinese": "教学楼B"
+    },
+    {
+      "type": "abbreviation",
+      "english": "TC",
+      "fullName": "Teaching C Building",
+      "chinese": "教学楼C"
+    },
+    {
+      "type": "abbreviation",
+      "english": "TD",
+      "fullName": "Teaching D Building",
+      "chinese": "教学楼D"
+    },
+    {
+      "type": "abbreviation",
+      "english": "TP",
+      "fullName": "Term Paper",
+      "chinese": "学期论文"
+    },
+    {
+      "type": "abbreviation",
+      "english": "TRA",
+      "fullName": "Traslation",
+      "chinese": "翻译课"
+    },
+    {
+      "type": "abbreviation",
+      "english": "tut",
+      "fullName": "Tutorial",
+      "chinese": "导修课"
+    },
+    {
+      "type": "abbreviation",
+      "english": "tut",
+      "fullName": "Tutorial",
+      "chinese": "习题课"
+    },
+    {
+      "type": "abbreviation",
+      "english": "UAC",
+      "fullName": "University Art Center",
+      "chinese": "大学艺术中心"
+    },
+    {
+      "type": "abbreviation",
+      "english": "UL",
+      "fullName": "University Library",
+      "chinese": "大学图书馆"
+    },
+    {
+      "type": "abbreviation",
+      "english": "URB",
+      "fullName": "Urban Studies",
+      "chinese": "城市研究"
+    },
+    {
+      "type": "abbreviation",
+      "english": "URM",
+      "fullName": "Urban Management",
+      "chinese": "城市管理"
+    },
+    {
+      "type": "abbreviation",
+      "english": "USTF",
+      "fullName": "Undergraduate Students Teaching Fellow",
+      "chinese": "本科生助教"
+    },
+    {
+      "type": "abbreviation",
+      "english": "wl",
+      "fullName": "Workload",
+      "chinese": "课业负担"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ZR",
+      "fullName": "Zhiren Building",
+      "chinese": "志仁楼"
+    },
+    {
+      "type": "abbreviation",
+      "english": "ZX",
+      "fullName": "Zhixin Building",
+      "chinese": "知新楼"
+    },
+    {
+      "type": "term",
+      "english": "Add",
+      "fullName": "",
+      "chinese": "加课"
+    },
+    {
+      "type": "term",
+      "english": "Argue",
+      "fullName": "",
+      "chinese": "申诉"
+    },
+    {
+      "type": "term",
+      "english": "Assignment",
+      "fullName": "",
+      "chinese": "作业"
+    },
+    {
+      "type": "term",
+      "english": "Coding",
+      "fullName": "",
+      "chinese": "敲代码"
+    },
+    {
+      "type": "term",
+      "english": "College",
+      "fullName": "",
+      "chinese": "书院"
+    },
+    {
+      "type": "term",
+      "english": "Dean's List",
+      "fullName": "",
+      "chinese": "一种按照CGPA评选的荣誉"
+    },
+    {
+      "type": "term",
+      "english": "Declare",
+      "fullName": "",
+      "chinese": "申报"
+    },
+    {
+      "type": "term",
+      "english": "Drop",
+      "fullName": "",
+      "chinese": "退课"
+    },
+    {
+      "type": "term",
+      "english": "Elective",
+      "fullName": "",
+      "chinese": "选修课"
+    },
+    {
+      "type": "term",
+      "english": "Enroll",
+      "fullName": "",
+      "chinese": "选课"
+    },
+    {
+      "type": "term",
+      "english": "Essay",
+      "fullName": "",
+      "chinese": "论文"
+    },
+    {
+      "type": "term",
+      "english": "Exclusion",
+      "fullName": "",
+      "chinese": "排除课"
+    },
+    {
+      "type": "term",
+      "english": "Fail",
+      "fullName": "",
+      "chinese": "不及格，挂科"
+    },
+    {
+      "type": "term",
+      "english": "Final",
+      "fullName": "",
+      "chinese": "期末考试"
+    },
+    {
+      "type": "term",
+      "english": "Gap Year",
+      "fullName": "",
+      "chinese": "休学一年"
+    },
+    {
+      "type": "term",
+      "english": "Instructor",
+      "fullName": "",
+      "chinese": "教授"
+    },
+    {
+      "type": "term",
+      "english": "Killer",
+      "fullName": "",
+      "chinese": "给分严格的教授"
+    },
+    {
+      "type": "term",
+      "english": "Late Drop",
+      "fullName": "",
+      "chinese": "逾期退课"
+    },
+    {
+      "type": "term",
+      "english": "Major",
+      "fullName": "",
+      "chinese": "主修课程"
+    },
+    {
+      "type": "term",
+      "english": "Major Elective",
+      "fullName": "",
+      "chinese": "主修选修课程"
+    },
+    {
+      "type": "term",
+      "english": "Major Required",
+      "fullName": "",
+      "chinese": "主修必修课程"
+    },
+    {
+      "type": "term",
+      "english": "Minor",
+      "fullName": "",
+      "chinese": "辅修课程"
+    },
+    {
+      "type": "term",
+      "english": "Office Hour",
+      "fullName": "",
+      "chinese": "教授在课外答疑的时间段"
+    },
+    {
+      "type": "term",
+      "english": "Peer Evaluation",
+      "fullName": "",
+      "chinese": "小组内部互相打分"
+    },
+    {
+      "type": "term",
+      "english": "Peer Pressure",
+      "fullName": "",
+      "chinese": "同年级竞争压力"
+    },
+    {
+      "type": "term",
+      "english": "Prerequisite",
+      "fullName": "",
+      "chinese": "先修课"
+    },
+    {
+      "type": "term",
+      "english": "Project",
+      "fullName": "",
+      "chinese": "项目作业"
+    },
+    {
+      "type": "term",
+      "english": "Registry",
+      "fullName": "",
+      "chinese": "教务处"
+    },
+    {
+      "type": "term",
+      "english": "Report",
+      "fullName": "",
+      "chinese": "研究报告"
+    },
+    {
+      "type": "term",
+      "english": "School",
+      "fullName": "",
+      "chinese": "学院"
+    },
+    {
+      "type": "term",
+      "english": "School Package",
+      "fullName": "",
+      "chinese": "学院课程"
+    },
+    {
+      "type": "term",
+      "english": "Section",
+      "fullName": "",
+      "chinese": "课程的节次"
+    },
+    {
+      "type": "term",
+      "english": "Study Scheme",
+      "fullName": "",
+      "chinese": "修读计划"
+    },
+    {
+      "type": "term",
+      "english": "Swap",
+      "fullName": "",
+      "chinese": "换课"
+    },
+    {
+      "type": "term",
+      "english": "Syllabus",
+      "fullName": "",
+      "chinese": "课程大纲"
+    },
+    {
+      "type": "term",
+      "english": "Target Students",
+      "fullName": "",
+      "chinese": "目标学生"
+    },
+    {
+      "type": "term",
+      "english": "Transcript",
+      "fullName": "",
+      "chinese": "成绩单"
+    },
+    {
+      "type": "term",
+      "english": "Transfer",
+      "fullName": "",
+      "chinese": "转学"
+    },
+    {
+      "type": "term",
+      "english": "U-Core",
+      "fullName": "",
+      "chinese": "大学核心课程"
+    },
+    {
+      "type": "term",
+      "english": "Unit",
+      "fullName": "",
+      "chinese": "学分"
+    },
+    {
+      "type": "term",
+      "english": "University",
+      "fullName": "",
+      "chinese": "大学"
+    },
+    {
+      "type": "term",
+      "english": "Zoom",
+      "fullName": "",
+      "chinese": "用来上网课、开会的平台"
+    }
+  ]
+}
