@@ -7,7 +7,7 @@ category: "资源"
 
 <div id="campus-terms-app" data-source="/cuhksz/data/campus-terms.json">
 <!-- STATIC_TERMS_START -->
-<section class="campus-terms-hero"><p class="campus-terms-kicker">CUHK-Shenzhen glossary</p><h2>常用中英文对照表</h2><p>共收录 272 条校园术语。启用 JavaScript 后可按英文或中文搜索和筛选。</p></section>
+<p class="campus-terms-source">共收录 272 条校园术语。</p>
 <div class="campus-terms-grid">
   <article class="campus-term"><span class="campus-term__english">AA</span><span class="campus-term__full">Academic Advisor</span><span class="campus-term__chinese">学术导师</span></article>
   <article class="campus-term"><span class="campus-term__english">ABE</span><span class="campus-term__full">Administration Building East</span><span class="campus-term__chinese">行政楼东翼</span></article>
@@ -19,6 +19,10 @@ category: "资源"
   <article class="campus-term"><span class="campus-term__english">AIR</span><span class="campus-term__full">Artificial Intelligence and Robot</span><span class="campus-term__chinese">人工智能与机器人</span></article>
   <article class="campus-term"><span class="campus-term__english">AIS</span><span class="campus-term__full">Artificial Intelligence for Science</span><span class="campus-term__chinese">人工智能科学应用</span></article>
   <article class="campus-term"><span class="campus-term__english">AIT</span><span class="campus-term__full">Information Technology and AI</span><span class="campus-term__chinese">信息技术与人工智能</span></article>
+</div>
+<details class="campus-terms-fallback">
+  <summary>浏览其余 262 条术语</summary>
+  <div class="campus-terms-grid">
   <article class="campus-term"><span class="campus-term__english">AO</span><span class="campus-term__full">Admission Office</span><span class="campus-term__chinese">招生办公室</span></article>
   <article class="campus-term"><span class="campus-term__english">APA</span><span class="campus-term__full">American Psychological Association</span><span class="campus-term__chinese">英文学术引用格式</span></article>
   <article class="campus-term"><span class="campus-term__english">ART</span><span class="campus-term__full">Art</span><span class="campus-term__chinese">艺术</span></article>
@@ -281,6 +285,7 @@ category: "资源"
   <article class="campus-term"><span class="campus-term__english">Registry</span><span class="campus-term__chinese">教务处</span></article>
   <article class="campus-term"><span class="campus-term__english">Library</span><span class="campus-term__chinese">图书馆</span></article>
   <article class="campus-term"><span class="campus-term__english">Student Health and Counselling Centre</span><span class="campus-term__chinese">学生健康辅导中心</span></article>
-</div>
+  </div>
+</details>
 <!-- STATIC_TERMS_END -->
 </div>
