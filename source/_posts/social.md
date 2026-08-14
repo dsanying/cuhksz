@@ -17,13 +17,14 @@ category: "资源"
 
 ## 友链
 
-<div class="site-link-grid" aria-label="友链">
-  <a class="site-link" href="https://ai.gitfetch.dev/" target="_blank" rel="noopener noreferrer">
-    <img class="site-link__icon no-lightbox" src="https://ai.gitfetch.dev/favicon.ico" alt="" onerror="this.hidden=true">
-    <span class="site-link__content"><span class="site-link__title">The Lab</span><span class="site-link__description">课件阅读帮手</span></span>
-  </a>
-  <a class="site-link" href="https://ablu6669.github.io/zzh-campus-guide/" target="_blank" rel="noopener noreferrer">
-    <img class="site-link__icon no-lightbox" src="https://ablu6669.github.io/zzh-campus-guide/favicon.ico" alt="" onerror="this.hidden=true">
-    <span class="site-link__content"><span class="site-link__title">校园新生指南 - 香港中文大学（深圳）</span></span>
-  </a>
-</div>
+{% flink %}
+- link_list:
+    - name: The Lab
+      link: https://ai.gitfetch.dev/
+      avatar: https://ai.gitfetch.dev/favicon.ico
+      descr: 课件阅读帮手
+    - name: 校园新生指南
+      link: https://ablu6669.github.io/zzh-campus-guide/
+      avatar: https://ablu6669.github.io/zzh-campus-guide/favicon.ico
+      descr: ''
+{% endflink %}
