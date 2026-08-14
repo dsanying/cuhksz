@@ -3,54 +3,70 @@ title: "社交媒体与宝藏资源"
 slug: social
 date: "2024-08-30 16:03:18"
 category: "资源"
-source: "已从 social/index.html 的发布产物恢复"
-content_format: html
 ---
 
-<!-- 原始正文：为避免自动转换损失链接、表格、图片和嵌入内容，暂保留 HTML。 -->
+## 社群与站主媒体
 
-<h2 id="站主媒体"><a href="#站主媒体" class="headerlink" title="站主媒体"></a>站主媒体</h2><p>关注站主媒体防止走丢░ ∗ ◕ ں ◕ ∗ ░</p>
-<table>
-<tr>
-<td align="center">
-关注站主微信公众号<br>"暗夜孤残影"防止迷路
-<br>
-<img src="/cuhksz/img/dsanying_search.jpg" width="500">
-</td>
-<td align="center">
-点击链接加入【港中深（龙大）聊天交流群】: <a target="_blank" rel="noopener" href="https://qm.qq.com/q/pZ3j9BowaA">https://qm.qq.com/q/pZ3j9BowaA</a>
-<br>
-<img src="https://fastly.jsdelivr.net/gh/dsanying/ImgHosting@cuhksz/qq_chat.jpg" width="200">
-</td>
-</tr>
-</table>
+{% flink %}
+- class_name: 社群
+  class_desc: 校园交流入口
+  link_list:
+    - name: 港中深（龙大）聊天交流群
+      link: https://qm.qq.com/q/pZ3j9BowaA
+      avatar: /cuhksz/img/avatar.jpg
+      descr: 加入 QQ 群，与同学交流校园信息
+    - name: 港中深资源站
+      link: https://github.com/dsanying/cuhksz
+      avatar: https://github.com/fluidicon.png
+      descr: 本站源码与问题反馈
+{% endflink %}
 
-<h2 id="宝藏媒体"><a href="#宝藏媒体" class="headerlink" title="宝藏媒体"></a>宝藏媒体</h2><p>以下为精选的优质媒体，仅为个人推荐。访问和使用这些媒体所产生的一切费用及行为，均由个人自主决定，与本推荐内容无关。<strong>本站已收录部分优质文章。</strong></p>
-<table>
-<tr>
-<td align="center">
-港中深学生自营微信公众号"神仙湖畔的薯塔"
-<br>
-<img src="https://fastly.jsdelivr.net/gh/dsanying/ImgHosting@cuhksz/ca_qrcode.jpg" width="200">
-</td>
-<td align="center">
-个人微信公众号"抹茶Mattya"
-<br>
-<img src="https://fastly.jsdelivr.net/gh/dsanying/ImgHosting@cuhksz/mattya_qrcode.jpg" width="200">
-</td>
-</tr>
-<tr>
-<td align="center">
-个人微信公众号"要开心的汤圆"
-<br>
-*有资料售卖
-<br>
-<img src="https://fastly.jsdelivr.net/gh/dsanying/ImgHosting@cuhksz/lht_qrcode.jpg" width="200">
-</td>
-</tr>
-</table>
+### 站主公众号
 
-<h2 id="宝藏网站"><a href="#宝藏网站" class="headerlink" title="宝藏网站"></a>宝藏网站</h2><p>以下为精选的优质网站，仅为个人推荐。访问和使用这些网站所产生的一切费用及行为，均由个人自主决定，与本推荐内容无关。</p>
-<ul>
-<li>【免费】<a target="_blank" rel="noopener" href="https://ai.gitfetch.dev/">The Lab</a> (课件阅读帮手) by <a target="_blank" rel="noopener" href="https://github.com/BetterAndBetterII">BetterAndBetterII</a></li>
-</ul>
+微信搜索“暗夜孤残影”即可关注。
+
+![暗夜孤残影公众号](/img/dsanying_search.jpg)
+
+## 校园服务
+
+{% flink %}
+- class_name: 官方入口
+  class_desc: 港中深在用的官方服务网站
+  link_list:
+    - name: 港中深官网
+      link: https://www.cuhk.edu.cn/en
+      avatar: /cuhksz/img/logo.png
+      descr: 学校新闻、通知与服务总入口
+    - name: 学生事务处
+      link: https://osa.cuhk.edu.cn/en/
+      avatar: /cuhksz/img/logo.png
+      descr: 学生活动、事务与支持服务
+    - name: ITSO
+      link: https://itso.cuhk.edu.cn/en
+      avatar: /cuhksz/img/logo.png
+      descr: 校园网络、账号、软件与 IT 服务
+    - name: ITSO 学生指南
+      link: https://itso.cuhk.edu.cn/en/student
+      avatar: /cuhksz/img/logo.png
+      descr: 学生常用系统和网络服务说明
+    - name: MyPortal
+      link: https://i.cuhk.edu.cn
+      avatar: /cuhksz/img/logo.png
+      descr: 校内一站式办事与应用入口
+{% endflink %}
+
+## 独立资源
+
+{% flink %}
+- class_name: 同学推荐
+  class_desc: 访问前请自行判断服务内容与适用范围
+  link_list:
+    - name: The Lab
+      link: https://ai.gitfetch.dev/
+      avatar: /cuhksz/img/pwa/favicon.png
+      descr: 课件阅读帮手
+    - name: BetterAndBetterII
+      link: https://github.com/BetterAndBetterII
+      avatar: https://github.com/fluidicon.png
+      descr: The Lab 开发者主页
+{% endflink %}
