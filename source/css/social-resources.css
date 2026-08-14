@@ -1,6 +1,6 @@
 .scan-resource-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1.25rem 0 2rem; }
 .scan-resource { display: flex; flex-direction: column; min-width: 0; padding: 1rem; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 8px; box-shadow: var(--card-box-shadow); }
-.scan-resource__image { display: flex; width: 100%; height: 220px; margin-bottom: .85rem; align-items: center; justify-content: center; overflow: hidden; background: var(--text-bg-hover); border-radius: 6px; }
+.scan-resource__image { display: flex; width: 100%; height: 220px; margin-bottom: .85rem; align-items: center; justify-content: center; overflow: hidden; background: transparent; border-radius: 6px; }
 .scan-resource__image img { display: block; width: auto !important; height: auto !important; max-width: 100% !important; max-height: 100% !important; object-fit: contain; }
 .scan-resource__image img:not(.medium-zoom-image--opened) { cursor: zoom-in; }
 .scan-resource__image .img-alt { display: none; }
