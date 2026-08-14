@@ -15,12 +15,15 @@ category: "资源"
   <article class="scan-resource"><div class="scan-resource__image"><img src="https://fastly.jsdelivr.net/gh/dsanying/ImgHosting@cuhksz/lht_qrcode.jpg" alt="要开心的汤圆公众号二维码"></div><h3>要开心的汤圆</h3><p>微信公众号</p></article>
 </div>
 
-## 网站
+## 友链
 
-{% flink %}
-- link_list:
-    - name: The Lab
-      link: https://ai.gitfetch.dev/
-      avatar: /cuhksz/img/pwa/favicon.png
-      descr: 课件阅读帮手
-{% endflink %}
+<div class="site-link-grid" aria-label="友链">
+  <a class="site-link" href="https://ai.gitfetch.dev/" target="_blank" rel="noopener noreferrer">
+    <img class="site-link__icon no-lightbox" src="https://ai.gitfetch.dev/favicon.ico" alt="" onerror="this.hidden=true">
+    <span class="site-link__content"><span class="site-link__title">The Lab</span><span class="site-link__description">课件阅读帮手</span></span>
+  </a>
+  <a class="site-link" href="https://ablu6669.github.io/zzh-campus-guide/" target="_blank" rel="noopener noreferrer">
+    <img class="site-link__icon no-lightbox" src="https://ablu6669.github.io/zzh-campus-guide/favicon.ico" alt="" onerror="this.hidden=true">
+    <span class="site-link__content"><span class="site-link__title">校园新生指南 - 香港中文大学（深圳）</span></span>
+  </a>
+</div>
