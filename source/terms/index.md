@@ -1,5 +1,5 @@
 ---
-title: "常用中英文对照表"
+title: "中英字典"
 slug: terms
 date: "2026-08-14 17:30:00"
 category: "资源"
