@@ -27,6 +27,10 @@ avatar:
   img: /img/avatar.jpg
   effect: false
 
+# 全站友链图标加载失败时，统一使用本站默认头像兜底。
+error_img:
+  flink: /img/avatar.jpg
+
 disable_top_img: true
 footer_img: false
 background:
