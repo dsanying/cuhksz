@@ -130,7 +130,7 @@ aside:
   card_tags:
     enable: false
   card_archives:
-    enable: true
+    enable: false
     type: yearly
     order: -1
     limit: 8
