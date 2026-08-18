@@ -168,7 +168,9 @@ darkmode:
 readmode: true
 rightside_scroll_percent: true
 rightside_item_order:
-  enable: false
+  enable: true
+  hide: readmode,hideAside
+  show: darkmode,toc
 rightside_config_animation: false
 
 category_ui: index

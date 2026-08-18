@@ -91,3 +91,9 @@
   background: #48515c;
   color: #fff;
 }
+
+/* 亮暗模式切换位于主题右侧常驻工具栏，无需滚动后才出现。 */
+#rightside {
+  opacity: 0.8 !important;
+  transform: translate(-58px, 0) !important;
+}
