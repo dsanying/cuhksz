@@ -6,6 +6,5 @@
 .scan-resource__image .img-alt { display: none; }
 .scan-resource h3 { margin: 0; color: var(--font-color); font-size: 1rem; line-height: 1.45; }
 .scan-resource p { margin: .28rem 0 0; color: var(--font-color); font-size: .85rem; opacity: .68; }
-.flink .flink-item-icon:has(img[src$="/img/friend_404.gif"]) { display: none; }
 @media screen and (max-width: 1024px) { .scan-resource-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media screen and (max-width: 600px) { .scan-resource-grid { grid-template-columns: 1fr; } }

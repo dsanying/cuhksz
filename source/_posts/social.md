@@ -19,10 +19,6 @@ category: "资源"
 
 {% flink %}
 - link_list:
-    - name: The Lab
-      link: https://ai.gitfetch.dev/
-      avatar: https://ai.gitfetch.dev/favicon.ico
-      descr: 课件阅读帮手
     - name: 校园新生指南
       link: https://ablu6669.github.io/zzh-campus-guide/
       avatar: https://ablu6669.github.io/zzh-campus-guide/favicon.ico
