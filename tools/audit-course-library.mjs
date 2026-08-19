@@ -16,7 +16,7 @@ import path from 'node:path'
 
 const validCategories = new Set(['学习资料', '考试资料', '作业习题', '其他资料'])
 const ignoredNames = new Set(['.DS_Store', 'Thumbs.db'])
-const generatedDirectoryNames = new Set(['.git', '__MACOSX', '__pycache__', 'node_modules', 'dist', 'build', 'out', 'target', 'coverage'])
+const generatedDirectoryNames = new Set(['.git', '__MACOSX', '__pycache__', 'node_modules', 'dist', 'build', 'out', 'target', 'coverage', '.vscode', '.vs', '.idea', '.cmake', 'cmake-build-debug', 'CMakeFiles'])
 const generatedExtensions = new Set(['.pyc', '.o', '.obj', '.class', '.log', '.tmp', '.swp', '.swo'])
 const privacyPattern = /(?:学生名单|姓名.*学号|学号.*姓名|成绩单|成绩证明|考勤|签到|座位表|联系方式|身份证|student[ _-]?list|attendance|roster)/i
 const studentProjectPattern = /(?:submission|submit|personal|个人|学生.*(?:项目|作业|报告)|(?:^|[_-])team[_-]?\d+|final[_ -]?project|coursework)/i
@@ -38,7 +38,7 @@ function extensionOf(name) {
 
 function isSystemArtifact(name, relativePath) {
   const parts = relativePath.split('/')
-  return ignoredNames.has(name) || name.startsWith('._') || parts.some((part) => generatedDirectoryNames.has(part)) || generatedExtensions.has(extensionOf(name))
+  return ignoredNames.has(name) || name.startsWith('._') || name.startsWith('~$') || name.endsWith('.synctex.gz') || parts.some((part) => generatedDirectoryNames.has(part)) || generatedExtensions.has(extensionOf(name))
 }
 
 function isLikelyStudentProject(relativePath) {
