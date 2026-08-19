@@ -9,7 +9,7 @@
  * 默认 dry-run；只有 --apply 才移动或解压文件。
  */
 
-import { access, mkdir, readdir, rename, rmdir } from 'node:fs/promises'
+import { access, mkdir, readdir, readFile, rename, rmdir, writeFile } from 'node:fs/promises'
 import { spawn } from 'node:child_process'
 import path from 'node:path'
 
@@ -53,6 +53,17 @@ const explicitFileRenames = [
   ['PHY1001/学习资料/PHY1001_第23讲_笔记_Chapter_17_(1).pdf', 'PHY1001/学习资料/PHY1001_第23讲_笔记_Chapter_17_第01部分.pdf'],
   ['PHY1001/学习资料/PHY1001_第24讲_笔记_Chapter_17_(2).pdf', 'PHY1001/学习资料/PHY1001_第24讲_笔记_Chapter_17_第02部分.pdf'],
   ['PHY1001/学习资料/PHY1001_第25讲_笔记_Chapter_17_(3).pdf', 'PHY1001/学习资料/PHY1001_第25讲_笔记_Chapter_17_第03部分.pdf'],
+]
+
+// OneNote 分享链接不是真实资料文件。保留为可双击打开的本地 HTML 入口，原 TXT 移至待复核以便追溯。
+const linkedNoteStubs = [
+  ['GEA2000/学习资料/GEA2000_.txt', 'GEA2000/学习资料/GEA2000_中国近现代历史与文化_在线笔记.html', 'GEA2000 中国近现代历史与文化'],
+  ['CSC3100/学习资料/CSC3100_.txt', 'CSC3100/学习资料/CSC3100_数据结构_在线笔记.html', 'CSC3100 数据结构'],
+  ['CSC3170/学习资料/CSC3170_.txt', 'CSC3170/学习资料/CSC3170_数据库系统_在线笔记.html', 'CSC3170 数据库系统'],
+  ['CSC3002/学习资料/CSC3002_.txt', 'CSC3002/学习资料/CSC3002_C_C++程序设计_在线笔记.html', 'CSC3002 C/C++ 程序设计'],
+  ['GEC2207/学习资料/GEC2207_.txt', 'GEC2207/学习资料/GEC2207_世界政治_在线笔记.html', 'GEC2207 世界政治'],
+  ['GFH1000/学习资料/GFH1000_.txt', 'GFH1000/学习资料/GFH1000_与人类对话_在线笔记.html', 'GFH1000 与人类对话'],
+  ['GFN1000/学习资料/GFN1000_.txt', 'GFN1000/学习资料/GFN1000_与自然对话_在线笔记.html', 'GFN1000 与自然对话'],
 ]
 
 function unix(relativePath) {
@@ -169,6 +180,33 @@ async function renameExplicitFiles() {
   return renamed
 }
 
+function escapeHtml(value) {
+  return value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;')
+}
+
+async function convertLinkedNoteStubs() {
+  let converted = 0
+  for (const [relativeSource, relativeDestination, title] of linkedNoteStubs) {
+    const source = path.join(root, relativeSource)
+    if (!(await exists(source))) continue
+    const content = await readFile(source, 'utf8')
+    const url = content.match(/https:\/\/[^\s]+/)?.[0]
+    if (!url || !url.startsWith('https://1drv.ms/o/')) throw new Error(`链接文本格式异常，未转换：${relativeSource}`)
+    const destination = await unique(path.join(root, relativeDestination))
+    console.log(`链接入口  ${relativeSource}  ->  ${unix(path.relative(root, destination))}`)
+    if (apply) {
+      const html = `<!doctype html>\n<html lang="zh-CN">\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>${escapeHtml(title)}｜在线笔记</title>\n<body>\n  <h1>${escapeHtml(title)}</h1>\n  <p>此资料由 OneNote 在线分享提供，双击本文件后点击下方链接打开。</p>\n  <p><a href="${escapeHtml(url)}">打开在线笔记</a></p>\n  <p>如链接失效或需要补充本地资料，请联系资料库维护者。</p>\n</body>\n</html>\n`
+      await mkdir(path.dirname(destination), { recursive: true })
+      await writeFile(destination, html)
+      const reviewDestination = await unique(path.join(reviewRoot, '已转换在线链接文本', relativeSource))
+      await mkdir(path.dirname(reviewDestination), { recursive: true })
+      await rename(source, reviewDestination)
+    }
+    converted += 1
+  }
+  return converted
+}
+
 async function removeEmptyDirectories(directory) {
   for (const entry of await readdir(directory, { withFileTypes: true })) {
     if (!entry.isDirectory() || entry.isSymbolicLink()) continue
@@ -233,5 +271,6 @@ async function extractVerifiedArchives() {
 
 const flattened = await flattenGenericFolders()
 const explicitRenames = await renameExplicitFiles()
+const convertedLinkedNotes = await convertLinkedNoteStubs()
 const extractedArchives = await extractVerifiedArchives()
-console.log(JSON.stringify({ mode: apply ? 'apply' : 'dry-run', flattenedFolders: flattened.folders, normalizedFiles: flattened.files, explicitRenames, extractedArchives }, null, 2))
+console.log(JSON.stringify({ mode: apply ? 'apply' : 'dry-run', flattenedFolders: flattened.folders, normalizedFiles: flattened.files, explicitRenames, convertedLinkedNotes, extractedArchives }, null, 2))
