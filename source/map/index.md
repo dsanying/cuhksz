@@ -3,7 +3,7 @@ title: "校园地图"
 slug: map
 date: "2024-08-20 08:32:54"
 category: ""
-source: "已从 map/index.html 的发布产物恢复"
+source: "校方官网与校园 VR 地图"
 content_format: html
 ---
 

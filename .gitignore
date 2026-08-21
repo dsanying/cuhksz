@@ -6,3 +6,4 @@ dist/
 db.json
 .deploy*/
 .DS_Store
+.workbuddy/
