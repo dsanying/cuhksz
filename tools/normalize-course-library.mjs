@@ -24,6 +24,37 @@ const flattenableNames = new Set(['课程笔记', '样卷汇总', '期中样卷'
 
 // 已逐一核对的括号数字/年份名称。括号并不一律代表重复：这里将年份、分卷或资料序号写成明确字段。
 const explicitFileRenames = [
+  ['CSC1001/考试资料/CSC1001_2021_秋季_期末_样卷.pdf', 'CSC1001/考试资料/CSC1001_2021_秋季_期末_样卷_参考答案.pdf'],
+  ['CSC1001/考试资料/CSC1001_2022_秋季_期末_样卷.pdf', 'CSC1001/考试资料/CSC1001_2022_秋季_期末_样卷_参考答案.pdf'],
+  ['CSC1001/考试资料/CSC1001_2024_秋季_期末_样卷.pdf', 'CSC1001/考试资料/CSC1001_2024_秋季_期末_样卷_参考答案.pdf'],
+  ['CSC3001/考试资料/CSC3001_Practice_Final_Solutions_from_Ottawa.pdf', 'CSC3001/考试资料/CSC3001_期末_外部参考题_渥太华大学_参考答案.pdf'],
+  ['CSC3002/考试资料/CSC3002_期末_样卷_官方答案.pdf', 'CSC3002/考试资料/CSC3002_期末_样卷_参考答案.pdf'],
+  ['DDA3003/考试资料/DDA3003_Midterm_Reviews.pdf', 'DDA3003/作业习题/DDA3003_2026_春季_期中_复习题.pdf'],
+  ['DDA3003/考试资料/DDA3003_ddamid.pdf', 'DDA3003/学习资料/DDA3003_期中_小抄.pdf'],
+  ['BIO1008/学习资料/BIO1008_Final.pdf', 'BIO1008/学习资料/BIO1008_期末_小抄.pdf'],
+  ['CSC4160/考试资料/CSC4160_期末_样卷.pdf', 'CSC4160/考试资料/CSC4160_期末_参考样题_COMP4651.pdf'],
+  ['MAT1001/考试资料/MAT1001_1001_mt_sol_2022_V2.pdf', 'MAT1001/考试资料/MAT1001_2022_期中_样卷_参考答案.pdf'],
+  ['MAT1001/考试资料/MAT1001_1001_mt_sol_2023.pdf', 'MAT1001/考试资料/MAT1001_2023_期中_样卷_参考答案.pdf'],
+  ['MAT1002/考试资料/MAT1002_2023answer.pdf', 'MAT1002/考试资料/MAT1002_2023_期中_样卷_参考答案.pdf'],
+  ['MAT1002/考试资料/MAT1002_2024answer.pdf', 'MAT1002/考试资料/MAT1002_2024_期中_样卷_参考答案.pdf'],
+  ['MAT2041/考试资料/MAT2041_2025_Final_Sol.pdf', 'MAT2041/考试资料/MAT2041_2025_期末_样卷_官方答案.pdf'],
+  ['MAT2041/考试资料/MAT2041_2025_sample_paper_withoutsolution_v8.pdf', 'MAT2041/考试资料/MAT2041_2025_期末_参考样题.pdf'],
+  ['MAT2041/考试资料/MAT2041_25S-Midterm-Solutions-Rubrics.pdf', 'MAT2041/考试资料/MAT2041_2025_春季_期中_样卷_官方答案及评分标准.pdf'],
+  ['MAT2041/考试资料/MAT2041_25S_sample_midterm_solutions.pdf', 'MAT2041/考试资料/MAT2041_2025_春季_期中_参考样题_官方答案.pdf'],
+  ['MAT3007/考试资料/MAT3007_SampleMidSpring2025Solution.pdf', 'MAT3007/考试资料/MAT3007_2025_春季_期中_参考样题_官方答案.pdf'],
+  ['MAT3007/考试资料/MAT3007_SampleMidSummer2025Solution.pdf', 'MAT3007/考试资料/MAT3007_2025_夏季_期中_参考样题_官方答案.pdf'],
+  ['MAT3007/考试资料/MAT3007_spring2022final_solutions.pdf', 'MAT3007/考试资料/MAT3007_2022_春季_期末_样卷_官方答案.pdf'],
+  ['MAT3007/考试资料/MAT3007_spring2024mid_solution.pdf', 'MAT3007/考试资料/MAT3007_2024_秋季_期中_样卷_官方答案.pdf'],
+  ['PHY1001/考试资料/PHY1001_2023-PHY1001-midterm_solutions_2.pdf', 'PHY1001/考试资料/PHY1001_2023_期中_样卷_官方答案.pdf'],
+  ['PHY1001/考试资料/PHY1001_2025_PHY1001_midterm_Solution_Guide.pdf', 'PHY1001/考试资料/PHY1001_2025_期中_样卷_官方答案及评分指南.pdf'],
+  ['PHY1001/考试资料/PHY1001_Final_2024_solution.pdf', 'PHY1001/考试资料/PHY1001_2024_期末_样卷_官方答案.pdf'],
+  ['PHY1001/考试资料/PHY1001_Final_2025_Solution.pdf', 'PHY1001/考试资料/PHY1001_2025_期末_样卷_官方答案.pdf'],
+  ['PHY1001/考试资料/PHY1001_Final_2025_Solutions_Guidelines.pdf', 'PHY1001/考试资料/PHY1001_2025_期末_样卷_官方评分指南.pdf'],
+  ['PHY1001/考试资料/PHY1001_final_2022-solution.pdf', 'PHY1001/考试资料/PHY1001_2022_期末_样卷_官方答案.pdf'],
+  ['PHY1001/考试资料/PHY1001_midterm_2024_solution.pdf', 'PHY1001/考试资料/PHY1001_2024_期中_样卷_官方答案.pdf'],
+  ['STA2001/考试资料/STA2001_Mid2023_solution.pdf', 'STA2001/考试资料/STA2001_2023_期中_样卷_官方答案.pdf'],
+  ['STA2001/考试资料/STA2001_Mid2024_solution.pdf', 'STA2001/考试资料/STA2001_2024_期中_参考样题_官方答案.pdf'],
+  ['STA2001/考试资料/STA2001_Midterm_25summer_withsol.pdf', 'STA2001/考试资料/STA2001_2025_夏季_期中_样卷_官方答案.pdf'],
   ['MAT1002/考试资料/MAT1002_Midterm_(2024).pdf', 'MAT1002/考试资料/MAT1002_2024_期中样卷.pdf'],
   ['MAT1001/考试资料/MAT1001_Midterm_(2023).pdf', 'MAT1001/考试资料/MAT1001_2023_期中样卷.pdf'],
   ['MAT1001/学习资料/MAT1001_第1&2讲_笔记_函数极限_连续性_单侧极限_特殊极限(1).pdf', 'MAT1001/学习资料/MAT1001_第01至02讲_笔记_函数极限_连续性_单侧极限_特殊极限_第01部分.pdf'],
@@ -53,6 +84,17 @@ const explicitFileRenames = [
   ['PHY1001/学习资料/PHY1001_第23讲_笔记_Chapter_17_(1).pdf', 'PHY1001/学习资料/PHY1001_第23讲_笔记_Chapter_17_第01部分.pdf'],
   ['PHY1001/学习资料/PHY1001_第24讲_笔记_Chapter_17_(2).pdf', 'PHY1001/学习资料/PHY1001_第24讲_笔记_Chapter_17_第02部分.pdf'],
   ['PHY1001/学习资料/PHY1001_第25讲_笔记_Chapter_17_(3).pdf', 'PHY1001/学习资料/PHY1001_第25讲_笔记_Chapter_17_第03部分.pdf'],
+]
+
+// 已逐页渲染确认为全空白或内容错位的文件；只移入待复核区，不直接永久删除。
+const confirmedInvalidFiles = [
+  'DDA3020/学习资料/DDA3020_第16讲_笔记_感知机_多层前馈神经网络.pdf',
+  'DDA3020/学习资料/DDA3020_第17讲_笔记_Backpropagation_多层神经网络.pdf',
+  'DDA3020/学习资料/DDA3020_Notes_for_Lecture_22.pdf',
+  'DDA3020/学习资料/DDA3020_Notes_for_Lecture_24.pdf',
+  'MAT3007/学习资料/MAT3007_第14讲_笔记_内点法.pdf',
+  'CSC1003/考试资料/CSC1003_2022_23_Midterm-v2.pdf',
+  'CSC1003/考试资料/CSC1003_2023_2024_期中_样卷_Studocu重复版.pdf',
 ]
 
 // OneNote 分享链接不是真实资料文件。保留为可双击打开的本地 HTML 入口，原 TXT 移至待复核以便追溯。
@@ -180,6 +222,22 @@ async function renameExplicitFiles() {
   return renamed
 }
 
+async function quarantineConfirmedInvalidFiles() {
+  let moved = 0
+  for (const relativeSource of confirmedInvalidFiles) {
+    const source = path.join(root, relativeSource)
+    if (!(await exists(source))) continue
+    const destination = await unique(path.join(reviewRoot, '已确认无效或错位文件', relativeSource))
+    console.log(`隔离  ${relativeSource}  ->  ${unix(path.relative(root, destination))}`)
+    if (apply) {
+      await mkdir(path.dirname(destination), { recursive: true })
+      await rename(source, destination)
+    }
+    moved += 1
+  }
+  return moved
+}
+
 function escapeHtml(value) {
   return value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;')
 }
@@ -271,6 +329,7 @@ async function extractVerifiedArchives() {
 
 const flattened = await flattenGenericFolders()
 const explicitRenames = await renameExplicitFiles()
+const invalidFilesQuarantined = await quarantineConfirmedInvalidFiles()
 const convertedLinkedNotes = await convertLinkedNoteStubs()
 const extractedArchives = await extractVerifiedArchives()
-console.log(JSON.stringify({ mode: apply ? 'apply' : 'dry-run', flattenedFolders: flattened.folders, normalizedFiles: flattened.files, explicitRenames, convertedLinkedNotes, extractedArchives }, null, 2))
+console.log(JSON.stringify({ mode: apply ? 'apply' : 'dry-run', flattenedFolders: flattened.folders, normalizedFiles: flattened.files, explicitRenames, invalidFilesQuarantined, convertedLinkedNotes, extractedArchives }, null, 2))

@@ -19,6 +19,7 @@ const examSource = '其他资料/考试资料/CUHKSZ_SDS_EXAMS'
 
 // 已通过目录 README 和文件结构确认的学生作品或个人项目；仅隔离，不永久删除。
 const confirmedStudentProjects = [
+  'ALEE1222/学习资料/CSC3002_Review_Question_Answer',
   'ERG2050/学习资料/IMDB-sentiment-analysis',
   'CSC4005/学习资料/CSC4005-Distributed-System',
   'CSC4005/学习资料/CSC4005-HW',
@@ -86,7 +87,6 @@ const confirmedStudentProjects = [
 // 可由目录名和 README 明确识别课程归属的非项目资料集合。
 const courseCollectionMoves = [
   ['ALEE1222/学习资料/CSC3001_Discrete_Mathematics', 'CSC3001/学习资料/离散数学课程资料'],
-  ['ALEE1222/学习资料/CSC3002_Review_Question_Answer', 'CSC3002/学习资料/复习题参考'],
   ['NTUO666/学习资料/CSC1003', 'CSC1003/学习资料/课程资料'],
   ['NTUO666/学习资料/CSC3150', 'CSC3150/学习资料/课程资料'],
   ['NTUO666/学习资料/CSC3170', 'CSC3170/学习资料/课程资料'],
@@ -166,7 +166,6 @@ const confirmedOfficialMaterialMoves = [
   ['ALEE1222/学习资料/CSC4005_Distributed_and_Parallel_Computing/Project 3 - N-body Simulation/Assignment 3 Requirement.pdf', 'CSC4005/作业习题/CSC4005_项目_03_题目.pdf'],
   ['ALEE1222/学习资料/CSC4005_Distributed_and_Parallel_Computing/Project 3 - N-body Simulation/Assignment 3 Grading.pdf', 'CSC4005/作业习题/CSC4005_项目_03_评分说明.pdf'],
   ['ALEE1222/学习资料/CSC4005_Distributed_and_Parallel_Computing/Project 4 - Heat Simulation/Assignment 4 Requirement.pdf', 'CSC4005/作业习题/CSC4005_项目_04_题目.pdf'],
-  ['ALEE1222/学习资料/CSC4005_Distributed_and_Parallel_Computing/Project 4 - Heat Simulation/Assignment 4 Grading.pdf', 'CSC4005/作业习题/CSC4005_项目_04_评分说明.pdf'],
   ['ALEE1222/学习资料/CSC3150_Operating_Systems/Final_Exam/Question.docx', 'CSC3150/考试资料/CSC3150_期末_试题.docx'],
   ['NTUO666/学习资料/ECE4016/HW2/Assignment 2.pdf', 'ECE4016/作业习题/ECE4016_作业_02_题目.pdf'],
   ['CSC3100/学习资料/CUHKSZ-CSC3100-EdgarFei/assignment1/CSC3100 Assignment 1.pdf', 'CSC3100/作业习题/CSC3100_作业_01_题目.pdf'],
@@ -176,10 +175,10 @@ const confirmedOfficialMaterialMoves = [
   ['CSC3100/学习资料/CUHKSZ-CSC3100/C++-CSC3100/Assignment 2/CSC3100_Data_Structures_HW2_Fall_2024(1).pdf', 'CSC3100/作业习题/CSC3100_作业_02_题目_2024_秋季.pdf'],
   ['CSC3100/学习资料/CUHKSZ-CSC3100/C++-CSC3100/Assignment 3/CSC3100_Data_Structures_HW3_Fall_2024.pdf', 'CSC3100/作业习题/CSC3100_作业_03_题目_2024_秋季.pdf'],
   ['CSC3100/学习资料/CUHKSZ-CSC3100/C++-CSC3100/Assignment 4/CSC3100_Data_Structures_HW4_Fall_2024.pdf', 'CSC3100/作业习题/CSC3100_作业_04_题目_2024_秋季.pdf'],
-  ['ECON3211/学习资料/ECON3211_PolicyEvaluationMethods/PS1_RCT/ECO3211 Problem Set 1.pdf', 'ECON3211/作业习题/ECON3211_作业_01_题目.pdf'],
-  ['ECON3211/学习资料/ECON3211_PolicyEvaluationMethods/PS2_IV/ECO3211 Problem Set 2.pdf', 'ECON3211/作业习题/ECON3211_作业_02_题目.pdf'],
-  ['ECON3211/学习资料/ECON3211_PolicyEvaluationMethods/PS3_DID/ECO3211 Problem Set 3.pdf', 'ECON3211/作业习题/ECON3211_作业_03_题目.pdf'],
-  ['ECON3211/学习资料/ECON3211_PolicyEvaluationMethods/PS4_RDD/ECO3211 Problem Set 4.pdf', 'ECON3211/作业习题/ECON3211_作业_04_题目.pdf'],
+  ['ECON3211/学习资料/ECON3211_PolicyEvaluationMethods/PS1_RCT/ECO3211 Problem Set 1.pdf', 'ECO3211/作业习题/ECO3211_作业_01_题目.pdf'],
+  ['ECON3211/学习资料/ECON3211_PolicyEvaluationMethods/PS2_IV/ECO3211 Problem Set 2.pdf', 'ECO3211/作业习题/ECO3211_作业_02_题目.pdf'],
+  ['ECON3211/学习资料/ECON3211_PolicyEvaluationMethods/PS3_DID/ECO3211 Problem Set 3.pdf', 'ECO3211/作业习题/ECO3211_作业_03_题目.pdf'],
+  ['ECON3211/学习资料/ECON3211_PolicyEvaluationMethods/PS4_RDD/ECO3211 Problem Set 4.pdf', 'ECO3211/作业习题/ECO3211_作业_04_题目.pdf'],
   ['CSC3001/学习资料/离散数学课程资料/Assignment/assignment 2.pdf', 'CSC3001/作业习题/CSC3001_作业_02_题目.pdf'],
   ['CSC3001/学习资料/离散数学课程资料/Assignment/assignment 3.pdf', 'CSC3001/作业习题/CSC3001_作业_03_题目.pdf'],
   ['CSC3150/学习资料/课程资料/HW1/CSC3150-OS-AS1-2024.pdf', 'CSC3150/作业习题/CSC3150_作业_01_题目_2024.pdf'],
@@ -201,7 +200,7 @@ const confirmedOfficialMaterialMoves = [
   ['CSC3170/学习资料/课程资料/Project/Project-CSC3170.pdf', 'CSC3170/作业习题/CSC3170_项目_题目.pdf'],
   ['CSC3170/学习资料/课程资料/Final/final-review.pdf', 'CSC3170/学习资料/CSC3170_期末_复习资料.pdf'],
   ['CSC4160/学习资料/课程资料/Final/review.pdf', 'CSC4160/学习资料/CSC4160_期末_复习资料.pdf'],
-  ['CSC4160/学习资料/课程资料/Final/sample.pdf.pdf', 'CSC4160/考试资料/CSC4160_期末_样卷.pdf'],
+  ['CSC4160/学习资料/课程资料/Final/sample.pdf.pdf', 'CSC4160/考试资料/CSC4160_期末_参考样题_COMP4651.pdf'],
   ['MDS5102/学习资料/课程资料/hw1/MDS5102_Assignment_1.pdf', 'MDS5102/作业习题/MDS5102_作业_01_题目.pdf'],
   ['MDS5102/学习资料/课程资料/hw2/MDS5102_Assignment_2.pdf', 'MDS5102/作业习题/MDS5102_作业_02_题目.pdf'],
   ['MDS5102/学习资料/课程资料/hw3/MDS5102_Assignment_3.pdf', 'MDS5102/作业习题/MDS5102_作业_03_题目.pdf'],
@@ -377,5 +376,6 @@ for (const item of mixedCourseMaterialsToReview) {
 let templates = 0
 if (await move('其他资料/其他资料/CUHK-Shenzhen-Beamer-Template', '其他资料/课程通用模板/演示文稿模板')) templates += 1
 if (await move('其他资料/其他资料/cuhksz_report_template', '其他资料/课程通用模板/课程报告模板')) templates += 1
+if (await quarantine('其他资料/课程通用模板/课程报告模板/example', '学生个人报告及身份信息')) quarantined += 1
 const emptyDirectories = apply ? await cleanupEmptyDirectories(root) : 0
 console.log(JSON.stringify({ mode: apply ? 'apply' : 'dry-run', quarantined, migratedNoteCollections: notes, migratedExamCollections: exams, migratedKnownCollections: knownCollections, migratedNestedCollections: nestedCollections, extractedHandouts: handouts, extractedOfficialMaterials: officialMaterials, nonCourseQuarantined, mixedCourseQuarantined, preservedTemplates: templates, emptyDirectories }, null, 2))
