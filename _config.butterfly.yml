@@ -14,7 +14,7 @@ menu:
     学校联系方式: /contact-school/ || fas fa-address-book
     IT 指南: /guide-IT/ || fas fa-laptop
   学业成长:
-    课程资料与电子课本: /course/ || fas fa-book
+    课程资料目录: 'https://my.feishu.cn/wiki/RjSzwtTIXi9OEVkFXN8cn84Enib?from=from_copylink || fas fa-book'
     学业: /categories/%E5%AD%A6%E4%B8%9A/ || fas fa-graduation-cap
   资源社区:
     重要资料汇总: /material/ || fas fa-folder-open
@@ -202,14 +202,12 @@ font:
 inject:
   head:
     - <link rel="stylesheet" href="/cuhksz/css/butterfly-overrides.css">
-    - <link rel="stylesheet" href="/cuhksz/css/course-resources.css">
     - <link rel="stylesheet" href="/cuhksz/css/campus-terms.css">
     - <link rel="stylesheet" href="/cuhksz/css/resource-search.css">
     - <link rel="stylesheet" href="/cuhksz/css/social-resources.css">
   bottom:
     - <script defer src="/cuhksz/js/card-click.js"></script>
     - <script defer src="/cuhksz/js/resource-search.js"></script>
-    - <script defer src="/cuhksz/js/course-resources.js"></script>
     - <script defer src="/cuhksz/js/campus-terms.js"></script>
 
 pjax:
