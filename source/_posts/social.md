@@ -1,5 +1,5 @@
 ---
-title: "社交媒体与宝藏资源"
+title: "外部资源"
 slug: social
 date: "2024-08-30 16:03:18"
 category: "资源"

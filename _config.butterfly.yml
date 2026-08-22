@@ -17,9 +17,9 @@ menu:
     课程资料: 'https://my.feishu.cn/wiki/RjSzwtTIXi9OEVkFXN8cn84Enib?from=from_copylink || fas fa-book'
     课程评价: 'https://my.feishu.cn/wiki/LEtLwn9k0iAXRskXnOzcpuNGncb?from=from_copylink || fas fa-star'
   资源社区:
-    重要资料汇总: /material/ || fas fa-folder-open
+    重要资料: /material/ || fas fa-folder-open
     中英字典: /dictionary/ || fas fa-language
-    社交媒体与宝藏资源: /social/ || fas fa-users
+    外部资源: /social/ || fas fa-users
   关于本站: /about/ || fas fa-circle-info
 
 favicon: /img/pwa/favicon.png
